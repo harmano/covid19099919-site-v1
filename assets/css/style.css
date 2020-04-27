@@ -13,7 +13,11 @@ html, body {width: auto!important; overflow-x: hidden!important}
   margin-left: 5%;
   margin-right: 5%;
 }
+/*................. Margin .....................*/
 
+.text-margin-can{
+  margin-left: 10px;
+}
 /*................. Nav .....................*/
 .topnav-right {
   float: right;
@@ -67,7 +71,10 @@ html, body {width: auto!important; overflow-x: hidden!important}
 }
 .flag-img{
   width: 25px;
-
+  margin-left: 10px;
+  margin-right: 8px;
+  margin-top: -6px;
+  margin-bottom: 0;
   padding: 0;
 }
 
