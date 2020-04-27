@@ -258,11 +258,11 @@ html, body {width: auto!important; overflow-x: hidden!important}
 /*................. Images .....................*/
 
 .brand-logo{
-  width: 170px;
+  width: 140px;
   margin-top: -10px;
 }
 
-.brand-logo-mobile{
+.\-mobile{
   width: 150px;
   margin-top: ;
 }
@@ -285,6 +285,10 @@ html, body {width: auto!important; overflow-x: hidden!important}
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  .brand-logo{
+    width: 170px;
+    margin-top: -10px;
   }
   .container-v2{
     margin-left: 15%;
