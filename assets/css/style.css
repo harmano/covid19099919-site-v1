@@ -9,6 +9,11 @@ html, body {width: auto!important; overflow-x: hidden!important}
   margin-right: 10%;
 }
 
+.container-v2{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /*................. Nav .....................*/
 .topnav-right {
   float: right;
@@ -267,6 +272,10 @@ html, body {width: auto!important; overflow-x: hidden!important}
 }
 
 @media (min-width: 768px) {
+  .container-v2{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .stats-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
