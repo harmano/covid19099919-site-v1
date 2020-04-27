@@ -260,6 +260,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .brand-logo{
   width: 140px;
   margin-top: -10px;
+  margin-right: -10px;
 }
 
 .\-mobile{
