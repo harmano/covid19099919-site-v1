@@ -1,0 +1,342 @@
+
+/*................. Fonts .....................*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+/*................. Container .....................*/
+html, body {width: auto!important; overflow-x: hidden!important}
+.container-nav{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*................. Nav .....................*/
+.topnav-right {
+  float: right;
+}
+/*................. Card .....................*/
+.card{
+  margin: 0px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  border: white;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.card-img-top-2{
+  width:  100%;
+  height: auto;
+}
+
+.card-donate{
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 15px;
+  max-width: 300px;
+}
+/*................. Buttons .....................*/
+
+.dontate-btn{
+  background-color: #32C782;
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+}
+.dontate-btn:hover{
+  background-color: #32d990;
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/*................. Image .....................*/
+.img-fluid-wallpaper{
+  width: 100%;
+  height: auto;
+  min-width: 1500px;
+  padding-bottom: 30px;
+
+}
+.flag-img{
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 8px;
+  margin-top: -6px;
+}
+
+.news-img{
+  width: 100%;
+  height: auto;
+}
+.coffee-img{
+  width: 150px;
+}
+/*................. Boxes .....................*/
+
+.counting-box{
+  width: auto;
+  height: auto;
+  border: 2px solid lightgrey;
+  border-radius: 2px;
+  padding: 15px 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.stats-text-box{
+  padding: 0px;
+  margin: 0px;
+}
+
+.news-box{
+  padding: 5px;
+  margin: 5px;
+
+}
+
+/*................. Lines .....................*/
+
+.underline-small{
+  border: .5px solid black;
+  margin-top: -4px;
+}
+
+.vl {
+  border-left: 2px solid lightgrey;
+  height: 40px;
+  margin-top: 5px;
+}
+/*................. margin .....................*/
+.margin-dontae{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*................. Text .....................*/
+
+
+
+
+.nav-link{
+  color: rgba(0,0,0,0);
+  box-shadow: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.footer-title-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-content-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+
+}
+
+.nav-link:hover{
+  font-weight: 600;
+}
+
+.p-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: black;
+}
+.p-text-alert{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  color: black;
+}
+.header-1-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header-2-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+
+.header-2-text-2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  color: grey;
+}
+.paragraph-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.paragraph-2-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.paragraph-text-links{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: darkblue;
+}
+
+.element-style-b{
+  padding: 0;
+}
+
+.stats-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+.see-more-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: black;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  margin-right: -15px;
+}
+
+.date-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: black;
+  margin-top:7px;
+}
+
+.date-text-location{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: black;
+  margin-top:7px;
+  color: #435B77;
+  margin-top: -5px;
+  margin-bottom: 6px;
+}
+.date-text-fund{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: black;
+  margin-top:7px;
+  color: black;
+  margin-top: -12px;
+  margin-left:4px;
+}
+/*................. Images .....................*/
+
+.brand-logo{
+  width: 170px;
+  margin-top: -10px;
+}
+
+.brand-logo-mobile{
+  width: 150px;
+  margin-top: ;
+}
+/*................. Container .....................*/
+.container-2 {
+  padding-right: 13%;
+  padding-left: 13%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.alert{
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .stats-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: -15px;
+  }
+  .p-text-alert{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: black;
+  }
+  .vl {
+    border-left: 2px solid lightgrey;
+    height: 60px;
+    margin-top: 15px;
+  }
+
+  .stats-text-box{
+    padding:px;
+    margin: 1px;
+  }
+  .header-2-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .counting-box{
+    width: auto;
+    height: auto;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .container-2 {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .brand-logo-large{
+    margin-left: 6%;
+  }
+
+  .alert-margin{
+    margin-left:17%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-2 {
+    width: 1170px;
+  }
+  .alert-margin{
+    margin-left:17%;
+  }
+  .brand-logo-large{
+    margin-left: 10%;
+  }
+  .stats-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: -15px;
+  }
+}
