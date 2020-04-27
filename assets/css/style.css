@@ -46,6 +46,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   border-radius: 10px;
   color: white;
   font-size: 12px;
+  transition-duration: 0.4s;
 }
 .dontate-btn:hover{
   background-color: #32d990;
@@ -130,6 +131,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
+  transition-duration: 0.4s;
 }
 .footer-title-text{
   font-family: 'Roboto', sans-serif;
@@ -204,7 +206,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .stats-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: -15px;
 }
 
