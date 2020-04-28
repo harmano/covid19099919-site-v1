@@ -9,6 +9,10 @@ html, body {width: auto!important; overflow-x: hidden!important}
   margin-right: 10%;
 }
 
+.bg-color{
+  background-color: ;
+}
+
 .container-v2{
   margin-left: 5%;
   margin-right: 5%;
@@ -17,6 +21,16 @@ html, body {width: auto!important; overflow-x: hidden!important}
 
 .text-margin-can{
   margin-left: 3%;
+}
+
+.alert-padding-top{
+  margin-bottom: 80px;
+}
+
+.alert {
+  border: none;
+  padding: 0px;
+  margin: 0;
 }
 /*................. Nav .....................*/
 .topnav-right {
@@ -129,7 +143,9 @@ html, body {width: auto!important; overflow-x: hidden!important}
 /*................. Text .....................*/
 
 
-
+.alert-text{
+  font-size: 10px;
+}
 
 .nav-link{
   color: rgba(0,0,0,0);
@@ -266,10 +282,11 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .brand-logo-2{
   width: 110px;
   margin-top: -10px;
-  margin-right: 60px;
-  padding-bottom: 10px;
+  margin-right: 80px;
+  padding-bottom: ;
   padding-top: 10px;
 }
+
 
 .\-mobile{
   width: 150px;
@@ -300,14 +317,18 @@ html, body {width: auto!important; overflow-x: hidden!important}
     margin-top: -10px;
   }
   .container-v2{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 17%;
+    margin-right: 17%;
   }
   .stats-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 30px;
     margin-top: -15px;
+  }
+  .text-margin-can{
+    margin-left: 0%;
+    padding-top: 4px;
   }
   .p-text-alert{
     font-family: 'Roboto', sans-serif;
