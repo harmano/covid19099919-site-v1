@@ -263,6 +263,14 @@ html, body {width: auto!important; overflow-x: hidden!important}
   margin-right: -10px;
 }
 
+.brand-logo-2{
+  width: 110px;
+  margin-top: -10px;
+  margin-right: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .\-mobile{
   width: 150px;
   margin-top: ;
