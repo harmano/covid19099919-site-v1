@@ -304,6 +304,9 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .alert{
   padding: 0;
 }
+.navbar-margin-mobile{
+  margin-top: -1000px
+}
 
 @media (min-width: 768px) {
   .flag-img{
@@ -311,6 +314,9 @@ html, body {width: auto!important; overflow-x: hidden!important}
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  .navbar-width{
+    height: 70px;
   }
   .alert-text{
     font-size: 10px;
