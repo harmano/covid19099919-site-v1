@@ -83,6 +83,15 @@ html, body {width: auto!important; overflow-x: hidden!important}
   padding-bottom: 30px;
 
 }
+
+.avatar-img {
+  vertical-align: middle;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+
+}
 .flag-img{
   width: 25px;
   margin-left: 10px;
@@ -95,9 +104,20 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .news-img{
   width: 100%;
   height: auto;
+  border-radius: 3px;
 }
+
 .coffee-img{
   width: 150px;
+    transition-duration: 0.4s;
+}
+.coffee-img:hover{
+  width: 160px;
+}
+
+.name-margin{
+  margin-top: 20px;
+  text-align: center;
 }
 /*................. Boxes .....................*/
 
@@ -133,18 +153,25 @@ html, body {width: auto!important; overflow-x: hidden!important}
   height: 40px;
   margin-top: 5px;
 }
+
+.hr-about{
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
 /*................. margin .....................*/
 .margin-dontae{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
+.about-margin{
+  margin-top: 3%;
+}
 /*................. Text .....................*/
 
 
 .alert-text{
-  font-size: 6px;
+  font-size: 7px;
 }
 
 .nav-link{
@@ -282,9 +309,9 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .brand-logo-2{
   width: 110px;
   margin-top: -10px;
-  margin-right: 80px;
   padding-bottom: ;
   padding-top: 10px;
+  float: right;
 }
 
 
@@ -304,9 +331,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
 .alert{
   padding: 0;
 }
-.navbar-margin-mobile{
-  margin-top: -1000px
-}
+
 
 @media (min-width: 768px) {
   .flag-img{
@@ -315,8 +340,13 @@ html, body {width: auto!important; overflow-x: hidden!important}
     margin-right: 8px;
     margin-top: -6px;
   }
+
+  .name-margin{
+    margin-top: 20px;
+    text-align: left;
+  }
   .navbar-width{
-    height: 70px;
+
   }
   .alert-text{
     font-size: 10px;
