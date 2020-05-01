@@ -5,7 +5,7 @@
 /*................. Container .....................*/
 html, body {width: auto!important; overflow-x: hidden!important}
 overflow-y: scroll; /* has to be scroll, not auto */
--webkit-overflow-scrolling: touch;
+-webkit-overflow-scrolling: touch;g
 .container-nav{
   margin-left: 10%;
   margin-right: 10%;
@@ -18,6 +18,78 @@ overflow-y: scroll; /* has to be scroll, not auto */
 .container-v2{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.container-v3{
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 20px;
+}
+
+/*................. Stats Nav.....................*/
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.scrollmenu a:hover {
+  border-bottom: 3px solid red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.scrollmenu a.active {
+  border-bottom: 3px solid red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 /*................. new nav .....................*/
 #menuToggle
@@ -156,6 +228,9 @@ opacity: 1;
 .text-margin-can{
   margin-left: 3%;
 }
+.body-margin{
+  padding-top: 50px;
+}
 
 .company-margin-group{
   padding: 5px;
@@ -168,6 +243,10 @@ opacity: 1;
 }
 .alert-padding-top{
   margin-bottom: 80px;
+}
+
+.container-top{
+  margin-top: 0px;
 }
 
 .alert {
@@ -544,6 +623,14 @@ opacity: 1;
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  .container-v3{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+  }
+  .container-top{
+    margin-top: 15px;
   }
 
   .company-margin{
