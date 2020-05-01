@@ -155,6 +155,15 @@ opacity: 1;
   margin-left: 3%;
 }
 
+.company-margin-group{
+  padding: 5px;
+}
+.company-margin{
+  margin-top: 30px;
+}
+.company-info-margin{
+  margin-top: 10px;
+}
 .alert-padding-top{
   margin-bottom: 80px;
 }
@@ -164,9 +173,24 @@ opacity: 1;
   padding: 0px;
   margin: 0;
 }
+
+.name-mrg{
+  padding-top: 30px;
+  text-align: center;
+}
 /*................. Nav .....................*/
 .topnav-right {
   float: right;
+}
+
+.in-page-nav{
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  width: 70%;
+
 }
 /*................. Card .....................*/
 .card{
@@ -313,6 +337,14 @@ opacity: 1;
   font-size: 7px;
 }
 
+.in-page-nav-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #435B77;
+  text-decoration: underline;
+  padding: 4px 0px;
+}
 .nav-link{
   color: rgba(0,0,0,0);
   box-shadow: 0;
@@ -473,7 +505,19 @@ opacity: 1;
   float: right;
 }
 
-
+.vaccine-img{
+  vertical-align: middle;
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
+}
+.vacine-flag-img{
+  vertical-align: middle;
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: -16px;
+}
 .\-mobile{
   width: 150px;
   margin-top: ;
@@ -500,6 +544,24 @@ opacity: 1;
     margin-top: -6px;
   }
 
+  .company-margin{
+    margin-top: 10px;
+  }
+  .in-page-nav{
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0;
+    width: auto;
+
+  }
+
+  .name-mrg{
+    padding-top: 0px;
+      text-align: left;
+  }
+
   .name-margin{
     margin-top: 20px;
     text-align: left;
@@ -518,6 +580,9 @@ opacity: 1;
     margin-left: 17%;
     margin-right: 17%;
   }
+
+
+
   .stats-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;

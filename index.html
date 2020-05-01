@@ -18,43 +18,73 @@
 
 </head>
 
-<nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
-  <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
-    <a class="navbar-brand" href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
-  </a>
+<nav style="padding-top:25px; margin-top:0px; "class="d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" role='navigation'>
+  <a href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
 
-  <button style="border:none;"class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#"></a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <div style="margin-top:-22px;" id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a class="nav-link-mobile" href="#"><li>Home</li></a>
+      <a class="nav-link-mobile" href="#"><li>Stats</li></a>
+      <a class="nav-link-mobile" href="#"><li>Fundrasiers</li></a>
+      <a class="nav-link-mobile" href="#"><li>Initiatives</li></a>
+      <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
     </ul>
-    <div class="form-inline my-2 my-lg-0">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="#">Stats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  style="color:black;" href="#">Fundraisers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="#">Initiatives</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="#">Vaccine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="about.html">About Us</a>
-        </li>
-      </ul>
-    </div>
   </div>
 </nav>
-
+<div class="d-none d-xl-block 	d-none d-lg-block d-xl-none">
+  <nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; height:70px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
+    <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
+      <a class="navbar-brand " href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
+    </a>
+    <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#"></a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="#">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  style="color:black;" href="#">Fundraisers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="#">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="#">Vaccine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 <!-- <div style=" margin-bottom:0; margin-top:-20px;  border:none; background-color:#fff9e7;" class="alert alert-warning" role="alert">
   <div style=" " class="alert-margin p-text-alert ">
     <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i> Last Updated <b>3 Hours ago</b> - For more information visit canada.ca
