@@ -3,7 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
 /*................. Container .....................*/
+html, body, div {
+  width: auto!important;
+  overflow-x: hidden!important
+}
 
+overflow-y: scroll; /* has to be scroll, not auto */
+-webkit-overflow-scrolling: touch;
 .container-nav{
   margin-left: 10%;
   margin-right: 10%;
