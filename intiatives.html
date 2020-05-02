@@ -15,10 +15,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ae027a5b04.js" crossorigin="anonymous"></script>
+  <style media="screen">
 
+  </style>
 </head>
-
-<nav style="padding-top:25px; margin-top:0px; "class="d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" role='navigation'>
+<nav style="padding-top:25px; margin-top:0px;"class=" d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" >
   <a href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
 
   <div style="margin-top:-22px;" id="menuToggle">
@@ -34,9 +35,9 @@
     They are acting like a real hamburger,
     not that McDonalds stuff.
     -->
-    <span></span>
-    <span></span>
-    <span></span>
+    <span class="nav-mobile-margin"></span>
+    <span class="nav-mobile-margin"></span>
+    <span class="nav-mobile-margin"></span>
 
     <!--
     Too bad the menu has to be inside of the button
@@ -118,81 +119,115 @@
 
 <body  class="bg-color">
   <div class="container-top container-v2">
+    <!---------- search --------->
+    <hr>
+    <nav style="margin-bottom:10px;" class="">
+      <div class=" text-center search-bg" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="col-8 text-right">
+            <input style="width:90%"class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <div class="col-4 text-left">
+            <button style="" class="button-search" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!---------- Nav --------->
+    <hr>
+    <div style="margin-bottom:20px;"  class="text-center">
+      <div class="btn-group">
+        <button style="background-color:darkgrey; border:none; font-size:12px;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Location
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button style="background-color:darkgrey; border:none; font-size:12px;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Date
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button style="background-color:darkgrey; border:none; font-size:12px;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Province
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button style="background-color:darkgrey; border:none; font-size:12px;" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div>
+    <hr>
     <!---------- Header --------->
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="in-page-nav">
-          <h1 style="margin-left:10px;"class="header-1-text">Most Viewed</h1>
-          <ul>
-            <li class="in-page-nav-text"><a href="">Companies working on Vaccines</a></li>
-            <li class="in-page-nav-text"><a href="">Known Theraputics</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-          </ul>
+      <div class="card mb-3" >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+
+              <img src="assets/images/test-img.jpg"  class="intiative-img"alt="">
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="header-1-text date-text-location-2">TORONTO <i class="p-3-text"> March 28th, 2020</i> </h1>
+              <h1 class="header-2-text">CERB Canada</h1>
+              <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+              <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;"  href="">see more ></a></p>
+
+            </div>
+          </div>
 
         </div>
-      </div>
-      <!---------- Companies --------->
-      <div class="col-12 col-sm-6">
-        <h1 style="color: #435B77; font-weight:600; margin-bottom: 25px;" class="company-margin header-1-text">Companies Working on a Vaccine</h1>
-        <div class="row">
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center">Company name</p> <img class="vacine-flag-img d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center" >Company name</p> <img class="vacine-flag-img d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-          <div class="col company-margin-group" >
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center">Company name</p> <img class="vacine-flag-img d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center">Company name</p> <img class="vacine-flag-img d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center">Company name</p> <img class="vacine-flag-img d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="row company-info-margin">
-              <p class="p-text text-center ">Company name</p> <img class="vacine-flag-img 	d-none d-sm-block"src="assets/images/canadian_flag.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!---------- Caption 1 --------->
-    <div class="body-margin">
-      <h1 class="header-1-text">Theraputics</h1>
-      <hr>
-      <h1 class="header-2-text">Theraputics</h1>
-      <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <!---------- Caption 2 --------->
-    <div class="body-margin">
-      <h1 class="header-1-text">Theraputics</h1>
-      <hr>
-      <h1 class="header-2-text">Theraputics</h1>
-      <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-    </div>
-</div>
+      </div>
+      <div class="card mb-3" >
+        <div class="row no-gutters">
+          <div class="col-md-4 col-4">
+
+              <img src="assets/images/test-img.jpg"  class="intiative-img"alt="">
+
+          </div>
+          <div class="col-md-8 col-8">
+            <div class="card-body">
+              <h1 class="header-1-text date-text-location-2">TORONTO <i class="p-3-text"> March 28th, 2020</i> </h1>
+              <h1 class="header-2-text">CERB Canada</h1>
+              <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+              <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;"  href="">see more ></a></p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
 </body>
 
 
