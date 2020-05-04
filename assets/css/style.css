@@ -87,7 +87,22 @@ div.scrollmenu {
   font-weight: 300;
   font-size: 12px;
 }
-
+.empty-item {
+background:#fff;
+color:#ddd;
+margin:0 0;
+padding:0.5em 0.8em;
+font-style:italic;
+border:none;
+text-align:center;
+visibility:hidden;
+opacity:0;
+clear:left;
+width:100%;
+text-align: center;
+margin-left: 3%;
+font-size: 10px;
+}
 div.scrollmenu a {
   display: inline-block;
   color: black;
@@ -239,6 +254,9 @@ opacity: 1;
 /*................. Margin .....................*/
 .nav-mobile-margin{
   margin-right: -20px;
+}
+.boxes-margin{
+  margin: 0 100px;
 }
 .text-margin-can{
   margin-left: 3%;
@@ -402,6 +420,15 @@ opacity: 1;
 }
 /*................. Boxes .....................*/
 
+.counting-box-small{
+  width: auto;
+  height: auto;
+  border: 2px solid lightgrey;
+  border-radius: 2px;
+  padding: 15px 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
 .counting-box{
   width: auto;
   height: auto;
@@ -708,6 +735,22 @@ opacity: 1;
     margin-right: 8px;
     margin-top: -6px;
   }
+  .empty-item {
+  background:#fff;
+  color:#ddd;
+  margin:0 0;
+  padding:0.5em 0.8em;
+  font-style:italic;
+  border:none;
+  text-align:center;
+  visibility:hidden;
+  opacity:0;
+  clear:left;
+  width:100%;
+  text-align: center;
+  margin-left: 8%;
+  font-size: 15px;
+  }
   .container-v3{
     margin-left: 10%;
     margin-right: 10%;
@@ -788,6 +831,15 @@ opacity: 1;
     font-size: 15px;
   }
   .counting-box{
+    width: auto;
+    height: auto;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .counting-box-small{
     width: auto;
     height: auto;
     border: 2px solid lightgrey;

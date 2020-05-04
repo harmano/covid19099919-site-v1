@@ -70,20 +70,7 @@
 
 
 
-      .empty-item {
-      background:#fff;
-      color:#ddd;
-      margin:0.2em 0;
-      padding:0.5em 0.8em;
-      font-style:italic;
-      border:none;
-      text-align:center;
-      visibility:hidden;
-      opacity:0;
-      float:left;
-      clear:left;
-      width:100%;
-      }
+
 
       .empty .empty-item {
       opacity:1;
@@ -189,10 +176,12 @@
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
-      <a class="nav-link-mobile" href="#"><li>Home</li></a>
-      <a class="nav-link-mobile" href="#"><li>Stats</li></a>
-      <a class="nav-link-mobile" href="#"><li>Fundrasiers</li></a>
-      <a class="nav-link-mobile" href="#"><li>Initiatives</li></a>
+      <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
+      <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
+      <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
+      <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a>
+      <a class="nav-link-mobile" href="about.html"><li>Initiatives</li></a>
+
       <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
     </ul>
   </div>
@@ -209,22 +198,22 @@
       <div class="form-inline my-2 my-lg-0">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="color:black;" href="#">Home</a>
+            <a class="nav-link" style="color:black;" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:black;" href="#">Stats</a>
+            <a class="nav-link" style="color:black;" href="stats.html">Stats</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  style="color:black;" href="#">Fundraisers</a>
+            <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:black;" href="#">Initiatives</a>
+            <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:black;" href="#">Vaccine</a>
+            <a class="nav-link" style="color:black;" href="intiatives.html">Initiatives</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:black;" href="#">About Us</a>
+            <a class="nav-link" style="color:black;" href="about.html">About Us</a>
           </li>
         </ul>
       </div>
@@ -254,14 +243,19 @@
   <div class="container-top container-v2">
 
     <!---------- search --------->
-      <form for="search-text" class="form-inline my-2 my-lg-0">
-        <div class="col-9 text-right">
+      <div class="col-12">
+        <h1 class="header-2-text">Local Initiatives</h1>
+        <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+      </div>
+      <hr>
+      <div class="col-12">
          <input id="search-text" style="width:90%"class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
        </div>
-       <div class="col-3 text-left">
-         <span class="list-count"></span>
-        </div>
-      </form>
+      <div style="margin-top:-5px;" class="text-left">
+        <i><span style="font-size:11px; margin-left:10px;" class="list-count"></span></i>
+      </div>
+
       <!-- <hr>
       <div style="margin-bottom:20px;"  class="text-center">
         <div class="btn-group">
@@ -384,7 +378,7 @@
         </div>
 
       </li>
-      <span class="empty-item">Sorry No Results For That Term, Stay Tuned for more updates</span>
+      <span class="empty-item">Sorry No Results For That Term, Try Something Else or Stay Tuned for more updates</span>
     </div>
     </section>
   </div>
@@ -393,7 +387,7 @@
   $(document).ready(function() {
 
   var jobCount = $('#list .in').length;
-  $('.list-count').text(jobCount + ' Initiatives');
+  $('.list-count').text('Total of ' + jobCount + ' Initiatives');
 
 
   $("#search-text").keyup(function () {
