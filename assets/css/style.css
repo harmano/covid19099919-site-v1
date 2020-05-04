@@ -265,6 +265,7 @@ opacity: 1;
 }
 .boxes-margin{
   margin: 0 100px;
+  padding-left: 15px;
 }
 .text-margin-can{
   margin-left: 3%;
@@ -430,7 +431,6 @@ opacity: 1;
 /*................. Boxes .....................*/
 
 .counting-box-small{
-  width: auto;
   height: auto;
   border: 2px solid lightgrey;
   border-radius: 2px;
@@ -750,6 +750,11 @@ opacity: 1;
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  .boxes-margin{
+    margin: 0 100px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .empty-item {
   background:#fff;
