@@ -352,15 +352,16 @@ opacity: 1;
 }
 .dontate-btn{
   background-color: #32C782;
-  padding: 10px 35px;
+  padding: 8px 30px;
   border-radius: 10px;
   color: white;
   font-size: 12px;
   transition-duration: 0.4s;
+
 }
 .dontate-btn:hover{
   background-color: #32d990;
-  padding: 10px 35px;
+  padding: 8px 30px;
   border-radius: 10px;
   color: white;
   font-size: 12px;
@@ -485,6 +486,7 @@ opacity: 1;
 /*................. Text .....................*/
 
 
+
 .alert-text{
   font-size: 7px;
 }
@@ -593,6 +595,12 @@ opacity: 1;
   font-size: 12px;
 }
 
+
+.header-chart-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
 
 .header-2-text-2{
   font-family: 'Roboto', sans-serif;
