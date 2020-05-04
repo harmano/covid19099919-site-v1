@@ -18,7 +18,7 @@
 
 </head>
 <nav style="padding-top:25px; margin-top:0px;"class=" d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" >
-  <a href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
+  <a href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
 
   <div style="margin-top:-22px;" id="menuToggle">
     <!--
@@ -115,9 +115,7 @@
 </div>
 
 
-
-<body  class="bg-color">
-  <div class="container-top container-v3">
+  <div class=" container-v3">
     <!---------- Main --------->
     <div class="row">
       <div class="col-12 col-sm-12 ">
@@ -162,34 +160,334 @@
             </div>
           </div>
           <div class=" ">
-            <p  class="see-more-text"><a href=""> <i class="fas fa-redo-alt" style="margin-right:5px;"></i>Refresh</a></p>
+            <p  class="see-more-text">
+              <a href="stats.html"> <i class="fas fa-redo-alt" style="margin-right:5px;"></i>Refresh</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-top container-v2">
+<div class="container-top container-v2">
     <div style="margin-bottom: 20px; margin-top:-20px;" class="row">
       <div class="scrollmenu">
-        <a href="#home" class="active">All</a>
-        <a href="#news">Info</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#support">Support</a>
-        <a href="#blog">Blog</a>
-        <a href="#tools">Tools</a>
-        <a href="#base">Base</a>
-        <a href="#custom">Custom</a>
-        <a href="#more">More</a>
-        <a href="#logo">Logo</a>
+        <a class="tablinks" onclick="openCity(event, 'fullSTATS')" id="defaultOpen">All</a>
+        <a class="tablinks"  onclick="openCity(event, 'summary')">Summary</a>
+        <a class="tablinks" onclick="openCity(event, 'timeline')">Timeline</a>
+        <a class="tablinks" >About</a>
+        <a class="tablinks" >Support</a>
+        <a class="tablinks" >Blog</a>
+        <a class="tablinks" >Tools</a>
+        <a class="tablinks" >Base</a>
+        <a class="tablinks" >Custom</a>
+        <a class="tablinks" >More</a>
+        <a class="tablinks" >Logo</a>
         <a href="#friends">Friends</a>
-        <a href="#partners">Partners</a>
-        <a href="#people">People</a>
-        <a href="#work">Sources</a>
+        <a >Partners</a>
+        <a >People</a>
+        <a >Sources</a>
       </div>
     </div>
-    <!---------- Main --------->
-    <div class="">
+    <!---------- ALL Full Stats --------->
+    <div id="fullSTATS" class="tabcontent">
+      <!---------- Charts --------->
+      <div style="margin-left:15px;" class="">
+        <div class="text-center">
+          <div  class=" row boxes-margin" style=";">
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
+                <hr style="margin-top: -5px;" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
+                <hr style="margin-top: -5px;" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
+                <hr style="margin-top: -5px;" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div  class=" row boxes-margin" style=";">
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
+                <hr style="margin-top: -5px;" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
+                <hr style="margin-top: -5px; width:30" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2 ">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center counting-box-small">
+              <div style="margin-bottom: 15px;" class="text-center ">
+
+                <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
+                <hr style="margin-top: -5px;" >
+              </div>
+              <div class="text-left ">
+                <div class="stats-text-box  text-center col">
+                  <p class="header-2-text-2">(Confirmed)</p>
+                  <h3 class="stats-text">61,278</h3>
+                </div>
+              </div>
+              <hr style="width:50px;">
+              <div style=""class="text-left ">
+                <div class="stats-text-box text-center col">
+                  <p class="header-2-text-2">Today</p>
+                  <h3 class="stats-text">832</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- Timeline --------->
+      <div class="">
+        <h1 class="header-1-text">Full Timeline</h1>
+        <hr class="underline-small">
+        <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <div  class="container">
+          <div class="row">
+            <div class="col-2">
+              <p class="header-2-text">April 25th </p>
+            </div>
+            <div class="col-1">
+              <p>-</p>
+            </div>
+            <div class="col-9">
+              <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <p class="header-2-text">April 24th </p>
+            </div>
+            <div class="col-1">
+              <p>-</p>
+            </div>
+            <div class="col-9">
+              <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-2">
+              <p class="header-2-text">April 23rd </p>
+            </div>
+            <div class="col-1">
+              <p>-</p>
+            </div>
+            <div class="col-9">
+              <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+            </div>
+          </div>
+          <hr>
+          <div class=" row">
+            <div class="col-2">
+              <p class="header-2-text">April 22nd </p>
+            </div>
+            <div class="col-1">
+              <p>-</p>
+            </div>
+            <div class="col-9">
+              <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    <!---------- Timeline --------->
+    <div  id="timeline" class="tabcontent">
+      <div class="">
+      <h1 class="header-1-text">Full Timeline</h1>
+      <hr class="underline-small">
+      <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <div  class="container">
+        <div class="row">
+          <div class="col-2">
+            <p class="header-2-text">April 25th </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-2">
+            <p class="header-2-text">April 24th </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-2">
+            <p class="header-2-text">April 23rd </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class=" row">
+          <div class="col-2">
+            <p class="header-2-text">April 22nd </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-2">
+            <p class="header-2-text">April 24th </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-2">
+            <p class="header-2-text">April 23rd </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class=" row">
+          <div class="col-2">
+            <p class="header-2-text">April 22nd </p>
+          </div>
+          <div class="col-1">
+            <p>-</p>
+          </div>
+          <div class="col-9">
+            <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!---------- Charts --------->
+    <div id="summary" class="tabcontent">
       <div class="text-center">
         <div  class=" row boxes-margin" style=";">
           <div class="col text-center counting-box-small">
@@ -319,74 +617,7 @@
         </div>
       </div>
     </div>
-    <div class="">
-
-    </div>
-    <!---------- Timeline --------->
-    <div class="">
-      <h1 class="header-1-text">Full Timeline</h1>
-      <hr class="underline-small">
-      <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-      <div  class="container">
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 25th </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 24th </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 23rd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-          </div>
-        </div>
-        <hr>
-        <div class=" row">
-          <div class="col-2">
-            <p class="header-2-text">April 22nd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    </div>
-  </div>
+</div>
 
 
 </body>
@@ -508,5 +739,37 @@
 
 </footer>
 <!-- Footer -->
+<script>
 
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var content = document.getElementById("content");
+var show = document.getElementById("show");
+
+show.onclick = function(){
+  if (content.className == "open"){
+    content.className = "";
+    show.innerHTML = "Show More";
+  } else
+    {
+      content.className = "open";
+      show.innerHTML = "Show Less";
+    }
+}
+</script>
 </html>

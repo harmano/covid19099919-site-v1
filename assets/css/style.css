@@ -27,9 +27,17 @@ html, body {
   margin-right: 3%;
   padding-top: 20px;
 }
-/*................. Button.....................*/
+/*................. Tabs Toggle.....................*/
 
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
 
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 /*................. Stats Nav.....................*/
 
 
