@@ -48,7 +48,7 @@ html, body {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav button {
   float: left;
   display: block;
   color: black;
@@ -61,16 +61,20 @@ html, body {
   font-weight: 300;
   font-size: 12px;
 }
-
-.scrollmenu a:hover {
+.tablinks{
+  background-color: white;
+  border: none;
+}
+.scrollmenu button:hover {
   border-bottom: 3px solid red;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   text-decoration: none;
+  color: black;
 }
 
-.scrollmenu a.active {
+.scrollmenu button.active {
   border-bottom: 3px solid red;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -111,7 +115,7 @@ text-align: center;
 margin-left: 3%;
 font-size: 10px;
 }
-div.scrollmenu a {
+div.scrollmenu button {
   display: inline-block;
   color: black;
   text-align: center;
@@ -696,7 +700,20 @@ opacity: 1;
   margin-left:4px;
 }
 /*................. Images .....................*/
+}
 
+.bg-image-w{
+  /* The image used */
+
+  background-image: url(".../assets/images/canada_wallpaper.jpg");
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .brand-logo{
   width: 140px;
   margin-top: -10px;
