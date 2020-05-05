@@ -20,12 +20,28 @@ html, body {
 .container-v2{
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 5px;
 }
 
 .container-v3{
   margin-left: 3%;
   margin-right: 3%;
   padding-top: 20px;
+}
+/*................. Footer ....................*/
+
+
+.footer-nav-link{
+  color:black;
+  weight: 00;
+  transition-duration: 0.4s;
+  padding-top: 15px;
+}
+.footer-nav-link:hover{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition-duration: 1s;
 }
 /*................. Tabs Toggle.....................*/
 
@@ -549,7 +565,6 @@ opacity: 1;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
-
 }
 
 .nav-link:hover{
@@ -701,11 +716,19 @@ opacity: 1;
 }
 /*................. Images .....................*/
 }
+.img-fluid-wallpaper-2{
+  width: 100%;
+  height: auto;
+  min-width: 1500px;
+  padding-bottom: 30px;
+  height: 10px;
 
+
+}
 .bg-image-w{
   /* The image used */
 
-  background-image: url(".../assets/images/canada_wallpaper.jpg");
+  background: url("../images/canada_wallpaper.jpg");
   /* Full height */
   height: 50%;
 
@@ -833,6 +856,7 @@ opacity: 1;
   .container-v2{
     margin-left: 17%;
     margin-right: 17%;
+    margin-top: 25px;
   }
 
 
