@@ -248,20 +248,17 @@ margin: -100px 0 0 0;
 padding: 50px;
 padding-top: 125px;
 right: -50px;
-
 background: #ededed;
 list-style-type: none;
 -webkit-font-smoothing: antialiased;
 /* to stop flickering of text in safari */
+  display: none;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
 
-transform-origin: 0% 0%;
-transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-transform: none;
-opacity: 0;
 
-transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
@@ -277,8 +274,11 @@ font-size: 22px;
 {
 transform: scale(1.0, 1.0);
 opacity: 1;
+display: inline;
+
 
 }
+
 /*................. Margin .....................*/
 .nav-mobile-margin{
   margin-right: -20px;
@@ -466,7 +466,9 @@ opacity: 1;
   padding: 15px 20px;
   margin-right: 20px;
   margin-bottom: 40px;
+
 }
+
 .stats-text-box{
   padding: 0px;
   margin: 0px;
@@ -816,6 +818,7 @@ opacity: 1;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 30px;
+
   }
   .container-top{
     margin-top: 15px;
@@ -933,6 +936,12 @@ opacity: 1;
 @media (min-width: 1200px) {
   .container-2 {
     width: 1170px;
+  }
+  .container-v3{
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-top: 30px;
+
   }
   .alert-margin{
     margin-left:17%;
