@@ -16,7 +16,17 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ae027a5b04.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <style media="screen">
+    .filterDiv{
+        display: none; /* Hidden by default */
+    }
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
 
+  </style>
 </head>
 <nav style="padding-top:25px; margin-top:0px;"class=" d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" >
   <a href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
@@ -168,157 +178,158 @@
       </div>
     </div>
   </div>
-<div class="container-top container-v2">
-    <div style="margin-bottom: 20px; margin-top:-20px;" class="row">
-      <div class="scrollmenu">
-        <button class="tablinks" onclick="openCity(event, 'fullSTATS')" id="defaultOpen">All</button>
-        <button class="tablinks"  onclick="openCity(event, 'summary')">Summary</button>
-        <button class="tablinks" onclick="openCity(event, 'timeline')">Timeline</button>
-        <button class="tablinks" >About</button>
-        <button class="tablinks" >Support</button>
-        <button class="tablinks" >Blog</button>
-        <button class="tablinks" >Tools</button>
-        <button class="tablinks" >Base</button>
-        <button class="tablinks" >Custom</button>
-        <button class="tablinks" >More</button>
-        <button class="tablinks" >Logo</button>
-        <button class="tablinks">Friends</button>
-        <button class="tablinks">Partners</button>
-        <button class="tablinks">People</button>
-        <button class="tablinks">Sources</button>
-      </div>
+<div id="containerv2" class="container-top container-v2">
+  <!---------- Nav --------->
+  <div style="margin-bottom: 20px; margin-top:-20px;" class="row">
+    <div id="" class="scrollmenu col-md-12">
+      <button class=" active tablinks " onclick="filterSelection('all')"> Show All</button>
+      <button class="tablinks" onclick="filterSelection('time-line')"> Timeline</button>
+      <button class="tablinks" onclick="filterSelection('the-summary')"> Summary</button>
+      <button class="tablinks" onclick="filterSelection('autoBiograpghy')"> Auto-Biography</button>
+      <button class="tablinks" onclick="filterSelection('crimeDrama')"> Crime-Drama</button>
+      <button class="tablinks" onclick="filterSelection('history')"> History</button>
+      <button class="tablinks" onclick="filterSelection('fiction')"> Fiction</button>
+      <button class="tablinks" onclick="filterSelection('childFiction')"> Children's Fiction</button>
+      <button class="tablinks" onclick="filterSelection('nonFiction')"> Non-Fiction</button>
+      <button class="tablinks" onclick="filterSelection('thriller')"> Thriller</button>
+      <button class="tablinks" onclick="filterSelection('mystery')"> Mystery</button>
+      <button class="tablinks" onclick="filterSelection('play')"> Play</button>
+      <button class="tablinks" onclick="filterSelection('memoir')"> Memoir</button>
+      <button class="tablinks" onclick="filterSelection('novel')"> Novel</button>
+      <button class="tablinks" onclick="filterSelection('critique')"> Critique</button>
     </div>
-    <!---------- ALL Full Stats --------->
-    <div id="fullSTATS" class="tabcontent">
-      <!---------- Charts --------->
-      <div style="" class="">
-        <div class="text-center">
-          <div  class=" row boxes-margin" style=";">
-            <div class="col  text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+  </div>
+  <!---------- SUMMARY --------->
+    <div class="filterDiv  the-summary ">
+      <div  style="" class="">
+          <div class="text-center">
+            <div  class=" row boxes-margin" style=";">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
-                <hr style="margin-top: -5px;" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
+                  <hr style="margin-top: -5px;" >
+                </div>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col   text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
-                <hr style="margin-top: -5px;" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
+                  <hr style="margin-top: -5px;" >
+                </div>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
-                <hr style="margin-top: -5px;" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
+                  <hr style="margin-top: -5px;" >
+                </div>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col   text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
-                <hr style="margin-top: -5px;" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
+                  <hr style="margin-top: -5px;" >
+                </div>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
-                <hr style="margin-top: -5px; width:30" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2 ">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
+                  <hr style="margin-top: -5px; width:30" >
+                </div>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2 ">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col text-center counting-box-small">
-              <div style="margin-bottom: 15px;" class="text-center ">
+              <div class="col text-center counting-box-small">
+                <div style="margin-bottom: 15px;" class="text-center ">
 
-                <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
-                <hr style="margin-top: -5px;" >
-              </div>
-              <div class="text-left ">
-                <div class="stats-text-box  text-center col">
-                  <p class="header-2-text-2">(Confirmed)</p>
-                  <h3 class="stats-text">61,278</h3>
+                  <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
+                  <hr style="margin-top: -5px;" >
                 </div>
-              </div>
-              <hr style="width:50px;">
-              <div style=""class="text-left ">
-                <div class="stats-text-box text-center col">
-                  <p class="header-2-text-2">Today</p>
-                  <h3 class="stats-text">832</h3>
+                <div class="text-left ">
+                  <div class="stats-text-box  text-center col">
+                    <p class="header-2-text-2">(Confirmed)</p>
+                    <h3 class="stats-text">61,278</h3>
+                  </div>
+                </div>
+                <hr style="width:50px;">
+                <div style=""class="text-left ">
+                  <div class="stats-text-box text-center col">
+                    <p class="header-2-text-2">Today</p>
+                    <h3 class="stats-text">832</h3>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!---------- Timeline --------->
-      <div id="timeline-2"  class="">
+    </div>
+  <!---------- Timeline --------->
+    <div class="filterDiv  time-line  graph-margin">
         <h1 class="header-1-text">Full Timeline</h1>
         <hr class="underline-small">
         <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -378,238 +389,261 @@
           </div>
       </div>
     </div>
+
+  <!---------- Line Char --------->
+  <!--- <div class="">
+    <svg class="chart"></svg>
+    <div class='button-area'>
     </div>
-    <!---------- Timeline --------->
-    <div  id="timeline" class="tabcontent">
-      <div class="">
-      <h1 class="header-1-text">Full Timeline</h1>
-      <hr class="underline-small">
-      <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-      <div  class="container">
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 25th </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </div>
 
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 24th </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script>
+  d3.csv('assets/data.csv', function(day_data) {
+    var formatDate = d3.time.format("%Y-%m-%d");
+    var bisectDate = d3.bisector(function(d) { return formatDate.parse(d['date']); }).left;
 
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 23rd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    // fix those integers
+    day_data.forEach(function(d, i) {
+      d.value = parseInt(d.value);
+    });
 
-          </div>
-        </div>
-        <hr>
-        <div class=" row">
-          <div class="col-2">
-            <p class="header-2-text">April 22nd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    ///////////////////////
+    // generate weekly data
+    var week_data = create_time_unit_data(parse_for_week);
 
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 24th </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    function parse_for_week(date) {
+      return formatDate.parse(date).getDay();
+    }
 
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-2">
-            <p class="header-2-text">April 23rd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    ///////////////////////
+    // generate monthly data
+    var month_data = create_time_unit_data(parse_for_month);
 
-          </div>
-        </div>
-        <hr>
-        <div class=" row">
-          <div class="col-2">
-            <p class="header-2-text">April 22nd </p>
-          </div>
-          <div class="col-1">
-            <p>-</p>
-          </div>
-          <div class="col-9">
-            <p class="paragraph-text"><b>DEATH:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="paragraph-text"><b>INTIATIVE:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    function parse_for_month(date) {
+      return formatDate.parse(date).getDate() - 1;
+    }
 
-          </div>
-        </div>
+    ///////////////////////
+    // helper functions
+    function create_time_unit_data(parse_date) {
+      var new_data = JSON.parse(JSON.stringify(day_data));
+      new_data.forEach(function(d, i) {
+        var offset = parse_date(d.date);
+        if(offset == 0 || i == 0 || i == day_data.length - 1) { // it's a new date_unit, or this is the first or last date in the array
+          d['start'] = true;
+        } else {
+          d['start'] = false;
 
-      </div>
-    </div>
-    </div>
-    <!---------- Charts --------->
-    <div id="summary" style="" class="tabcontent">
-      <div class="text-center">
-        <div  class=" row boxes-margin" style=";">
-          <div class="col  text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+          // add this value to the start of the week
+          var tar_idx = i - offset;
+          if(tar_idx < 0) { tar_idx = 0; }
+          new_data[tar_idx].value += d.value;
 
-              <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
-              <hr style="margin-top: -5px;" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col   text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+          // then nil out
+          d.value = -1;
+        }
+      });
 
-              <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
-              <hr style="margin-top: -5px;" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+      fill_in_gaps(new_data);
+      return new_data;
+    }
 
-              <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
-              <hr style="margin-top: -5px;" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col   text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+    function fill_in_gaps(data_array) {
+      // go back in and fill in the missing dates
+      data_array.forEach(function(d, i) {
+        if(d.start == false) {
+          var prev_val, next_val, prev_dist, next_dist;
+          for(var idx = i; idx>=0; idx--) {
+            if(data_array[idx].start == true) {
+              prev_val = data_array[idx].value;
+              prev_dist = i - idx;
+              break;
+            }
+          }
 
-              <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
-              <hr style="margin-top: -5px;" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+          for(var idx = i; idx < data_array.length; idx++) {
+            if(data_array[idx].start == true) {
+              next_val = data_array[idx].value;
+              next_dist = idx - i;
+              break;
+            }
+          }
 
-              <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
-              <hr style="margin-top: -5px; width:30" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2 ">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center counting-box-small">
-            <div style="margin-bottom: 15px;" class="text-center ">
+          d.value = prev_val + ((next_val - prev_val) * (prev_dist/ (prev_dist + next_dist)));
+        }
+      });
+    }
 
-              <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
-              <hr style="margin-top: -5px;" >
-            </div>
-            <div class="text-left ">
-              <div class="stats-text-box  text-center col">
-                <p class="header-2-text-2">(Confirmed)</p>
-                <h3 class="stats-text">61,278</h3>
-              </div>
-            </div>
-            <hr style="width:50px;">
-            <div style=""class="text-left ">
-              <div class="stats-text-box text-center col">
-                <p class="header-2-text-2">Today</p>
-                <h3 class="stats-text">832</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    ///////////////////////
+    // Time unit selection buttons
+    var all_data = [
+      { 'name': 'Daily', 'data': day_data},
+      { 'name': 'Weekly', 'data': week_data},
+      { 'name': 'Monthly', 'data': month_data}
+    ];
+
+    d3.select('.button-area').selectAll('.app-button')
+      .data(all_data)
+      .enter().append('button')
+      .attr('class', 'app-button')
+      .html(function(d) { return d.name; })
+      .on('click', function(d) {
+        curr_data = d.data;
+        updateChart();
+      });
+
+    ///////////////////////
+    // Chart Size Setup
+    var margin = { top: 40, right: 50, bottom: 20, left: 20 };
+
+    var width = 840 - margin.left - margin.right;
+    var height = 500 - margin.top - margin.bottom;
+
+    var chart = d3.select(".chart")
+        .attr("width", 840)
+        .attr("height", 500)
+      .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    ///////////////////////
+    // Title
+    chart.append("text")
+      .text("Infection History")
+      .attr("text-anchor", "middle")
+      .attr("class", "graph-title")
+      .attr("y", -10)
+      .attr("x", width / 2.0);
+
+    chart.append("text")
+      .attr("text-anchor", "middle")
+      .attr("style", "font-size: 0.9em")
+      .attr("y", height + 50)
+      .attr("x", width / 2.0);
+
+    ///////////////////////
+    // Scales
+    var x = d3.time.scale()
+        .domain(d3.extent(day_data, function(d) { return formatDate.parse(d.date); }))
+        .range([0, width]);
+
+    var y;
+
+    ///////////////////////
+    // Axis
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    chart.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    ///////////////////////
+    // Tooltips
+    var overlay = chart.append("rect")
+        .attr("class", "overlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function() { chart.selectAll('.focus').style("display", null); })
+        .on("mouseout", function() { chart.selectAll('.focus').style("display", "none"); })
+
+    var tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip");
+
+    var focus = chart.append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+
+    focus.append("circle")
+        .attr("r", 4.5)
+
+    focus.append("text")
+        .attr("x", 9)
+        .attr("dy", ".35em");
+
+    ///////////////////////
+    // DYNAMIC STUFF GOES HERE
+    // any data things that need to update (yxis, lines, etc)
+    function updateChart() {
+      ///////////////////////
+      // Y axis changes
+      y = d3.scale.linear()
+          .domain([0, d3.max(curr_data, function(d) { return d.value; })])
+          .range([height, 0]);
+
+      var yAxis = d3.svg.axis()
+          .scale(y)
+          .orient("right");
+
+      // remove any old axis
+      chart.selectAll(".y-axis").remove()
+
+      chart.append("g")
+          .attr("class", "y axis y-axis")
+          .attr("transform", "translate(" + (width + 5) + ",0)")
+          .call(yAxis);
+
+      ///////////////////////
+      // Line changes
+      var lineGenerator = d3.svg.line()
+          .x(function(d) { return x(formatDate.parse(d.date)) })
+          .y(function(d) { return y(d.value) });
+
+      var lines = chart.selectAll(".line")
+          .data([curr_data])
+
+      lines.enter().append("path")
+          .attr("class", "line")
+          .attr("d", lineGenerator);
+
+      lines.transition()
+          .duration(1000)
+          .attr("d", lineGenerator);
+
+      overlay.on("mousemove", mousemove);
+    }
+
+    function mousemove() {
+      var x0 = x.invert(d3.mouse(this)[0]),
+          i = bisectDate(curr_data, x0, 1),
+          d0 = curr_data[i - 1],
+          d1 = curr_data[i];
+
+      // search for dates where "start" == true, in other words, only valid dates for the dataset
+      // start of week, start of month
+      var i0 = i - 1;
+      while(d0.start == false && i0 > 0) {
+        i0 -= 1;
+        d0 = curr_data[i0];
+      }
+      var i1 = i;
+      while(d1.start == false && i1 < curr_data.length - 1) {
+        i1 += 1;
+        d1 = curr_data[i1];
+      }
+
+      var dIdx = x0 - d0.date > d1.date - x0 ? i1 : i0;
+
+      var tar_date = curr_data[dIdx]['date'];
+      var tooltip_string = tar_date;
+
+      var tar_value = curr_data[dIdx].value;
+      focus.attr("transform", "translate(" + x(formatDate.parse(tar_date)) + ","+y(tar_value)+ ")");
+      tooltip_string += "<br>" + tar_value;
+
+      tooltip.html(tooltip_string)
+        .style("visibility", "visible")
+        .style("top", d3.mouse(this)[1] - (tooltip[0][0].clientHeight - 30) + "px")
+        .style("left", d3.mouse(this)[0] - (tooltip[0][0].clientWidth / 2.0) + "px");
+    }
+
+    // default
+    curr_data = day_data;
+    updateChart();
+  });
+</script> -->
 
 </div>
 
@@ -734,36 +768,57 @@
 </footer>
 <!-- Footer -->
 <script>
-
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+filterSelection("all")
+function filterSelection(c) {
+//Intializing variables
+var x, i;
+//searches the page for the divs with the filterDiv class
+x = document.getElementsByClassName("filterDiv");
+if (c == "all") c = "";
+// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+for (i = 0; i < x.length; i++) {
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+}
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-var content = document.getElementById("content");
-var show = document.getElementById("show");
-
-show.onclick = function(){
-  if (content.className == "open"){
-    content.className = "";
-    show.innerHTML = "Show More";
-  } else
-    {
-      content.className = "open";
-      show.innerHTML = "Show Less";
-    }
+// Show filtered elements
+function w3AddClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  if (arr1.indexOf(arr2[i]) == -1) {
+    element.className += " " + arr2[i];
+  }
 }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+var i, arr1, arr2;
+arr1 = element.className.split(" ");
+arr2 = name.split(" ");
+for (i = 0; i < arr2.length; i++) {
+  while (arr1.indexOf(arr2[i]) > -1) {
+    arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
+}
+element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("containerv2");
+var btns = btnContainer.getElementsByClassName("tablinks");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", " ");
+  this.className += " active";
+});
+}
+
+// Charts ..................................................................//
+
 </script>
 </html>

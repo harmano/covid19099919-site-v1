@@ -1,1 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/images/canadian_flag.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <title>Canada Covid 19</title>
+  <meta name="description" content="Canada Covid-19">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ae027a5b04.js" crossorigin="anonymous"></script>
+  <style media="screen">
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+  main {
+    width: 600px;
+    height: 400px;
+    margin: 10px auto;
+    padding: 50px 20px 40px 50px;
+    background: #FFF;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  }
+#bar-chart {
+width: 500px;
+height: 300px;
+position: relative;
+}
+#line-chart {
+width: 500px;
+height: 300px;
+position: relative;
+}
+#bar-chart::before, #line-chart::before {
+content: "";
+position: absolute;
+display: block;
+width: 240px;
+height: 30px;
+left: 155px;
+top: 254px;
+background: #FAFAFA;
+box-shadow: 1px 1px 0 0 #DDD;
+}
+#pie-chart {
+width: 500px;
+height: 250px;
+position: relative;
+}
+#pie-chart::before {
+content: "";
+position: absolute;
+display: block;
+width: 120px;
+height: 115px;
+left: 315px;
+top: 0;
+background: #FAFAFA;
+box-shadow: 1px 1px 0 0 #DDD;
+}
+#pie-chart::after {
+content: "";
+position: absolute;
+display: block;
+top: 260px;
+left: 70px;
+width: 170px;
+height: 2px;
+background: rgba(0,0,0,0.1);
+border-radius: 50%;
+box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+}
+  </style>
+</head>
+<nav style="padding-top:25px; margin-top:0px;"class=" d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" >
+  <a href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
+
+  <div style="margin-top:-22px;" id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span class="nav-mobile-margin"></span>
+    <span class="nav-mobile-margin"></span>
+    <span class="nav-mobile-margin"></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
+      <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
+      <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
+      <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a>
+      <a class="nav-link-mobile" href="about.html"><li>Initiatives</li></a>
+
+      <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
+    </ul>
+  </div>
+</nav>
+<div class="d-none d-xl-block 	d-none d-lg-block d-xl-none">
+  <nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; height:70px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
+    <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
+      <a class="navbar-brand " href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
+    </a>
+    <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#"></a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="stats.html">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="intiatives.html">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- <div style=" margin-bottom:0; margin-top:-20px;  border:none; background-color:#fff9e7;" class="alert alert-warning" role="alert">
+  <div style=" " class="alert-margin p-text-alert ">
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i> Last Updated <b>3 Hours ago</b> - For more information visit canada.ca
+  </div>
+</div>
+<div style=" margin-bottom:0;  border:none; background-color:;" class="alert alert-primary" role="alert">
+  <div style="" class=" alert-margin p-text-alert">
+    <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
+  </div>
+</div> -->
+
+<div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
+  <strong  style="padding-left:10%; ">
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i> Last Updated <b>3 Hours ago</b>
+  </strong> - For more information visit canada.ca
+  <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+  <i  style="padding-left:10%; ">
+    <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
+  </i>
+  <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<img src="assets/images/blue-diamond-wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image">
+
+
+
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<div class="container">
+
+</div>
+<div class="row">
+  <div class="col">
+    <main >
+      <h5 class="header-2-text text-center">Monthly Summary</h5>
+      <div id="bar-chart"></div>
+    </main>
+  </div>
+  <div class="col">
+    <main >
+      <h5 class="header-2-text text-center">Monthly Summary</h5>
+
+      <div id="pie-chart"></div>
+    </main>
+  </div>
+</div>
+<main >
+  <h5>Break Down</h5>
+  <div id="line-chart"></div>
+</main>
+
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawCharts);
+      function drawCharts() {
+
+        // BEGIN BAR CHART
+
+        // create zero data so the bars will 'grow'
+        var barZeroData = google.visualization.arrayToDataTable([
+          ['Day', 'Page Views', 'Unique Views'],
+          ['Sun',  0,      0],
+          ['Mon',  0,      0],
+          ['Tue',  0,      0],
+          ['Wed',  0,      0],
+          ['Thu',  0,      0],
+          ['Fri',  0,      0],
+          ['Sat',  0,      0]
+        ]);
+
+        // actual bar chart data
+        var barData = google.visualization.arrayToDataTable([
+          ['Month', 'Infected', 'Deaths', 'Recovered'],
+          ['Jan',  1050,      600,      600],
+          ['Feb',  1370,      910,      600],
+          ['Apr',  660,       400,      600],
+          ['May',  1030,      540,      600]
+        ]);
+        // set bar chart options
+        var barOptions = {
+          focusTarget: 'category',
+          backgroundColor: 'transparent',
+          colors: ['cornflowerblue', '#DB4437', '#0F9D58'],
+          fontName: 'Open Sans',
+          chartArea: {
+            left: 50,
+            top: 10,
+            width: '100%',
+            height: '70%'
+          },
+          bar: {
+            groupWidth: '80%'
+          },
+          hAxis: {
+            textStyle: {
+              fontSize: 11
+            }
+          },
+          vAxis: {
+            minValue: 0,
+            maxValue: 1500,
+            baselineColor: '#DDD',
+            gridlines: {
+              color: '#DDD',
+              count: 4
+            },
+            textStyle: {
+              fontSize: 11
+            }
+          },
+          legend: {
+            position: 'bottom',
+            textStyle: {
+              fontSize: 10
+            }
+          },
+          animation: {
+            duration: 1200,
+            easing: 'out',
+      			startup: true
+          }
+        };
+        // draw bar chart twice so it animates
+        var barChart = new google.visualization.ColumnChart(document.getElementById('bar-chart'));
+        //barChart.draw(barZeroData, barOptions);
+        barChart.draw(barData, barOptions);
+
+  // BEGIN LINE GRAPH
+
+        function randomNumber(base, step) {
+          return Math.floor((Math.random()*step)+base);
+        }
+        function createData(year, start1, start2, step, offset) {
+          var ar = [];
+          for (var i = 0; i < 12; i++) {
+            ar.push([new Date(year, i), randomNumber(start1, step)+offset, randomNumber(start2, step)+offset]);
+          }
+          return ar;
+        }
+        var randomLineData = [
+          ['Month', 'Page Views', 'Unique Views']
+        ];
+        for (var x = 0; x < 7; x++) {
+          var newYear = createData(2007+x, 10000, 5000, 4000, 800*Math.pow(x,2));
+          for (var n = 0; n < 12; n++) {
+            randomLineData.push(newYear.shift());
+          }
+        }
+        var lineData = google.visualization.arrayToDataTable(randomLineData);
+
+      	/*
+        var animLineData = [
+          ['Year', 'Page Views', 'Unique Views']
+        ];
+        for (var x = 0; x < 7; x++) {
+          var zeroYear = createData(2007+x, 0, 0, 0, 0);
+          for (var n = 0; n < 12; n++) {
+            animLineData.push(zeroYear.shift());
+          }
+        }
+        var zeroLineData = google.visualization.arrayToDataTable(animLineData);
+      	*/
+
+        var lineOptions = {
+          backgroundColor: 'transparent',
+          colors: ['cornflowerblue', 'tomato'],
+          fontName: 'Open Sans',
+          focusTarget: 'category',
+          chartArea: {
+            left: 50,
+            top: 10,
+            width: '100%',
+            height: '70%'
+          },
+          hAxis: {
+            //showTextEvery: 12,
+            textStyle: {
+              fontSize: 11
+            },
+            baselineColor: 'transparent',
+            gridlines: {
+              color: 'transparent'
+            }
+          },
+          vAxis: {
+            minValue: 0,
+            maxValue: 50000,
+            baselineColor: '#DDD',
+            gridlines: {
+              color: '#DDD',
+              count: 4
+            },
+            textStyle: {
+              fontSize: 11
+            }
+          },
+          legend: {
+            position: 'bottom',
+            textStyle: {
+              fontSize: 12
+            }
+          },
+          animation: {
+            duration: 1200,
+            easing: 'out',
+      			startup: true
+          }
+        };
+
+        var lineChart = new google.visualization.LineChart(document.getElementById('line-chart'));
+        //lineChart.draw(zeroLineData, lineOptions);
+        lineChart.draw(lineData, lineOptions);
+
+    // BEGIN PIE CHART
+
+        // pie chart data
+        var pieData = google.visualization.arrayToDataTable([
+          ['Title', 'Stats'],
+          ['Deaths',      7242],
+          ['Recovered',   4563],
+          ['Active',   1345],
+          ['Infected',    946]
+        ]);
+        // pie chart options
+        var pieOptions = {
+          backgroundColor: 'transparent',
+          pieHole: 0.2,
+          colors: [ "cornflowerblue",
+                    "olivedrab",
+                    "orange",
+                    "tomato",
+                    "crimson",
+                    "purple",
+                    "turquoise",
+                    "forestgreen",
+                    "navy",
+                    "gray"],
+          pieSliceText: 'value',
+          tooltip: {
+            text: 'percentage'
+          },
+          fontName: 'Open Sans',
+          chartArea: {
+            width: '100%',
+            height: '94%'
+          },
+          legend: {
+            textStyle: {
+              fontSize: 14
+
+            }
+          }
+        };
+        // draw pie chart
+        var pieChart = new google.visualization.PieChart(document.getElementById('pie-chart'));
+        pieChart.draw(pieData, pieOptions);
+      }
+</script>
+  <!-- Footer -->
+<footer style="margin-top:50px;" class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div style="padding-top: 20px; padding-bottom: 30px; background-color:#dedede;" class="">
+    <div  class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <h5 class="footer-title-text mt-3 mb-4">About</h5>
+          <p class="footer-content-text">I created this website to provide some relief to those hard working Canadians in need. Share your story, find relief programs and stop the spread of misinformation. If you have and tips or feedback send me an email.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="footer-title-text mt-3 mb-4">Stats</h5>
+          <ul class="list-unstyled footer-content-text">
+            <li >
+              <a style="color: black;" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 4</a>
+            </li>
+          </ul>
+
+        </div><hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="footer-title-text mt-3 mb-4">Vaccine</h5>
+          <ul class="list-unstyled footer-content-text">
+            <li>
+              <a style="color: black;" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a  style="color: black;" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a  style="color: black;" href="#!">Link 4</a>
+            </li>
+          </ul>
+
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto">
+          <h5 class="footer-title-text mt-3 mb-4">Initiatives</h5>
+          <ul class="list-unstyled footer-content-text">
+            <li>
+              <a style="color: black;" href="#!">Link 1</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 2</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 3</a>
+            </li>
+            <li>
+              <a style="color: black;" href="#!">Link 4</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul style="margin-top: 15px;" class="list-unstyled list-inline text-center py-2">
+
+    <li class="list-inline-item">
+      <img src="assets/images/buy-me-coffee-icon.png" class="coffee-img"alt="">
+    </li>
+  </ul>
+  <hr>
+
+  <!-- Social buttons
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>  -->
+  <!-- Social buttons -->
+  <div style="margin-bottom:0; padding-top:0; padding-bottom:0;"class="footer-copyright paragraph-text text-center py-3">Created by <b>Harman Brar </b>  +
+    <a style="color: black;" target="_blank" href="http://www.thesofoundcompany.com/"> <b>www.thesofoundcompany.com</b></a>
+  </div>
+
+
+</footer>
+<!-- Footer -->
+
+</html>

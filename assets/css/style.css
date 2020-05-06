@@ -28,6 +28,70 @@ html, body {
   margin-right: 3%;
   padding-top: 20px;
 }
+
+/*................. Line Chart ................*/
+.chart {
+  float: left;
+}
+
+.button-area {
+  padding: 40px 0 0 30px;
+  float: left;
+
+}
+
+.app-button {
+  display: block;
+  margin-bottom: 3px;
+  color: white;
+  background: #4c8bf5;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.app-button:hover {
+  background: #3061B4;
+  transition-timing-function: ease-in-out;
+}
+.axis text {
+  font-size: 0.8em;
+  padding:10px;
+}
+
+.axis line {
+  stroke: #111;
+}
+
+.axis path {
+  display: none;
+}
+
+.line {
+  stroke: #DB4437;
+  fill: none;
+  stroke-width: 5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px 'Roboto', sans-serif;
+  background: grey;
+  color: black;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0.9;
+  visibility: hidden;
+}
 /*................. Footer ....................*/
 
 
@@ -80,6 +144,14 @@ html, body {
 .tablinks{
   background-color: white;
   border: none;
+}
+.tablinks.active {
+  border-bottom: 3px solid red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
 }
 .scrollmenu button:hover {
   border-bottom: 3px solid red;
@@ -279,9 +351,73 @@ display: inline;
 
 }
 
+
+/*..................Pie Chart .....................*/
+
+  main {
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px 20px 30px;
+    background: #FFF;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  }
+
+#bar-chart {
+width: 500px;
+height: 300px;
+position: relative;
+}
+#line-chart {
+width: 500px;
+height: 300px;
+position: relative;
+}
+#bar-chart::before, #line-chart::before {
+content: "";
+position: absolute;
+display: block;
+width: 240px;
+height: 30px;
+left: 155px;
+top: 254px;
+background: #FAFAFA;
+box-shadow: 1px 1px 0 0 #DDD;
+}
+#pie-chart {
+width: 500px;
+height: 250px;
+position: relative;
+}
+#pie-chart::before {
+content: "";
+position: absolute;
+display: block;
+width: 120px;
+height: 115px;
+left: 315px;
+top: 0;
+background: #FAFAFA;
+box-shadow: 1px 1px 0 0 #DDD;
+}
+#pie-chart::after {
+content: "";
+position: absolute;
+display: block;
+top: 260px;
+left: 70px;
+width: 170px;
+height: 2px;
+background: rgba(0,0,0,0.1);
+border-radius: 50%;
+box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+}
 /*................. Margin .....................*/
 .nav-mobile-margin{
   margin-right: -20px;
+}
+.graph-margin{
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .boxes-margin{
   margin: 0 100px;
@@ -378,6 +514,8 @@ display: inline;
 }
 .button-search:hover{
   background-color:grey;
+  transition-timing-function: ease-in-out;
+
 }
 .dontate-btn{
   background-color: #32C782;
@@ -395,6 +533,8 @@ display: inline;
   color: white;
   font-size: 12px;
   text-decoration: none;
+  transition-timing-function: ease-in-out;
+
 }
 
 /*................. Image .....................*/
@@ -526,8 +666,16 @@ display: inline;
   font-weight: 300;
   font-size: 14px;
   color: #435B77;
-  text-decoration: underline;
   padding: 4px 0px;
+  transition-duration: 0.2s;
+  text-decoration: underline;
+}
+
+.in-page-nav-text:hover{
+  font-weight: 400;
+  transition-timing-function: ease-in-out;
+
+
 }
 .nav-link{
   color: rgba(0,0,0,0);
@@ -629,6 +777,14 @@ display: inline;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 12px;
+
+}
+
+.header-chart-2-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .header-2-text-2{
