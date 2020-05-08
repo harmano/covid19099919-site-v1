@@ -222,23 +222,42 @@
   </nav>
 </div>
 
-
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
-    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i> Last Updated <b>3 Hours ago</b>
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
+    <script type="text/javascript">
+    function lastModified() {
+      var modiDate = new Date(document.lastModified);
+      var showAs = modiDate.getDate() + "/" + (modiDate.getMonth() + 1) + "/" + modiDate.getFullYear();
+      return showAs
+    }
+
+    function GetTime() {
+      var modiDate = new Date();
+
+      var modiDate = new Date();
+      var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes()
+      return CurTime
+    }
+
+    document.write("Last updated: ")
+    document.write( GetTime() + " on " + lastModified());
+    document.write(" ")
+    document.write("");
+    </script>
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-<div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+<!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
   <i  style="padding-left:10%; ">
     <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
   </i>
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>
+</div> -->
 <img src="assets/images/blue-diamnond-wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image">
 
 <body  class="bg-color">
