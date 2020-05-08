@@ -160,15 +160,18 @@ html, body {
   font-size: 12px;
   text-decoration: none;
   color: black;
+  outline: none;
 }
 
 .scrollmenu button.active {
-  border-bottom: 3px solid red;
+  border-bottom: 4px solid red;
+  background-color: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
   text-decoration: none;
   color: black;
+  outline: none;
 }
 
 div.scrollmenu {
@@ -204,6 +207,7 @@ margin-left: 3%;
 font-size: 10px;
 }
 div.scrollmenu button {
+
   display: inline-block;
   color: black;
   text-align: center;
@@ -355,7 +359,7 @@ display: inline;
 /*..................Pie Chart .....................*/
 
   main {
-    width: 600px;
+    width: 100%;
     margin: 10px auto;
     padding: 10px 20px 30px;
     background: #FFF;
@@ -372,7 +376,7 @@ width: 500px;
 height: 300px;
 position: relative;
 }
-#bar-chart::before, #line-chart::before {
+/* ..#bar-chart::before, #line-chart::before {
 content: "";
 position: absolute;
 display: block;
@@ -382,35 +386,37 @@ left: 155px;
 top: 254px;
 background: #FAFAFA;
 box-shadow: 1px 1px 0 0 #DDD;
-}
+} ..*/
+
 #pie-chart {
 width: 500px;
 height: 250px;
 position: relative;
 }
-#pie-chart::before {
+/* ..#pie-chart::before {
 content: "";
 position: absolute;
 display: block;
 width: 120px;
-height: 115px;
+height: 80px;
 left: 315px;
 top: 0;
 background: #FAFAFA;
 box-shadow: 1px 1px 0 0 #DDD;
-}
+} ..*/
+/*... Shadow
 #pie-chart::after {
 content: "";
 position: absolute;
 display: block;
-top: 260px;
+top: 20px;
 left: 70px;
 width: 170px;
 height: 2px;
 background: rgba(0,0,0,0.1);
 border-radius: 50%;
 box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
-}
+} ..*/
 /*................. Margin .....................*/
 .nav-mobile-margin{
   margin-right: -20px;
@@ -654,9 +660,34 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   margin-top: 3%;
 }
 /*................. Text .....................*/
-
-
-
+.top-left-cnn{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-left: 5px;
+  color: darkred;
+  background-color: white;
+  opacity:0.8;
+  padding: 8px ;
+  margin-top: -5px;
+  border-radius: 0 0px 5px 5px;
+}
+.top-left-star{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-left: 5px;
+  color: darkblue;
+  background-color: white;
+  opacity:0.8;
+  padding: 8px ;
+  margin-top: -5px;
+  border-radius: 0 0px 5px 5px;
+}
 .alert-text{
   font-size: 7px;
 }
@@ -948,6 +979,10 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  main {
+    width: 600px;
+
   }
   .boxes-margin{
     margin: 0 100px;

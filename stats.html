@@ -21,6 +21,7 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="assets/js/pieChart.js"></script>
+
   <style media="screen">
     .filterDiv{
         display: none; /* Hidden by default */
@@ -103,33 +104,13 @@
 </div>
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
-    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
-    <script type="text/javascript">
-    function lastModified() {
-      var modiDate = new Date(document.lastModified);
-      var showAs = modiDate.getDate() + "/" + (modiDate.getMonth() + 1) + "/" + modiDate.getFullYear();
-      return showAs
-    }
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>Last Updated: <b>Today - 12:46 PM EST</b>
 
-    function GetTime() {
-      var modiDate = new Date();
-
-      var modiDate = new Date();
-      var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes()
-      return CurTime
-    }
-
-    document.write("Last updated: ")
-    document.write( GetTime() + " on " + lastModified());
-    document.write(" ")
-    document.write("");
-    </script>
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>
-<!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+</div><!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
   <i  style="padding-left:10%; ">
     <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
   </i>
@@ -670,15 +651,17 @@
   <div class="filterDiv  the-summary row">
     <div class="col">
       <main >
-        <h5 class="header-2-text text-center">Monthly Summary</h5>
+        <h5 class="header-2-text text-center">Yearly Summary</h5>
         <div id="bar-chart"></div>
       </main>
     </div>
     <div class="col">
       <main >
-        <h5 class="header-2-text text-center">Monthly Summary</h5>
+        <div  class="">
+          <h5 class="header-2-text text-center">Cases Breakdown</h5>
+          <div  id="pie-chart"></div>
 
-        <div id="pie-chart"></div>
+        </div>
       </main>
     </div>
   </div>
@@ -719,7 +702,7 @@
             chartArea: {
               left: 50,
               top: 10,
-              width: '100%',
+              width: '70%',
               height: '70%'
             },
             bar: {
@@ -768,9 +751,8 @@
             ['Title', 'Stats'],
             ['Deaths',      7242],
             ['Recovered',   4563],
-            ['Active',   1345],
-            ['Infected',    946]
-          ]);
+            ['Active',   1345]
+           ]);
           // pie chart options
           var pieOptions = {
             backgroundColor: 'transparent',
@@ -791,8 +773,8 @@
             },
             fontName: 'Open Sans',
             chartArea: {
-              width: '100%',
-              height: '94%'
+              width: '100px',
+              height: '50px'
             },
             legend: {
               textStyle: {
