@@ -361,9 +361,9 @@ display: inline;
   main {
     width: 100%;
     margin: 10px auto;
-    padding: 10px 20px 30px;
     background: #FFF;
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    padding-top: 30px;
   }
 
 #bar-chart {
@@ -982,8 +982,10 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   }
   main {
     width: 600px;
+    padding: 40px 80px 30px 110px;
 
   }
+
   .boxes-margin{
     margin: 0 100px;
     padding-left: 10%;
