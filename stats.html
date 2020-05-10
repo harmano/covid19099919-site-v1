@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164156903-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164156903-2');
+  </script>
   <link rel="icon" href="assets/images/canadian_flag.svg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +80,7 @@
 <div class="d-none d-xl-block 	d-none d-lg-block d-xl-none">
   <nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; height:70px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
     <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
-      <a class="navbar-brand " href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
+      <a class="navbar-brand " href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
     </a>
     <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#"></a>
@@ -129,39 +138,39 @@
           <div style="margin-bottom: 15px;" class=" row">
             <img src="assets/images/canadian_flag.svg"  class=" d-none d-sm-block flag-img"alt="">
             <h1 style=" " class="header-1-text text-margin-can">Canada</h1>
-            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">(Updated 3 Hours Ago)</p>
+            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">(Updated: <b>Today - 12:46 PM EST</b>)</p>
           </div>
           <div class="text-left row">
             <div class="stats-text-box col">
               <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <h3 class="stats-text">68,003</h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <p class="header-2-text-2">Recoverd</p>
+              <h3 class="stats-text">31,644</h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <p class="header-2-text-2">Deaths</p>
+              <h3 class="stats-text">4,728</h3>
             </div>
           </div>
           <hr>
           <div style=""class="text-left row">
             <div class="stats-text-box col">
-              <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <p class="header-2-text-2">C: Today</p>
+              <h3 class="stats-text">1,268</h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <p class="header-2-text-2">R: Today</p>
+              <h3 class="stats-text">00</h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">36,000</h3>
+              <p class="header-2-text-2">D: Today</p>
+              <h3 class="stats-text">124</h3>
             </div>
           </div>
           <div class=" ">
@@ -179,8 +188,8 @@
       <button class=" active tablinks " onclick="filterSelection('all')"> Show All</button>
       <button class="tablinks" onclick="filterSelection('time-line')"> Timeline</button>
       <button class="tablinks" onclick="filterSelection('the-summary')"> Summary</button>
-      <button class="tablinks" onclick="filterSelection('autoBiograpghy')"> Auto-Biography</button>
-      <button class="tablinks" onclick="filterSelection('crimeDrama')"> Crime-Drama</button>
+      <button class="tablinks" onclick="filterSelection('monthlyBreakdown')"> Monthly Breakdown</button>
+      <button class="tablinks" onclick="filterSelection('ratio')"> Ratio</button>
       <button class="tablinks" onclick="filterSelection('history')"> History</button>
       <button class="tablinks" onclick="filterSelection('fiction')"> Fiction</button>
       <button class="tablinks" onclick="filterSelection('childFiction')"> Children's Fiction</button>
@@ -190,7 +199,7 @@
       <button class="tablinks" onclick="filterSelection('play')"> Play</button>
       <button class="tablinks" onclick="filterSelection('memoir')"> Memoir</button>
       <button class="tablinks" onclick="filterSelection('novel')"> Novel</button>
-      <button class="tablinks" onclick="filterSelection('critique')"> Critique</button>
+      <button class="tablinks" onclick="filterSelection('sources')"> Sources</button>
     </div>
   </div>
   <!---------- SUMMARY --------->
@@ -648,14 +657,14 @@
 
 
   </style>
-  <div class="filterDiv  the-summary row">
-    <div class="col">
+  <div class="   row">
+    <div class="col filterDiv monthlyBreakdown">
       <main >
         <h5 class="header-2-text text-center">Yearly Summary</h5>
         <div id="bar-chart"></div>
       </main>
     </div>
-    <div class="col">
+    <div class="col filterDiv ratio">
       <main >
         <div  class="">
           <h5 class="header-2-text text-center">Cases Breakdown</h5>
@@ -791,7 +800,7 @@
   </script>
 
   <!---------- Timeline --------->
-    <div class="filterDiv  time-line  graph-margin">
+    <div style="margin-left:5px;" class="filterDiv  time-line  graph-margin">
         <h1 class="header-1-text">Full Timeline</h1>
         <hr class="underline-small">
         <p style="margin-bottom:40px;"CLASS="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -852,8 +861,42 @@
       </div>
     </div>
 
+  <!---------- Sources --------->
+  <div  class="filterDiv sources">
+  <h1 style="margin-left:5px; color:lightgrey;" class="header-1-text">Sources</h1>
 
+    <div style="opacity: .98;" class="card   " >
+      <div  class="row no-gutters">
+      <div class="col-12">
+        <div class="card-body">
+          <h1 style="color:lightgrey;" class="header-1-text date-text-location-2">Canada.ca/covid19 <i class="p-3-text"> March 28th, 2020</i> </h1>
+          <h1 style="color:lightgrey;"class="header-2-text">Official Canadian Site</h1>
+          <p style="color:lightgrey;" class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+          <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;" target="_blank" href="www.canada.ca">visit site ></a></p>
 
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <div style="margin-top:15px; opacity: .95;" class="card   " >
+      <div  class="row no-gutters">
+      <div class="col-12">
+        <div class="card-body">
+          <h1 style="color:lightgrey;" class="header-1-text date-text-location-2">Canada.ca/covid19 <i class="p-3-text"> March 28th, 2020</i> </h1>
+          <h1 style="color:lightgrey;"class="header-2-text">Official Canadian Site</h1>
+          <p style="color:lightgrey;" class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+          <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;" target="_blank" href="www.canada.ca">visit site ></a></p>
+
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
 </div>
 
 
