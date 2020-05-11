@@ -1,3 +1,4 @@
+var timeMod = 'Last Updated : Today - 3:20 PM ET'
 var deaths = 4990;
 var deathsToday = 168;
 var confirmed = 70034;
@@ -16,7 +17,7 @@ var critical = 502;
 var test = 1135984;
 var testToday = 67984;
 
-var timeMod = 'Last Updated : Today - 3:20 PM ET'
+
 
 document.getElementById("confirmed").innerHTML = numberWithCommas(confirmed);
 document.getElementById("confirmedAlt").innerHTML = numberWithCommas(confirmed);
