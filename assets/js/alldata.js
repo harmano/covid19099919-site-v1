@@ -16,7 +16,7 @@ var critical = 502;
 var test = 1135984;
 var testToday = 67984;
 
-var timeMod = 'Last Updated : Today - 11:40 AM EST'
+var timeMod = 'Last Updated : Today - 3:20 PM ET'
 
 document.getElementById("confirmed").innerHTML = numberWithCommas(confirmed);
 document.getElementById("confirmedAlt").innerHTML = numberWithCommas(confirmed);
