@@ -14,7 +14,7 @@
   <link rel="icon" href="assets/images/canadian_flag.svg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canada Covid 19 | Live Updated Stats & Graphs</title>
+  <title>Canada Covid 19 | Live Updated Stats & Graphics</title>
   <meta name="description" content="Canada Covid-19">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -735,10 +735,10 @@
           // actual bar chart data
           var barData = google.visualization.arrayToDataTable([
             ['Month', 'Infected', 'Deaths', 'Recovered'],
-            ['Jan',  1050,      600,      600],
-            ['Feb',  1370,      910,      600],
-            ['Apr',  660,       400,      600],
-            ['May',  1030,      540,      600]
+            ['Feb',  20,      0,      0],
+            ['Mar',  8592,      101,      1242],
+            ['Apr',  45782,       3202,      20181],
+            ['May',  16813,      2013,      10673]
           ]);
           // set bar chart options
           var barOptions = {
@@ -797,9 +797,10 @@
           // pie chart data
           var pieData = google.visualization.arrayToDataTable([
             ['Title', 'Stats'],
-            ['Deaths',      4728],
-            ['Recovered',   68003],
-            ['Active',   32853]
+            ['Deaths',      4990],
+            ['Recovered',   32096],
+            ['Infected',   70034],
+            ['Active',   32948]
            ]);
           // pie chart options
           var pieOptions = {
@@ -808,8 +809,8 @@
             colors: [ "tomato",
                       "olivedrab",
                       "orange",
-                      "tomato",
-                      "crimson",
+                      "navy",
+                      "forestgreen",
                       "purple",
                       "turquoise",
                       "forestgreen",
