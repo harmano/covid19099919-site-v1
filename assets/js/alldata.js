@@ -47,6 +47,7 @@ document.getElementById("totatTestsToday").innerHTML = numberWithCommas(testToda
 
 document.getElementById("timeMod").innerHTML = timeMod;
 document.getElementById("timeModAlt").innerHTML = timeMod;
+document.getElementById("timeModalt2").innerHTML = timeMod;
 
 
 function numberWithCommas(x) {
