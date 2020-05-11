@@ -185,11 +185,12 @@
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
     -->
+
     <ul id="menu">
       <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
       <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
-      <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
-      <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a>
+      <!-- <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a> -->
+      <!--  <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a> -->
       <a class="nav-link-mobile" href="about.html"><li>Initiatives</li></a>
 
       <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
@@ -198,8 +199,8 @@
 </nav>
 <div class="d-none d-xl-block 	d-none d-lg-block d-xl-none">
   <nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; height:70px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
-    <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
-      <a class="navbar-brand " href="home.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
+    <a class="alert-padding-top  brand-logo-large navbar-brand" href="home.html">
+      <a class="navbar-brand " href="#"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
     </a>
     <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#"></a>
@@ -213,18 +214,18 @@
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="stats.html">Stats</a>
           </li>
-          <li class="nav-item">
+          <!--  <li class="nav-item">
             <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="intiatives.html">Initiatives</a>
           </li>
-          <li class="nav-item">
+          <!--  <li class="nav-item">
             <a class="nav-link" style="color:black;" href="about.html">About Us</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -232,13 +233,17 @@
 </div>
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
-    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>Last Updated: <b>Today - 12:46 PM EST</b>
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
+      <b id="timeMod"></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div><!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+</div>
+
+<!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+
   <i  style="padding-left:10%; ">
     <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
   </i>
@@ -590,5 +595,7 @@
 
 
 </footer>
+<script src="assets/js/alldata.js"></script>
+
 <!-- Footer -->
 </html>

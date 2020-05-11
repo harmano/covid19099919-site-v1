@@ -54,8 +54,8 @@
     <ul id="menu">
       <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
       <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
-      <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
-      <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a>
+      <!-- <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a> -->
+      <!--  <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a> -->
       <a class="nav-link-mobile" href="about.html"><li>Initiatives</li></a>
 
       <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
@@ -79,18 +79,18 @@
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="stats.html">Stats</a>
           </li>
-          <li class="nav-item">
+          <!--  <li class="nav-item">
             <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="intiatives.html">Initiatives</a>
           </li>
-          <li class="nav-item">
+          <!--  <li class="nav-item">
             <a class="nav-link" style="color:black;" href="about.html">About Us</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -98,14 +98,17 @@
 </div>
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
-    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>Last Updated: <b>Today - 12:46 PM EST</b>
+    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
+      <b id="timeMod"></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+
 <!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+
   <i  style="padding-left:10%; ">
     <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
   </i>
@@ -116,7 +119,6 @@
 
 <!-- <img src="assets/images/canada_wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image"> -->
 <img src="assets/images/blue-diamnond-wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image">
-
 <body  class="bg-color">
   <div class="container-v2">
     <!---------- Main --------->
@@ -127,39 +129,51 @@
           <div style="margin-bottom: 15px;" class=" row">
             <img src="assets/images/canadian_flag.svg"  class=" d-none d-sm-block flag-img"alt="">
             <h1 style=" " class="header-1-text text-margin-can">Canada</h1>
-            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">(Updated: <b>Today - 12:46 PM EST</b>)</p>
+            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">(<b id="timeModAlt"></b>)</p>
           </div>
           <div class="text-left row">
             <div class="stats-text-box col">
               <p class="header-2-text-2">Confirmed</p>
-              <h3 class="stats-text">68,003</h3>
+              <h3 class="stats-text">
+                <div id="confirmed"></div>
+              </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">Recoverd</p>
-              <h3 class="stats-text">31,644</h3>
+              <h3 class="stats-text">
+                <div id="recovered"></div>
+              </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">Deaths</p>
-              <h3 class="stats-text">4,728</h3>
+              <h3 class="stats-text">
+                <div id="deaths"></div>
+              </h3>
             </div>
           </div>
           <hr>
           <div style=""class="text-left row">
             <div class="stats-text-box col">
               <p class="header-2-text-2">C: Today</p>
-              <h3 class="stats-text">1,268</h3>
+              <h3 class="stats-text">
+                <div id="confirmedToday"></div>
+              </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">R: Today</p>
-              <h3 class="stats-text">00</h3>
+              <h3 class="stats-text">
+                <div id="recoveredToday"></div>
+              </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">D: Today</p>
-              <h3 class="stats-text">124</h3>
+              <h3 class="stats-text">
+                <div id="deathsToday"></div>
+              </h3>
             </div>
           </div>
           <div class=" ">
@@ -201,7 +215,7 @@
 
       </div>
     </div>
-<!---------- Fundraisers --------->
+<!---------- Fundraisers
 <div class="">
   <h1 class="header-1-text">Top Local Stories</h1>
   <hr class="underline-small">
@@ -260,211 +274,7 @@
     <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;"  href="fundrasiers.html">see more ></a></p>
   </div>
 </div>
-
-<!---------- Stats --------->
-<div class="">
-  <h1 class="header-1-text">Stats</h1>
-  <hr class="underline-small">
-  <div style="padding:3px; margin-bottom:10px; margin-top:-15px; background-color:white; border-radius:0px 0px 0px 0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
-    <i  class="text-center" style=" padding-left: 0%;">
-       Last Updated <b>Today - 12:46 PM EST</b>
-    </i>
-  </div>
-  <div style="margin-top:25px; margin-left:15px" >
-    <div class="text-center">
-      <div  class=" row boxes-margin-home" style="">
-        <div class="col  text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
-            <hr style="margin-top: -5px;" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col   text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
-            <hr style="margin-top: -5px;" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
-            <hr style="margin-top: -5px;" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col   text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
-            <hr style="margin-top: -5px;" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
-            <hr style="margin-top: -5px; width:30" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2 ">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center counting-box-small">
-          <div style="margin-bottom: 15px;" class="text-center ">
-
-            <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
-            <hr style="margin-top: -5px;" >
-          </div>
-          <div class="text-left ">
-            <div class="stats-text-box  text-center col">
-              <p class="header-2-text-2">(Confirmed)</p>
-              <h3 class="stats-text">61,278</h3>
-            </div>
-          </div>
-          <hr style="width:50px;">
-          <div style=""class="text-left ">
-            <div class="stats-text-box text-center col">
-              <p class="header-2-text-2">Today</p>
-              <h3 class="stats-text">832</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class=" ">
-  <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="stats.html">see more ></a></p>
-</div>
-<!---------- Local Programs --------->
-<div class="">
-  <h1 class="header-1-text">Vaccine Updates</h1>
-  <hr class="underline-small">
-  <div class="row">
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-    <div class="col news-box">
-
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-  </div>
-  <div class=" ">
-    <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="vaccine.html">see more ></a></p>
-  </div>
-</div>
-<!---------- Local Programs --------->
-<div class="">
-  <h1 class="header-1-text">Local Programs</h1>
-  <hr class="underline-small">
-  <div class="row">
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-    <div class="col news-box">
-
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-  </div>
-  <div class=" ">
-    <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="intiatives.html">see more ></a></p>
-  </div>
-</div>
-
+--------->
 <!---------- News Feed --------->
 <div class="">
   <h1 class="header-1-text">News Feed</h1>
@@ -498,10 +308,241 @@
   </div>
   <div class=" ">
     <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text">
-      <a style="color:grey;"  href="stats.html">see more ></a>
+     <!--  <a style="color:grey;"  href="stats.html">see more ></a> -->
     </p>
   </div>
 </div>
+<!---------- Stats --------->
+<div class="">
+  <h1 class="header-1-text">Stats</h1>
+  <hr class="underline-small">
+  <div style="padding:3px; margin-bottom:10px; margin-top:-15px; background-color:white; border-radius:0px 0px 0px 0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
+    <i  class="text-center" style=" padding-left: 0%;">
+       Last Updated <b>Today - 12:46 PM EST</b>
+    </i>
+  </div>
+  <div  style="margin-top:25px; margin-left:15px" class="">
+      <div class="text-center">
+        <div  class=" row boxes-margin" style=";">
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" " class="header-chart-text text-margin-can underline">Total Confirmed Cases</h1>
+              <hr style="margin-top: -5px;" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2">(Confirmed)</p>
+                <h3 class="stats-text">
+                    <div id="confirmedAlt"></div>
+              </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="confirmedTodayAlt"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" " class="header-chart-text text-margin-can underline">Recovered</h1>
+              <hr style="margin-top: -5px;" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2">(Confirmed)</p>
+                <h3 class="stats-text">
+                  <div class="" id="recoveredAlt"></div>
+                </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="recoveredTodayAlt"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" " class="header-chart-text text-margin-can underline">Total Deaths</h1>
+              <hr style="margin-top: -5px;" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2">(Confirmed)</p>
+                <h3 class="stats-text">
+                  <div class="" id="deathsAlt"></div>
+                </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="deathsTodayAlt"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" "  class="header-chart-text text-margin-can underline">Active Cases</h1>
+              <hr style="margin-top: -5px;" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2">(Confirmed)</p>
+                <h3 class="stats-text">
+                  <div class="" id="active"></div>
+                </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="activeToday"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" " class="header-chart-text text-margin-can underline">Mortality</h1>
+              <hr style="margin-top: -5px; width:30" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2 ">(Confirmed)</p>
+                <h3 class="stats-text">
+                  <div class="" id="mortality"></div>
+                </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="mortalityToday"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center counting-box-small">
+            <div style="margin-bottom: 15px;" class="text-center ">
+
+              <h1 style=" "  class="header-chart-text text-margin-can underline">Total Test</h1>
+              <hr style="margin-top: -5px;" >
+            </div>
+            <div class="text-left ">
+              <div class="stats-text-box  text-center col">
+                <p class="header-2-text-2">(Confirmed)</p>
+                <h3 class="stats-text">
+                  <div class="" id="totatTests"></div>
+                </h3>
+              </div>
+            </div>
+            <hr style="width:50px;">
+            <div style=""class="text-left ">
+              <div class="stats-text-box text-center col">
+                <p class="header-2-text-2">Today</p>
+                <h3 class="stats-text">
+                  <div class="" id="totatTestsToday"></div>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class=" ">
+  <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="stats.html">see more ></a></p>
+</div>
+<!---------- Vaccine Updates
+<div class="">
+  <h1 class="header-1-text">Vaccine Updates</h1>
+  <hr class="underline-small">
+  <div class="row">
+    <div class="col news-box">
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+    <div class="col news-box">
+
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+    <div class="col news-box">
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+  </div>
+  <div class=" ">
+    <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="vaccine.html">see more ></a></p>
+  </div>
+</div>
+--------->
+<!---------- Local Programs --------->
+<div class="">
+  <h1 class="header-1-text">Local Programs</h1>
+  <hr class="underline-small">
+  <div class="row">
+    <div class="col news-box">
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+    <div class="col news-box">
+
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+    <div class="col news-box">
+        <img src="assets/images/test-img.jpg" alt="" class="news-img">
+        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
+        <a href="">
+          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
+        </a>
+    </div>
+  </div>
+  <div class=" ">
+    <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="intiatives.html">see more ></a></p>
+  </div>
+</div>
+
+
 
 
 <!---------- Timeline --------->
@@ -691,5 +732,5 @@
 
 </footer>
 <!-- Footer -->
-
+<script src="assets/js/alldata.js"></script>
 </html>
