@@ -1,13 +1,13 @@
-var timeMod = 'Last Updated : Today - 6:57 PM ET'
-var deaths = 4990;
-var deathsToday = 168;
-var confirmed = 70034;
-var confirmedToday = 1173;
+var timeMod = 'Last Updated : Today - 12:36 PM ET'
+var deaths = 5115;
+var deathsToday = 1;
+var confirmed = 71237;
+var confirmedToday = 30;
 
-var recovered = 32096;
-var recoveredToday = 847;
+var recovered = 33251;
+var recoveredToday = 357;
 
-var active = 32948;
+var active = 32771;
 var activeToday = 211;
 
 var m = (deaths / confirmed) * 100;
@@ -15,7 +15,7 @@ var mortality = m.toFixed(3);
 var critical = 502;
 
 var test = 1135984;
-var testToday = 67984;
+var testToday = 0;
 
 
 
