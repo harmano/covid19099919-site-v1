@@ -1,13 +1,13 @@
 var timeMod = 'Last Updated : Today - 12:36 PM ET'
-var deaths = 5115;
-var deathsToday = 1;
-var confirmed = 71237;
-var confirmedToday = 30;
+var deaths = 5167;
+var deathsToday = 53;
+var confirmed = 71311;
+var confirmedToday = 104;
 
-var recovered = 33251;
-var recoveredToday = 357;
+var recovered = 33707;
+var recoveredToday = 713;
 
-var active = 32771;
+var active = 32437;
 var activeToday = 211;
 
 var m = (deaths / confirmed) * 100;

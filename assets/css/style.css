@@ -660,6 +660,9 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   margin-top: 3%;
 }
 /*................. Text .....................*/
+.news-title-hover {
+  weight:900;
+}
 .top-left-cnn{
   position: absolute;
   top: 8px;
@@ -838,7 +841,21 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   font-weight: 300;
   font-size: 12px;
 }
-
+a .header-2-text:hover{
+  font-weight: 500;
+  text-decoration: underline white;
+  border: none;
+}
+.news-title-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+}
+.news-title-text:hover{
+  font-weight: 500;
+  text-decoration: none;
+}
 .header-4-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1129,6 +1146,16 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
+  }
+  .news-title-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .news-title-text:hover{
+    font-weight: 500;
+    text-decoration: none;
   }
   .counting-box{
     width: auto;
