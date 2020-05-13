@@ -44,6 +44,7 @@ html, body {
   width: auto;
   height: 300px;
   margin: 0;
+  margin-top: 20px;
 }
 /*................. Line Chart ................*/
 .chart {
@@ -662,6 +663,11 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   margin-top: 5px;
 }
 
+.vl-2 {
+border-left: 1px solid lightgrey;
+height: 200px;
+border-radius: 5px;
+}
 .hr-about{
   margin-top: 6%;
   margin-bottom: 4%;
@@ -1056,14 +1062,16 @@ a .header-2-text:hover{
     margin-top: -6px;
   }
   .pie-graph-style{
-    width: 900px;
-    height: 500px;
-margin-bottom: 0;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .bar-graph-style{
-    width: 900px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
+    padding: 0;
 
   }
   .geo-graph-style{
@@ -1219,6 +1227,7 @@ margin-bottom: 0;
     margin-left: auto;
   }
 
+
   .brand-logo-large{
     margin-left: 6%;
   }
@@ -1231,6 +1240,7 @@ margin-bottom: 0;
   .container-2 {
     width: 1170px;
   }
+
   .container-v3{
     margin-left: 18%;
     margin-right: 18%;

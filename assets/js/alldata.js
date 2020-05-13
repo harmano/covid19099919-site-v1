@@ -1,4 +1,4 @@
-var timeMod = 'Last Updated : Today - 10:40 PM ET'
+var timeMod = 'Last Updated : Today - 1:43 PM ET'
 var deaths = 5298;
 var deathsToday = 184;
 var confirmed = 72362;

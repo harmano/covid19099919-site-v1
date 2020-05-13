@@ -1,7 +1,3 @@
-var deaths = 5298;
-var confirmed = 72362;
-var recovered = 34042;
-var active = 33022;
 
 
 
