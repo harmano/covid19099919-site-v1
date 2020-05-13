@@ -687,32 +687,27 @@
     </script> ----->
 
   <!---------- Bar Graph --------->
-  <style media="screen">
 
-
-  </style>
-  <div class="   row">
-    <!-- Bar Graph -->
-    <div class="col filterDiv monthlyBreakdown">
-      <main >
-        <h5 class="header-2-text text-center">Yearly Summary</h5>
-        <div id="bar-chart"></div>
-      </main>
-    </div>
-    <!-- Pie Graph --->
-    <div class="col filterDiv ratio">
-      <main >
-        <div  class="">
-          <h5 class="header-2-text text-center">Cases Breakdown</h5>
-          <div style="width:400px;"  id="pie-chart"></div>
-
-        </div>
-      </main>
+  <div class="filterDiv  monthlyBreakdown row">
+    <hr style="margin: 35px 0px">
+    <div class="col-12">
+      <div id="barchart_material" class="bar-graph-style  " ></div>
     </div>
   </div>
+  <!--Pie Graph --------->
 
+<div class="col-12 filterDiv  ratio">
+<hr style="margin: 35px 0px">
+  <div id="donutchart" class="pie-graph-style filterDiv  ratio " ></div>
 
-
+</div>
+  <!-- Geo Graph --------->
+  <div class="filterDiv  Province ">
+    <hr style="margin: 35px 0px">
+    <div id="regions_div" class="geo-graph-style" ></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <hr style="margin: 35px 0px">
+  </div>
   <!---------- Timeline --------->
     <div style="margin-left:5px;" class="filterDiv  time-line  graph-margin">
         <h1 class="header-1-text">Full Timeline</h1>
@@ -983,5 +978,6 @@ btns[i].addEventListener("click", function() {
 </script>
 <script src="assets/js/alldata.js"></script>
 <script src="assets/js/pie-bar-chart.js"></script>
+<script src="assets/js/world.js"></script>
 
 </html>
