@@ -44,7 +44,8 @@ html, body {
   width: auto;
   height: 300px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 /*................. Line Chart ................*/
 .chart {
@@ -1072,6 +1073,7 @@ a .header-2-text:hover{
     width: 400px;
     height: 300px;
     padding: 0;
+    margin-top: 0px;
 
   }
   .geo-graph-style{

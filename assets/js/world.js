@@ -49,7 +49,7 @@ google.charts.load('current', {
         ]);
 
        var options = {
-         title: 'Cases Breakdown',
+         title: '',
          pieHole: 0.4,
        };
 
@@ -72,11 +72,10 @@ google.charts.load('current', {
 
              var options = {
                chart: {
-                 title: 'Yearly',
-                 subtitle: 'History of cases',
+
                },
                legend: {
-                 position: 'top', alignment: 'start' },
+              position: 'top', alignment: 'start' },
                bars: 'vertical' // Required for Material Bar Charts.
              };
 
