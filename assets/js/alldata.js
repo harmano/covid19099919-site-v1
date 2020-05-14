@@ -18,6 +18,20 @@ var test = 1169380;
 var testToday = 5564;
 
 
+var ontario = 22158;
+var  pe = 0;
+var  newfoundland = 261;
+var  nova = 1020;
+var  newbuns = 120;
+var  quebec = 39235;
+var  manatoba = 290;
+var  saka = 573;
+var  alberta = 6345;
+var  bc = 2360;
+var  yukon = 0;
+var  nt = 0;
+var  nu = 0;
+
 
 document.getElementById("confirmed").innerHTML = numberWithCommas(confirmed);
 document.getElementById("confirmedAlt").innerHTML = numberWithCommas(confirmed);

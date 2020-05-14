@@ -9,22 +9,24 @@ google.charts.load('current', {
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
           ['Province', 'Infected'],
-          ['CA-ON', 22158],
-          ['CA-PE', 0],
-          ['CA-NL', 261],
-          ['CA-NS', 1020],
-          ['CA-NB', 120],
-          ['CA-QC', 39235],
-          ['CA-MB', 290],
-          ['CA-SK', 573],
-          ['CA-AB', 6345],
-          ['CA-BC', 2360],
-          ['CA-YT', 0],
-          ['CA-NT', 0],
-          ['CA-NU	', 0]
+          ['CA-ON', ontario],
+          ['CA-PE', pe],
+          ['CA-NL', newfoundland],
+          ['CA-NS', nova],
+          ['CA-NB', newbuns],
+          ['CA-QC', quebec],
+          ['CA-MB', manatoba],
+          ['CA-SK', saka],
+          ['CA-AB', alberta],
+          ['CA-BC', bc],
+          ['CA-YT', yukon],
+          ['CA-NT', nt],
+          ['CA-NU	', nu]
+
         ]);
 
         var options = {
+        sizeAxis: { minValue: 0, maxValue: 100000 },
         region: 'CA',
         displayMode: 'regions',
         resolution: 'provinces',
@@ -51,6 +53,12 @@ google.charts.load('current', {
        var options = {
          title: '',
          pieHole: 0.4,
+         slices: {
+             0: { color: '#DB4437' },
+             1: { color: '#0F9D58' },
+             2: { color: '#4285F4' },
+             3: { color: '#F4B400' }
+           }
        };
 
        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
