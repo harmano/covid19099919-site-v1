@@ -1,13 +1,13 @@
-var timeMod = 'Last Updated : Today - 12:57 PM ET'
-var deaths = 5430;
-var deathsToday = 6;
-var confirmed = 73596;
-var confirmedToday = 90;
+var timeMod = 'Last Updated : Today - 6:07 PM ET'
+var deaths = 5574;
+var deathsToday = 150;
+var confirmed = 73977;
+var confirmedToday = 471;
 
-var recovered = 35164;
-var recoveredToday = 0;
+var recovered = 35936;
+var recoveredToday = 772;
 
-var active = 33002;
+var active = 32467;
 var activeToday = 211;
 
 var m = (deaths / confirmed) * 100;
@@ -18,18 +18,18 @@ var test = 1169380;
 var testToday = 5564;
 
 
-var ontario = 22158;
-var  pe = 0;
+var ontario = 22854;
+var  pe = 27;
 var  newfoundland = 261;
-var  nova = 1020;
+var  nova = 1026;
 var  newbuns = 120;
-var  quebec = 39235;
+var  quebec = 40732;
 var  manatoba = 290;
-var  saka = 573;
-var  alberta = 6345;
-var  bc = 2360;
-var  yukon = 0;
-var  nt = 0;
+var  saka = 582;
+var  alberta = 6407;
+var  bc = 2376;
+var  yukon = 11;
+var  nt = 5;
 var  nu = 0;
 
 

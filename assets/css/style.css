@@ -33,11 +33,22 @@ html, body {
   width: 350px;
   height: auto;
   margin: 0;
+  display: block;
+  margin: 0 auto;
+}
+.line-chart-infection{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 5%;
+  display: block;
+  margin: 0 auto;
 }
 .pie-graph-style{
   width: 400px;
   height: 300px;
   margin-bottom: -80px;
+  display: block;
+  margin: 0 auto;
 }
 
 .bar-graph-style{
@@ -46,8 +57,10 @@ html, body {
   margin: 0;
   margin-top: 100px;
   margin-left: 50px;
+  display: block;
+  margin: 0 auto;
 }
-/*................. Line Chart ................*/
+/*.................  Chart ................*/
 .chart {
   float: left;
 }
@@ -1061,6 +1074,13 @@ a .header-2-text:hover{
     margin-left: 10px;
     margin-right: 8px;
     margin-top: -6px;
+  }
+  .line-chart-infection{
+    width: 800px;
+    height: 400px;
+    margin-bottom: 5%;
+    display: block;
+    margin: 0 auto;
   }
   .pie-graph-style{
     width: 400px;
