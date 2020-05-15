@@ -137,7 +137,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 10), 70034],
       [new Date (2020, 4, 11), 71207],
       [new Date (2020, 4, 12), 72363],
-      [new Date (2020, 4, 13), 73506]
+      [new Date (2020, 4, 13), 73506],
       [new Date (2020, 4, 14), 74055]
     ]);
 
