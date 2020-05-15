@@ -1,4 +1,5 @@
-var timeMod = 'Last Updated : Today - 11:45 AM ET'
+// date is 2020-05-15T12:10
+var timeMod = '2020-05-15T12:10'
 var deaths = 5581;
 var deathsToday = 0;
 var confirmed = 74055;

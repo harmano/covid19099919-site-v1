@@ -1,6 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Timeago -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="jquery-timeago-master/jquery.timeago.js" type="text/javascript"></script>
+  <script src="jquery-timeago-master/test/test_helpers.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      prepareDynamicDates();
+      $(".timeago").timeago();
+
+      $("#prog_date").text(jQuery.timeago(new Date()));
+      $("#prog_string").text(jQuery.timeago("2008-07-17"));
+      $("#prog_element").text(jQuery.timeago("2008-07-20"));
+    });
+
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+  <!-- Timeago -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164156903-2"></script>
   <script>
@@ -114,7 +131,8 @@
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
     <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
-      <b id="timeMod"></b>
+      Last Updated :
+      <b><time class="timeago" datetime="2020-05-15T12:36"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -141,7 +159,12 @@
           <div style="margin-bottom: 15px;" class=" row">
             <img src="assets/images/canadian_flag.svg"  class=" d-none d-sm-block flag-img"alt="">
             <h1 style=" " class="header-1-text text-margin-can">Canada</h1>
-            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">(<b id="timeModAlt"></b>)</p>
+            <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">
+                (Last Updated :
+                <b>
+                  <time class="timeago" datetime="2020-05-15T12:36"></time>
+                </b>)
+            </p>
           </div>
           <div class="text-left row">
             <div class="stats-text-box col">
