@@ -39,8 +39,12 @@ google.charts.load('current', {
       }
 
 
+
+
+
       google.charts.load("current", {packages:["corechart"]});
      google.charts.setOnLoadCallback(drawChart);
+
      function drawChart() {
        var data = google.visualization.arrayToDataTable([
          ['Title', 'Stats'],
@@ -92,3 +96,9 @@ google.charts.load('current', {
 
              chart.draw(data, google.charts.Bar.convertOptions(options));
            }
+
+           $(window).resize(function(){
+             drawChart();
+             drawChart2();
+             drawRegionsMap();
+           });

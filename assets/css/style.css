@@ -7,7 +7,10 @@ html, body {
   width: auto!important;
   overflow-x: hidden!important;
 }
-
+.chart-width {
+width: 100%;
+min-height: 450px;
+}
 .container-nav{
   margin-left: 10%;
   margin-right: 10%;
@@ -29,22 +32,25 @@ html, body {
   padding-top: 20px;
 }
 /*................ Graphs ............*/
+.chart-margin-line{
+  padding: 10px;
+}
 .geo-graph-style{
-  width: 350px;
-  height: auto;
+  width: 100%;
+  height: 450px;
   margin: 0;
   display: block;
   margin: 0 auto;
 }
 .line-chart-infection{
-  width: 300px;
+  width: 100%;
   height: 300px;
   margin-bottom: 5%;
   display: block;
   margin: 0 auto;
 }
 .pie-graph-style{
-  width: 400px;
+  width: 100%;
   height: 300px;
   margin-bottom: -80px;
   display: block;
@@ -52,7 +58,7 @@ html, body {
 }
 
 .bar-graph-style{
-  width: auto;
+  width: 100%;
   height: 300px;
   margin: 0;
   margin-top: 100px;
@@ -1076,21 +1082,21 @@ a .header-2-text:hover{
     margin-top: -6px;
   }
   .line-chart-infection{
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     margin-bottom: 5%;
     display: block;
     margin: 0 auto;
   }
   .pie-graph-style{
-    width: 400px;
+    width: 100%;
     height: 300px;
     margin-bottom: 0;
     padding: 0;
   }
 
   .bar-graph-style{
-    width: 400px;
+    width: 100%;
     height: 300px;
     padding: 0;
     margin-top: 0px;

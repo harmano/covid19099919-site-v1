@@ -132,7 +132,7 @@
   <strong  style="padding-left:10%; ">
     <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
       Last Updated :
-      <b><time class="timeago" datetime="2020-05-15T12:36"></time></b>
+      <b><time class="timeago" datetime="2020-05-15T16:07"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -162,8 +162,9 @@
             <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">
                 (Last Updated :
                 <b>
-                  <time class="timeago" datetime="2020-05-15T12:36"></time>
-                </b>)
+                  <time class="timeago" datetime="2020-05-15T16:07"></time>
+                </b>
+                )
             </p>
           </div>
           <div class="text-left row">
@@ -219,23 +220,23 @@
       </div>
     </div>
 </div>
-
 <div id="containerv2" class="container-top container-v2">
 
   <!-- Nav  --------------------------------------------------------------------->
   <div style="margin-bottom: 20px; margin-top:-20px;" class="row">
     <div id="" class="scrollmenu col-md-12">
       <button class=" active tablinks " onclick="filterSelection('all')"> Show All</button>
+      <button class="tablinks" onclick="filterSelection('Active')"> Active Cases</button>
       <button class="tablinks" onclick="filterSelection('time-line')"> Timeline</button>
       <button class="tablinks" onclick="filterSelection('the-summary')"> Summary</button>
       <button class="tablinks" onclick="filterSelection('monthlyBreakdown')"> Monthly Breakdown</button>
       <button class="tablinks" onclick="filterSelection('ratio')"> Ratio</button>
+      <button class="tablinks" onclick="filterSelection('Daily')"> Daily Change</button>
       <button class="tablinks" onclick="filterSelection('Province')">Breakdown by Province</button>
       <button class="tablinks" onclick="filterSelection('Deaths')">Deaths</button>
       <button class="tablinks" onclick="filterSelection('Infection')">Infection</button>
       <button class="tablinks" onclick="filterSelection('Recovery')">Recovery</button>
       <button class="tablinks" onclick="filterSelection('Daily')"> Daily Change</button>
-      <button class="tablinks" onclick="filterSelection('Active')"> Active Cases</button>
       <button class="tablinks" onclick="filterSelection('Critical')"> Critical Cases</button>
       <button class="tablinks" onclick="filterSelection('sources')"> Sources</button>
     </div>
@@ -253,7 +254,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                         <div style="color:#4285F4; " id="confirmedAlt"></div>
                   </h3>
@@ -277,7 +278,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                       <div class="" style="color:#0F9D58; " id="recoveredAlt"></div>
                     </h3>
@@ -301,7 +302,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                       <div class="" style="color:#DB4437; " id="deathsAlt"></div>
                     </h3>
@@ -325,7 +326,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                       <div class="" style="color:#F4B400; " id="active"></div>
                     </h3>
@@ -349,7 +350,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2 ">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                       <div class="" style="color:darkred; " id="mortality"></div>
                     </h3>
@@ -373,7 +374,7 @@
                 </div>
                 <div class="text-left ">
                   <div class="stats-text-box  text-center col">
-                    <p class="header-2-text-2">(Confirmed)</p>
+                    <p style="color:transparent;"class="header-2-text-2">-</p>
                     <h3 class="stats-text">
                       <div class="" style="color:skyblue;" id="totatTests"></div>
                     </h3>
@@ -396,11 +397,33 @@
     </div>
 
   <!-- Infection daily  --------------------------------------------------------------------->
-
   <div class="filterDiv  Infection row">
     <div id="linechart_material" class="line-chart-infection"></div>
-    <hr style="margin-bottom: 50px;">
+    <hr style="margin-top: 50px; margin-bottom: 50px;">
   </div>
+  <!--  daily  --------------------------------------------------------------------->
+  <div class="filterDiv  Daily row">
+    <div id="daily_line_chart" class="line-chart-infection"></div>
+    <hr style="margin-top: 50px; margin-bottom: 50px;">
+  </div>
+  <!--  Active  --------------------------------------------------------------------->
+  <div class="filterDiv  Active row">
+    <div id="active_line_chart" class="line-chart-infection"></div>
+    <hr style="margin-top: 50px; margin-bottom: 50px;">
+  </div>
+  <div class="row">
+  <!-- Deaths daily  --------------------------------------------------------------------->
+    <div class="filterDiv  Deaths col-lg-6 col-md-12">
+      <div id="deaths_line_chart" class="chart-margin-line line-chart-infection"></div>
+    </div>
+  <!-- Recovery daily  --------------------------------------------------------------------->
+    <div class="filterDiv  Recovery col-lg-6 col-md-12">
+
+      <div id="rercovered_line_chart" class="chart-margin-line line-chart-infection"></div>
+    </div>
+  </div>
+
+
 
   <!-- Pie and Bar  --------------------------------------------------------------------->
   <div class="row">
@@ -696,5 +719,6 @@ btns[i].addEventListener("click", function() {
 <script src="assets/js/pie-bar-chart.js"></script>
 <script src="assets/js/world.js"></script>
 <script src="assets/js/daily-charts.js"></script>
+
 
 </html>
