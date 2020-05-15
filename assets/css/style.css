@@ -35,10 +35,10 @@ min-height: 450px;
 .chart-margin-line{
   padding: 10px;
 }
+
 .geo-graph-style{
   width: 100%;
   height: 450px;
-  margin: 0;
   display: block;
   margin: 0 auto;
 }
