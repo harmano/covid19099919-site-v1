@@ -49,6 +49,13 @@ min-height: 450px;
   display: block;
   margin: 0 auto;
 }
+.line-chart-infection-half{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5%;
+  display: block;
+  margin: 0 auto;
+}
 .pie-graph-style{
   width: 100%;
   height: 300px;
@@ -640,6 +647,7 @@ box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
   padding: 15px 20px;
   margin-right: 20px;
   margin-bottom: 40px;
+
 }
 .counting-box{
   width: auto;
@@ -1083,7 +1091,14 @@ a .header-2-text:hover{
   }
   .line-chart-infection{
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin-bottom: 5%;
+    display: block;
+    margin: 0 auto;
+  }
+  .line-chart-infection-half{
+    width: 100%;
+    height: 300px;
     margin-bottom: 5%;
     display: block;
     margin: 0 auto;
@@ -1135,8 +1150,9 @@ a .header-2-text:hover{
   font-size: 15px;
   }
   .container-v3{
-    margin-left: 10%;
-    margin-right: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
 
   }
@@ -1187,7 +1203,7 @@ a .header-2-text:hover{
   .stats-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: -15px;
   }
   .text-margin-can{
@@ -1209,6 +1225,7 @@ a .header-2-text:hover{
   .stats-text-box{
     padding:px;
     margin: 1px;
+
   }
   .header-2-text{
     font-family: 'Roboto', sans-serif;
@@ -1264,15 +1281,24 @@ a .header-2-text:hover{
     margin-left:17%;
   }
 }
+
+#displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
 @media (min-width: 1200px) {
   .container-2 {
     width: 1170px;
   }
 
   .container-v3{
-    margin-left: 18%;
-    margin-right: 18%;
-    padding-top: 30px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 40px;
+
 
   }
   .alert-margin{
@@ -1284,7 +1310,7 @@ a .header-2-text:hover{
   .stats-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: -15px;
   }
 }

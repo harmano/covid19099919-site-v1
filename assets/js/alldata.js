@@ -1,17 +1,17 @@
-// date is 2020-05-15T16:07
-var timeMod = '2020-05-15T16:07'
-var deaths = 5641;
-var deathsToday = 60;
-var confirmed = 74941;
-var confirmedToday = 887;
+// date is 2020-05-16T10:00
+var timeMod = '2020-05-16T10:00'
+var deaths = 5669;
+var deathsToday = 22;
+var confirmed = 75237;
+var confirmedToday = 202;
 
-var recovered = 36747;
-var recoveredToday = 656;
+var recovered = 36895;
+var recoveredToday = 0;
 
-var active = 32553;
-var activeToday = 32382 - 32553;
+var active = 32673;
+var activeToday = 32553 - 32673;
 
-var test = 1169380;
+var test = 1225049;
 var testToday = 0;
 
 var m = (deaths / confirmed) * 100;

@@ -5,32 +5,6 @@ google.charts.load('current', {
     data.addColumn('date', '');
     data.addColumn('number', 'Infected');
     data.addRows([
-      [new Date (2020, 0, 1), 0],
-      [new Date (2020, 0, 2), 0],
-      [new Date (2020, 0, 3), 0],
-      [new Date (2020, 0, 4), 0],
-      [new Date (2020, 0, 5), 0],
-      [new Date (2020, 0, 6), 0],
-      [new Date (2020, 0, 7), 0],
-      [new Date (2020, 0, 8), 0],
-      [new Date (2020, 0, 9), 0],
-      [new Date (2020, 0, 10), 0],
-      [new Date (2020, 0, 11), 0],
-      [new Date (2020, 0, 12), 0],
-      [new Date (2020, 0, 13), 0],
-      [new Date (2020, 0, 14), 0],
-      [new Date (2020, 0, 15), 0],
-      [new Date (2020, 0, 16), 0],
-      [new Date (2020, 0, 17), 0],
-      [new Date (2020, 0, 18), 0],
-      [new Date (2020, 0, 19), 0],
-      [new Date (2020, 0, 20), 0],
-      [new Date (2020, 0, 21), 0],
-      [new Date (2020, 0, 22), 0],
-      [new Date (2020, 0, 23), 0],
-      [new Date (2020, 0, 24), 0],
-      [new Date (2020, 0, 25), 0],
-      [new Date (2020, 0, 26), 0],
       [new Date (2020, 0, 27), 1],
       [new Date (2020, 0, 28), 2],
       [new Date (2020, 0, 29), 2],
@@ -139,7 +113,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 11), 71207],
       [new Date (2020, 4, 12), 72363],
       [new Date (2020, 4, 13), 73506],
-      [new Date (2020, 4, 14), 74055]
+      [new Date (2020, 4, 14), 74055],
+      [new Date (2020, 4, 15), 75035]
     ]);
 
     var tickMarks = [];
@@ -178,32 +153,6 @@ google.charts.load('current', {
     data.addColumn('date', '');
     data.addColumn('number', 'Recovered');
     data.addRows([
-      [new Date (2020, 0, 1), 0],
-      [new Date (2020, 0, 2), 0],
-      [new Date (2020, 0, 3), 0],
-      [new Date (2020, 0, 4), 0],
-      [new Date (2020, 0, 5), 0],
-      [new Date (2020, 0, 6), 0],
-      [new Date (2020, 0, 7), 0],
-      [new Date (2020, 0, 8), 0],
-      [new Date (2020, 0, 9), 0],
-      [new Date (2020, 0, 10), 0],
-      [new Date (2020, 0, 11), 0],
-      [new Date (2020, 0, 12), 0],
-      [new Date (2020, 0, 13), 0],
-      [new Date (2020, 0, 14), 0],
-      [new Date (2020, 0, 15), 0],
-      [new Date (2020, 0, 16), 0],
-      [new Date (2020, 0, 17), 0],
-      [new Date (2020, 0, 18), 0],
-      [new Date (2020, 0, 19), 0],
-      [new Date (2020, 0, 20), 0],
-      [new Date (2020, 0, 21), 0],
-      [new Date (2020, 0, 22), 0],
-      [new Date (2020, 0, 23), 0],
-      [new Date (2020, 0, 24), 0],
-      [new Date (2020, 0, 25), 0],
-      [new Date (2020, 0, 26), 0],
       [new Date (2020, 0, 27), 0],
       [new Date (2020, 0, 28), 0],
       [new Date (2020, 0, 29), 0],
@@ -312,7 +261,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 11), 32994],
       [new Date (2020, 4, 12), 34042],
       [new Date (2020, 4, 13), 35164],
-      [new Date (2020, 4, 14), 36091]
+      [new Date (2020, 4, 14), 36091],
+      [new Date (2020, 4, 15), 36895]
     ]);
 
     var tickMarks = [];
@@ -350,32 +300,6 @@ google.charts.load('current', {
     data.addColumn('date', '');
     data.addColumn('number', 'Deaths');
     data.addRows([
-      [new Date (2020, 0, 1), 0],
-      [new Date (2020, 0, 2), 0],
-      [new Date (2020, 0, 3), 0],
-      [new Date (2020, 0, 4), 0],
-      [new Date (2020, 0, 5), 0],
-      [new Date (2020, 0, 6), 0],
-      [new Date (2020, 0, 7), 0],
-      [new Date (2020, 0, 8), 0],
-      [new Date (2020, 0, 9), 0],
-      [new Date (2020, 0, 10), 0],
-      [new Date (2020, 0, 11), 0],
-      [new Date (2020, 0, 12), 0],
-      [new Date (2020, 0, 13), 0],
-      [new Date (2020, 0, 14), 0],
-      [new Date (2020, 0, 15), 0],
-      [new Date (2020, 0, 16), 0],
-      [new Date (2020, 0, 17), 0],
-      [new Date (2020, 0, 18), 0],
-      [new Date (2020, 0, 19), 0],
-      [new Date (2020, 0, 20), 0],
-      [new Date (2020, 0, 21), 0],
-      [new Date (2020, 0, 22), 0],
-      [new Date (2020, 0, 23), 0],
-      [new Date (2020, 0, 24), 0],
-      [new Date (2020, 0, 25), 0],
-      [new Date (2020, 0, 26), 0],
       [new Date (2020, 0, 27), 0],
       [new Date (2020, 0, 28), 0],
       [new Date (2020, 0, 29), 0],
@@ -484,7 +408,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 11), 5114],
       [new Date (2020, 4, 12), 5298],
       [new Date (2020, 4, 13), 5424],
-      [new Date (2020, 4, 14), 5581]
+      [new Date (2020, 4, 14), 5581],
+      [new Date (2020, 4, 15), 5647]
     ]);
 
     var tickMarks = [];
@@ -526,32 +451,6 @@ google.charts.load('current', {
     data.addColumn('date', '');
     data.addColumn('number', 'Daily Infection');
     data.addRows([
-      [new Date (2020, 0, 1), 0],
-      [new Date (2020, 0, 2), 0],
-      [new Date (2020, 0, 3), 0],
-      [new Date (2020, 0, 4), 0],
-      [new Date (2020, 0, 5), 0],
-      [new Date (2020, 0, 6), 0],
-      [new Date (2020, 0, 7), 0],
-      [new Date (2020, 0, 8), 0],
-      [new Date (2020, 0, 9), 0],
-      [new Date (2020, 0, 10), 0],
-      [new Date (2020, 0, 11), 0],
-      [new Date (2020, 0, 12), 0],
-      [new Date (2020, 0, 13), 0],
-      [new Date (2020, 0, 14), 0],
-      [new Date (2020, 0, 15), 0],
-      [new Date (2020, 0, 16), 0],
-      [new Date (2020, 0, 17), 0],
-      [new Date (2020, 0, 18), 0],
-      [new Date (2020, 0, 19), 0],
-      [new Date (2020, 0, 20), 0],
-      [new Date (2020, 0, 21), 0],
-      [new Date (2020, 0, 22), 0],
-      [new Date (2020, 0, 23), 0],
-      [new Date (2020, 0, 24), 0],
-      [new Date (2020, 0, 25), 0],
-      [new Date (2020, 0, 26), 0],
       [new Date (2020, 0, 27), 1],
       [new Date (2020, 0, 28), 1],
       [new Date (2020, 0, 29), 0],
@@ -660,7 +559,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 11), 1173],
       [new Date (2020, 4, 12), 1155],
       [new Date (2020, 4, 13), 1144],
-      [new Date (2020, 4, 14), 548]
+      [new Date (2020, 4, 14), 548],
+      [new Date (2020, 4, 15), 981],
     ]);
 
     var tickMarks = [];
@@ -705,31 +605,6 @@ google.charts.load('current', {
     data.addColumn('date', '');
     data.addColumn('number', 'Daily Infection');
     data.addRows([
-      [new Date (2020, 0, 1), 0],
-      [new Date (2020, 0, 2), 0],
-      [new Date (2020, 0, 3), 0],
-      [new Date (2020, 0, 4), 0],
-      [new Date (2020, 0, 5), 0],
-      [new Date (2020, 0, 6), 0],
-      [new Date (2020, 0, 7), 0],
-      [new Date (2020, 0, 8), 0],
-      [new Date (2020, 0, 9), 0],
-      [new Date (2020, 0, 10), 0],
-      [new Date (2020, 0, 11), 0],
-      [new Date (2020, 0, 12), 0],
-      [new Date (2020, 0, 13), 0],
-      [new Date (2020, 0, 14), 0],
-      [new Date (2020, 0, 15), 0],
-      [new Date (2020, 0, 16), 0],
-      [new Date (2020, 0, 17), 0],
-      [new Date (2020, 0, 18), 0],
-      [new Date (2020, 0, 19), 0],
-      [new Date (2020, 0, 20), 0],
-      [new Date (2020, 0, 21), 0],
-      [new Date (2020, 0, 22), 0],
-      [new Date (2020, 0, 23), 0],
-      [new Date (2020, 0, 24), 0],
-      [new Date (2020, 0, 25), 0],
       [new Date (2020, 0, 26), 1],
       [new Date (2020, 0, 27), 1],
       [new Date (2020, 0, 28), 2],
@@ -840,6 +715,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 12), 33022],
       [new Date (2020, 4, 13), 32918],
       [new Date (2020, 4, 14), 32382],
+      [new Date (2020, 4, 15), 32493],
     ]);
 
     var tickMarks = [];
