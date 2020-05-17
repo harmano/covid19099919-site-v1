@@ -125,9 +125,9 @@
 </div>
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
-    <i style="padding-right: 15px; color:orange;" class="fas fa-exclamation"></i>
+    <i style="padding-right: 8px; color:#DB4437;" class="fas fa-exclamation"></i>
       Last Updated :
-      <b><time class="timeago" datetime="2020-05-16T10:00"></time></b>
+      <b><time class="timeago" datetime="2020-05-17T14:05"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -160,7 +160,7 @@
             <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">
               (Last Updated :
               <b>
-                <time class="timeago" datetime="2020-05-16T10:00"></time>
+                <time class="timeago" datetime="2020-05-17T14:05"></time>
               </b>)
             </p>
           </div>
@@ -351,6 +351,19 @@
 <div  class="">
   <h1 class="header-1-text">Stats</h1>
   <hr class="underline-small">
+    <div style="margin-left;"class="container">
+      <!--  daily  --------------------------------------------------------------------->
+      <div style="padding-top:10px;" class="filterDiv  Daily row">
+        <div id="daily_line_chart" class="chart-margin-line line-chart-infection"></div>
+        <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
+      </div>
+      <hr style="margin-top: 40px;">
+      <!-- Infection daily  --------------------------------------------------------------------->
+      <div style="padding-top:20px;" class="filterDiv  Infection row">
+        <div id="linechart_material" class="chart-margin-line line-chart-infection"></div>
+        <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
+      </div>
+    </div>
     <div style="display:none; margin-left:0; margin-right:0;"class="text-center">
     <div class="  text-center ">
         <div  style="" class="">
@@ -505,16 +518,7 @@
           </div>
       </div>
   </div>
-    <!--  daily  --------------------------------------------------------------------->
-    <div style="padding-top:10px;" class="filterDiv  Daily row">
-    <div id="daily_line_chart" class="chart-margin-line line-chart-infection"></div>
-    <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
-  </div>
-    <!-- Infection daily  --------------------------------------------------------------------->
-    <div style="padding-top:20px;" class="filterDiv  Infection row">
-      <div id="linechart_material" class="chart-margin-line line-chart-infection"></div>
-      <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
-    </div>
+
       <div style="display:none; padding:3px; margin-bottom:10px; margin-top:-15px; background-color:white; border-radius:0px 0px 0px 0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
       <i  class="text-center" style=" padding-left: 0%;">
            <b id="timeModalt2"></b>

@@ -1,18 +1,18 @@
-// date is 2020-05-16T10:00
-var timeMod = '2020-05-16T10:00'
-var deaths = 5669;
-var deathsToday = 22;
-var confirmed = 75237;
-var confirmedToday = 202;
+// date is 2020-05-17T14:05
+var timeMod = '2020-05-17T14:05'
+var deaths = 5792;
+var deathsToday = 4;
+var confirmed = 76944;
+var confirmedToday = 469;
 
-var recovered = 36895;
-var recoveredToday = 0;
+var recovered = 38463;
+var recoveredToday = 644;
 
-var active = 32673;
-var activeToday = 32553 - 32673;
+var active = 32689;
+var activeToday =  active - 32673;
 
-var test = 1225049;
-var testToday = 0;
+var test = 1347287;
+var testToday = 81785;
 
 var m = (deaths / confirmed) * 100;
 var mortality = m.toFixed(3);
@@ -52,7 +52,7 @@ document.getElementById("recoveredToday").innerHTML = '+' + numberWithCommas(rec
 document.getElementById("recoveredTodayAlt").innerHTML = '+' + numberWithCommas(recoveredToday);
 
 document.getElementById("active").innerHTML = numberWithCommas(active);
-document.getElementById("activeToday").innerHTML =  numberWithCommas(activeToday);
+document.getElementById("activeToday").innerHTML = '+' + numberWithCommas(activeToday);
 
 
 

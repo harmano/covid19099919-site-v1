@@ -114,7 +114,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 12), 72363],
       [new Date (2020, 4, 13), 73506],
       [new Date (2020, 4, 14), 74055],
-      [new Date (2020, 4, 15), 75035]
+      [new Date (2020, 4, 15), 75035],
+      [new Date (2020, 4, 16), 76475],
     ]);
 
     var tickMarks = [];
@@ -135,9 +136,9 @@ google.charts.load('current', {
         ticks: tickMarks
       },
       curveType: 'function',
-      colors:['#4285F4']
-    };
+      colors:['#4285F4'],
 
+    };
 
         var chart = new google.charts.Line(document.getElementById('linechart_material'));
         chart.draw(data, google.charts.Line.convertOptions(options));
@@ -262,7 +263,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 12), 34042],
       [new Date (2020, 4, 13), 35164],
       [new Date (2020, 4, 14), 36091],
-      [new Date (2020, 4, 15), 36895]
+      [new Date (2020, 4, 15), 36895],
+      [new Date (2020, 4, 16), 37819],
     ]);
 
     var tickMarks = [];
@@ -409,7 +411,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 12), 5298],
       [new Date (2020, 4, 13), 5424],
       [new Date (2020, 4, 14), 5581],
-      [new Date (2020, 4, 15), 5647]
+      [new Date (2020, 4, 15), 5647],
+      [new Date (2020, 4, 16), 5788],
     ]);
 
     var tickMarks = [];
@@ -561,6 +564,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 13), 1144],
       [new Date (2020, 4, 14), 548],
       [new Date (2020, 4, 15), 981],
+      [new Date (2020, 4, 16), 1440],
     ]);
 
     var tickMarks = [];
@@ -716,6 +720,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 13), 32918],
       [new Date (2020, 4, 14), 32382],
       [new Date (2020, 4, 15), 32493],
+      [new Date (2020, 4, 16), 32868],
     ]);
 
     var tickMarks = [];
