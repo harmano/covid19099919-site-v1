@@ -1,3 +1,5 @@
+// World geo chart - Pie Chart - Bar Chart
+
 google.charts.load('current', {
         'packages':['geochart'],
         // Note: you will need to get a mapsApiKey for your project.
@@ -9,19 +11,19 @@ google.charts.load('current', {
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
           ['Province', 'Infected'],
-          ['CA-ON', ontario],
-          ['CA-PE', pe],
-          ['CA-NL', newfoundland],
-          ['CA-NS', nova],
-          ['CA-NB', newbuns],
-          ['CA-QC', quebec],
-          ['CA-MB', manatoba],
-          ['CA-SK', saka],
-          ['CA-AB', alberta],
-          ['CA-BC', bc],
-          ['CA-YT', yukon],
-          ['CA-NT', nt],
-          ['CA-NU	', nu]
+          ['CA-ON', ontarioInfected],
+          ['CA-PE', pieInfected],
+          ['CA-NL', newfoundlandInfected],
+          ['CA-NS', novaScotiaInfected],
+          ['CA-NB', newBrunswickInfected],
+          ['CA-QC', quebecInfected],
+          ['CA-MB', manitobaInfected],
+          ['CA-SK', saskatchewanInfected],
+          ['CA-AB', albertaInfected],
+          ['CA-BC', britishColumbiaInfected],
+          ['CA-YT', yukonInfected],
+          ['CA-NT', northwestTerritoriesInfected],
+          ['CA-NU	', nunavutInfected]
 
         ]);
 
@@ -30,7 +32,7 @@ google.charts.load('current', {
         region: 'CA',
         displayMode: 'regions',
         resolution: 'provinces',
-        colorAxis: {colors: ['#FFE5E5', 'darkred']}
+        colorAxis: {colors: ['lightgrey', '#59748E']}
       };
 
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
@@ -50,7 +52,6 @@ google.charts.load('current', {
          ['Title', 'Stats'],
          ['Deaths',      deaths],
          ['Recovered',   recovered],
-         ['Infected',   confirmed],
          ['Active',   active]
         ]);
 
@@ -58,9 +59,8 @@ google.charts.load('current', {
          title: '',
          pieHole: 0.4,
          slices: {
-             0: { color: '#DB4437' },
-             1: { color: '#0F9D58' },
-             2: { color: '#4285F4' },
+             0: { color: '#FF4C4C' },
+             1: { color: '#759785' },
              3: { color: '#F4B400' }
            }
        };
@@ -75,7 +75,7 @@ google.charts.load('current', {
 
            function drawChart2() {
              var data = google.visualization.arrayToDataTable([
-               ['Month', 'Infected', 'Deaths', 'Recovered'],
+               ['Month', 'Infected ', 'Deaths', 'Recovered'],
                ['Feb',  20,      0,      0],
                ['Mar',  8592,      101,      1242],
                ['Apr',  45782,       3202,      20181],
@@ -86,8 +86,9 @@ google.charts.load('current', {
                chart: {
 
                },
+               colors: ['#59748E', '#FF4C4C', '#759785'],
                legend: {
-              position: 'top', alignment: 'start' },
+              position: 'bottom', alignment: 'start' },
                bars: 'vertical' // Required for Material Bar Charts.
              };
 

@@ -1,3 +1,5 @@
+
+
 // .................................................. Infected ................................ //
 google.charts.load('current', {
   callback: function () {
@@ -116,6 +118,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 14), 74055],
       [new Date (2020, 4, 15), 75035],
       [new Date (2020, 4, 16), 76475],
+      [new Date (2020, 4, 17), 77603],
+      [new Date (2020, 4, 18), 78684],
     ]);
 
     var tickMarks = [];
@@ -136,7 +140,7 @@ google.charts.load('current', {
         ticks: tickMarks
       },
       curveType: 'function',
-      colors:['#4285F4'],
+      colors:['#59748E'],
 
     };
 
@@ -265,6 +269,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 14), 36091],
       [new Date (2020, 4, 15), 36895],
       [new Date (2020, 4, 16), 37819],
+      [new Date (2020, 4, 17), 38550],
+      [new Date (2020, 4, 18), 39288],
     ]);
 
     var tickMarks = [];
@@ -285,7 +291,7 @@ google.charts.load('current', {
         ticks: tickMarks
       },
       curveType: 'function',
-      colors:['#0F9D58']
+      colors:['#759785']
     };
 
         var chart = new google.charts.Line(document.getElementById('rercovered_line_chart'));
@@ -413,6 +419,9 @@ google.charts.load('current', {
       [new Date (2020, 4, 14), 5581],
       [new Date (2020, 4, 15), 5647],
       [new Date (2020, 4, 16), 5788],
+
+      [new Date (2020, 4, 17), 5892],
+      [new Date (2020, 4, 18), 5949],
     ]);
 
     var tickMarks = [];
@@ -433,7 +442,7 @@ google.charts.load('current', {
         ticks: tickMarks
       },
       curveType: 'function',
-      colors:['#DB4437']
+      colors:['#FF4C4C']
     };
 
 
@@ -565,6 +574,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 14), 548],
       [new Date (2020, 4, 15), 981],
       [new Date (2020, 4, 16), 1440],
+      [new Date (2020, 4, 17), 1128],
+      [new Date (2020, 4, 18), 1081],
     ]);
 
     var tickMarks = [];
@@ -721,6 +732,8 @@ google.charts.load('current', {
       [new Date (2020, 4, 14), 32382],
       [new Date (2020, 4, 15), 32493],
       [new Date (2020, 4, 16), 32868],
+      [new Date (2020, 4, 17), 33161],
+      [new Date (2020, 4, 18), 33507],
     ]);
 
     var tickMarks = [];

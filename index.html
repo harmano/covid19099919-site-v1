@@ -127,7 +127,7 @@
   <strong  style="padding-left:10%; ">
     <i style="padding-right: 8px; color:#DB4437;" class="fas fa-exclamation"></i>
       Last Updated :
-      <b><time class="timeago" datetime="2020-05-17T14:05"></time></b>
+      <b><time class="timeago" datetime="2020-05-19T14:05"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -160,7 +160,7 @@
             <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">
               (Last Updated :
               <b>
-                <time class="timeago" datetime="2020-05-17T14:05"></time>
+                <time class="timeago" datetime="2020-05-19T14:05"></time>
               </b>)
             </p>
           </div>
@@ -353,13 +353,13 @@
   <hr class="underline-small">
     <div style="margin-left;"class="container">
       <!--  daily  --------------------------------------------------------------------->
-      <div style="padding-top:10px;" class="filterDiv  Daily row">
+      <div style="padding-top:10px;" class="box-graphs filterDiv  Daily row">
         <div id="daily_line_chart" class="chart-margin-line line-chart-infection"></div>
         <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
       </div>
-      <hr style="margin-top: 40px;">
+      <hr class="stats-line">
       <!-- Infection daily  --------------------------------------------------------------------->
-      <div style="padding-top:20px;" class="filterDiv  Infection row">
+      <div style="padding-top:20px;" class="box-graphs filterDiv  Infection row">
         <div id="linechart_material" class="chart-margin-line line-chart-infection"></div>
         <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
       </div>
@@ -708,67 +708,86 @@
 </div>
 
 <!---------- Timeline --------->
-<div class="">
-  <h1 class="header-1-text">Full Timeline</h1>
-  <hr class="underline-small">
-  <p style="margin-bottom:40px;"CLASS="paragraph-text">The following is a time line of the events taken place related to COVID19 since the first infection, stay tuned as more data will be added shortly.</p>
-  <div  class="container">
-    <div class="row">
-      <div class="col-2">
-        <p class="header-2-text">May 11th </p>
-      </div>
-      <div class="col-1">
-        <p>-</p>
-      </div>
-      <div class="col-9">
-        <p class="paragraph-text"><b>DEATH:</b>  109 Coronavirus-related deaths have been reported</p>
-        <p class="paragraph-text"><b>NEWS:</b> State of emergency to be pushed to June 2</p>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-2">
-        <p class="header-2-text">May 10th </p>
-      </div>
-      <div class="col-1">
-        <p>-</p>
-      </div>
-      <div class="col-9">
-        <p class="paragraph-text"><b>DEATH:</b>  There have been 168 deaths today in Canada</p>
+<style media="screen">
 
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-2">
-        <p class="header-2-text">May 9th </p>
-      </div>
-      <div class="col-1">
-        <p>-</p>
-      </div>
-      <div class="col-9">
-        <p class="paragraph-text"><b>DEATH:</b> 129 Coronavirus-related deaths have been reported today in Canada</p>
+    tbody>tr>:nth-child(3){
+      color:#59748E;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(4){
+      color:#59748E;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(5){
+      color:#FF4C4C;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(6){
+      color:#FF4C4C;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(7){
+      color:#759785;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(8){
+      color:#759785;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(9){
+      color:#F4B400;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(10){
+      color:darkred;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    tbody>tr>:nth-child(11){
+      color:skyblue;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
 
-      </div>
-    </div>
-    <hr>
-    <div class=" row">
-      <div class="col-2">
-        <p class="header-2-text">May 8th </p>
-      </div>
-      <div class="col-1">
-        <p>-</p>
-      </div>
-      <div class="col-9">
-        <p class="paragraph-text"><b>DEATH:</b> There have been 155 deaths today in Canada</p>
+  tbody>tr>:nth-child(12){
+    color: black;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 
-      </div>
+  }
+    .headerRow{
+      background-color: #dcdcdc;
+      text-align: left;
+    }
+
+    .tablecell{
+      text-align: left;
+      background-color: #ececec;
+          border: solid red;
+
+        }
+
+        .google-visualization-table-table td {
+              border: solid #ececec;
+              border-width: 0 1px 1px 0;
+              padding: 2px .35em;}
+
+</style>
+ <div style="margin-left:5px; " class="filterDiv  time-line  graph-margin">
+        <h1 class="header-1-text">Full Timeline</h1>
+        <hr class="underline-small">
+        <p style="margin-bottom:40px; " CLASS="paragraph-text">The following is a time line of the events taken place related to COVID19 since the first infection, more data will be added shortly</p>
+        <div  style="margin-top: -30px;"class="">
+            <div id="dateformat_div"></div>
+          </div>
     </div>
-    <div class=" ">
-      <p style="margin-right:15px;" class="see-more-text"><a style="color:grey;"  href="stats.html#timeline-2">see more ></a></p>
-    </div>
-  </div>
-</div>
 
 </div>
 
@@ -777,18 +796,14 @@
 
 
 
-  <!-- Footer -->
+<!-- Footer -->
 <footer style="margin-top:50px;" class="page-footer font-small stylish-color-dark pt-4">
 
   <!-- Footer Links -->
   <div style="padding-top: 20px; padding-bottom: 30px; background-color:#dedede;" class="">
     <div  class="container text-center text-md-left">
       <div class="row">
-        <div class="col-md-4 mx-auto">
-          <h5 class="footer-title-text mt-3 mb-4">About</h5>
-          <p class="footer-content-text">I created this website to provide some relief to those hard working Canadians in need. Share your story, find relief programs and stop the spread of misinformation. If you have and tips or feedback send me an email.</p>
-        </div>
-        <hr class="clearfix w-100 d-md-none">
+
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Stats</h5>
           <ul class="list-unstyled footer-content-text">
@@ -807,6 +822,7 @@
           </ul>
 
         </div><hr class="clearfix w-100 d-md-none">
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Vaccine</h5>
           <ul class="list-unstyled footer-content-text">
@@ -826,6 +842,8 @@
 
         </div>
         <hr class="clearfix w-100 d-md-none">
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
+
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Initiatives</h5>
           <ul class="list-unstyled footer-content-text">
@@ -843,6 +861,12 @@
             </li>
           </ul>
 
+        </div>
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
+
+        <div class="col-md-4 mx-auto ">
+          <hr class="clearfix w-100 d-md-none">
+          <a href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-footer" alt=""></a>
         </div>
       </div>
     </div>
@@ -889,8 +913,10 @@
     <a style="color: black;" target="_blank" href="http://www.thesofoundcompany.com/"> <b>www.thesofoundcompany.com</b></a>
   </div> -->
 
+
 </footer>
 <!-- Footer -->
 <script src="assets/js/alldata.js"></script>
 <script src="assets/js/daily-charts.js"></script>
+<script src="assets/js/provinces-table.js"></script>
 </html>
