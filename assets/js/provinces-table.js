@@ -324,7 +324,7 @@ google.charts.load('current', {'packages':['table']});
      [new Date(2020, 1, 22), ' ', ' '],
      [new Date(2020, 1, 21), ' ', ' '],
      [new Date(2020, 1, 20), ' ', ' '],
-     [new Date(2020, 1, 19), ' ', ' '],
+     [new Date(2020, 1, 19), 'RECOVERED ', 'BC: Henry announces that the person diagnosed with B.C.’s first case of the new coronavirus has recovered. It’s the first time this has happened in the province. '],
      [new Date(2020, 1, 18), ' ', ' '],
      [new Date(2020, 1, 17), ' ', ' '],
      [new Date(2020, 1, 16), ' ', ' '],
@@ -347,11 +347,11 @@ google.charts.load('current', {'packages':['table']});
 
      [new Date(2020, 0, 31), ' ', ' '],
      [new Date(2020, 0, 30), ' ', ' '],
-     [new Date(2020, 0, 29), ' ', ' '],
-     [new Date(2020, 0, 28), ' ', ' '],
-     [new Date(2020, 0, 27), ' ', ' '],
+     [new Date(2020, 0, 29), 'Infected ', 'BC 1st case: The presumed case of the new strain of coronavirus in B.C. is confirmed by the National Microbiology Laboratory in Winnipeg.'],
+     [new Date(2020, 0, 28), 'INFECTED ', 'Canada 2nd case: Health authorities confirm Canada’s second case of the novel coronavirus. The woman had recently travelled to Wuhan with her husband, who was the first case confirmed in Canada.'],
+     [new Date(2020, 0, 27), 'INFECTED ', 'Canada 1st case: The National Microbiology Lab in Winnipeg confirms that a man in quarantine in Sunnybrook Hospital is Canada’s first documented case of the new coronavirus. '],
      [new Date(2020, 0, 26), ' ', ' '],
-     [new Date(2020, 0, 25), ' ', ' '],
+     [new Date(2020, 0, 25), 'REPORT ', 'A man in his 50s who arrived in Toronto from Wuhan, China, the epicentre of the outbreak, becomes the first “presumptive” case of the new coronavirus in Canada. The man called 911 as soon as he got sick with relatively minor symptoms and was placed in isolation in Toronto’s Sunnybrook Hospital. '],
 
    ]);
 
