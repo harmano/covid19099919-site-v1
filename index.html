@@ -81,7 +81,7 @@
     <ul id="menu">
       <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
       <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
-      <!-- <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a> -->
+      <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
       <!--  <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a> -->
       <a class="nav-link-mobile" href="intiatives.html"><li>Initiatives</li></a>
 
@@ -106,9 +106,9 @@
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="stats.html">Stats</a>
           </li>
-          <!--  <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
-          </li> -->
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
           </li> -->
@@ -127,7 +127,7 @@
   <strong  style="padding-left:10%; ">
     <i style="padding-right: 8px; color:#DB4437;" class="fas fa-exclamation"></i>
       Last Updated :
-      <b><time class="timeago" datetime="2020-05-19T14:05"></time></b>
+      <b><time class="timeago" datetime="2020-05-22T14:05"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -160,7 +160,7 @@
             <p style="margin-left:10px; margin-top:4px;" class="text-margin-can paragraph-2-text">
               (Last Updated :
               <b>
-                <time class="timeago" datetime="2020-05-19T14:05"></time>
+                <time class="timeago" datetime="2020-05-22T14:05"></time>
               </b>)
             </p>
           </div>
@@ -168,44 +168,44 @@
             <div class="stats-text-box col">
               <p class="header-2-text-2">Confirmed</p>
               <h3 class="stats-text">
-                <div id="confirmed"></div>
+                <div style="color:#59748E; " id="confirmed"></div>
               </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">Recoverd</p>
               <h3 class="stats-text">
-                <div id="recovered"></div>
+                <div style="color:#759785; " id="recovered"></div>
               </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
               <p class="header-2-text-2">Deaths</p>
               <h3 class="stats-text">
-                <div id="deaths"></div>
+                <div style="color:#FF4C4C; "  id="deaths"></div>
               </h3>
             </div>
           </div>
           <hr>
           <div style=""class="text-left row">
             <div class="stats-text-box col">
-              <p class="header-2-text-2">C: Today</p>
+              <p class="header-2-text-2">Today</p>
               <h3 class="stats-text">
-                <div id="confirmedToday"></div>
+                <div style="color:#59748E; " id="confirmedToday"></div>
               </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">R: Today</p>
+              <p class="header-2-text-2">Today</p>
               <h3 class="stats-text">
-                <div id="recoveredToday"></div>
+                <div style="color:#759785; " id="recoveredToday"></div>
               </h3>
             </div>
             <div class="vl"></div>
             <div class="stats-text-box  col">
-              <p class="header-2-text-2">D: Today</p>
+              <p class="header-2-text-2">Today</p>
               <h3 class="stats-text">
-                <div id="deathsToday"></div>
+                <div style="color:#FF4C4C; "  id="deathsToday"></div>
               </h3>
             </div>
           </div>
@@ -357,12 +357,17 @@
         <div id="daily_line_chart" class="chart-margin-line line-chart-infection"></div>
         <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
       </div>
+      <p style="text-align:right; margin-right:10px;" class="p-3-text">Updated <i><time class="timeago" datetime="2020-05-22T14:05"></time></i> | Sources: <a href="#sources">Click Here</a></p>
+
       <hr class="stats-line">
       <!-- Infection daily  --------------------------------------------------------------------->
       <div style="padding-top:20px;" class="box-graphs filterDiv  Infection row">
         <div id="linechart_material" class="chart-margin-line line-chart-infection"></div>
+
         <hr class="filterDiv none " style="margin-top: 50px; margin-bottom: 50px;">
       </div>
+      <p  style="text-align:right; margin-right:10px;" class="p-3-text">Updated <i><time class="timeago" datetime="2020-05-22T14:05"></time></i> | Sources: <a href="#sources">Click Here</a></p>
+
     </div>
     <div style="display:none; margin-left:0; margin-right:0;"class="text-center">
     <div class="  text-center ">
@@ -641,40 +646,42 @@
   <div class=" ">
     <p style="margin-right:5px; margin-top:30px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="stats.html">see more ></a></p>
   </div>
-<!---------- Vaccine Updates
-<div class="">
-  <h1 class="header-1-text">Vaccine Updates</h1>
-  <hr class="underline-small">
-  <div class="row">
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
-    </div>
-    <div class="col news-box">
+  <div class="">
+    <h1 class="header-1-text">Vaccine Updates</h1>
+    <hr class="underline-small">
+    <div class="row">
+      <div class="col news-box">
+          <img src="assets/images/pharma_home.png" alt="" class="news-img">
+          <div style="" class="top-left-cbc"></div>
+          <p class="date-text"><b style="color:darkred;">North America  </b> May 11, 2020 9:55 AM ET</p>
+          <a target="_blank"  href="https://www.cbc.ca/news/canada/toronto/covid-19-coronavirus-may-11-emergency-order-extended-1.5564237">
+            <p style="margin-top: -15px; color:black;" class="header-2-text">Non-Canadian Companies working on Vaccine</p>
+          </a>
+      </div>
+      <div class="col news-box">
 
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
+          <img src="assets/images/canadianpharma.png" alt="" class="news-img">
+          <div style="" class="top-left-ctv"> </div>
+          <p class="date-text"><b style="color:darkblue;">Canada - </b> May 11, 2020 1:41PM EDT </p>
+          <a target="_blank" href="vaccine.html#canadiancom">
+            <p style="margin-top: -15px; color:black;" class="header-2-text">Canadian Vaccine Initiatives</p>
+          </a>
+      </div>
+      <div class="col news-box">
+          <img src="assets/images/timeline.png" alt="" class="news-img">
+          <div style="" class="top-left-star"> </div>
+          <p class="date-text"><b style="color:darkblue;">Canada </b>  </p>
+          <a target="_blank" href="https://www.thestar.com/politics/federal/2020/05/07/82-of-canadas-covid-19-deaths-have-been-in-long-term-care.html">
+            <p style="margin-top: -15px; color:black;" class="header-2-text">Full timeline of Vaccine Updates</p>
+          </a>
+      </div>
     </div>
-    <div class="col news-box">
-        <img src="assets/images/test-img.jpg" alt="" class="news-img">
-        <p class="date-text"><b style="color:darkred;">Ontario</b> - April 25th 2020 </p>
-        <a href="">
-          <p style="margin-top: -15px; color:black;" class="header-2-text">Lorem ipsum dolor sit amet, consectetur</p>
-        </a>
+    <div class=" ">
+      <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text">
+        <a style="color:grey;"  href="vaccine.html">see more ></a>
+      </p>
     </div>
   </div>
-  <div class=" ">
-    <p style="margin-right:5px; margin-top:-10px; margin-bottom:20px;" class="see-more-text"><a style="color:grey;"  href="vaccine.html">see more ></a></p>
-  </div>
-</div>
---------->
-<!---------- Local Programs --------->
 <div class="">
   <h1 class="header-1-text">Local Programs</h1>
   <hr class="underline-small">

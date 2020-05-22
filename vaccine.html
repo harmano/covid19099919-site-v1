@@ -1,6 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Timeago -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="jquery-timeago-master/jquery.timeago.js" type="text/javascript"></script>
+  <script src="jquery-timeago-master/test/test_helpers.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      prepareDynamicDates();
+      $(".timeago").timeago();
+
+      $("#prog_date").text(jQuery.timeago(new Date()));
+      $("#prog_string").text(jQuery.timeago("2008-07-17"));
+      $("#prog_element").text(jQuery.timeago("2008-07-20"));
+    });
+
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+  <!-- Timeago -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164156903-2"></script>
   <script>
@@ -10,11 +27,11 @@
 
     gtag('config', 'UA-164156903-2');
   </script>
+
   <link rel="icon" href="assets/images/canadian_flag.svg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Canada Covid 19</title>
+  <title>Canada Covid 19 | Live Vaccine Updates</title>
   <meta name="description" content="Canada Covid-19">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -25,10 +42,19 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ae027a5b04.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164156903-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164156903-2');
+  </script>
 
 </head>
 <nav style="padding-top:25px; margin-top:0px;"class=" d-block d-sm-none	d-none d-sm-block d-md-none d-none d-md-block d-lg-none" >
-  <a href="home.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
+  <a href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-mobile" alt=""></a>
 
   <div style="margin-top:-22px;" id="menuToggle">
     <!--
@@ -51,21 +77,22 @@
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
     -->
+
     <ul id="menu">
       <a class="nav-link-mobile" href="index.html"><li>Home</li></a>
       <a class="nav-link-mobile" href="stats.html"><li>Stats</li></a>
       <a class="nav-link-mobile" href="vaccine.html"><li>Vaccine</li></a>
-      <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a>
-      <a class="nav-link-mobile" href="about.html"><li>Initiatives</li></a>
+      <!--  <a class="nav-link-mobile" href="fundrasiers.html"><li>Fundrasiers</li></a> -->
+      <a class="nav-link-mobile" href="intiatives.html"><li>Initiatives</li></a>
 
-      <a class="nav-link-mobile" href="about.html" ><li>About</li></a>
+      <!-- <a class="nav-link-mobile" href="about.html" ><li>About</li></a> -->
     </ul>
   </div>
 </nav>
 <div class="d-none d-xl-block 	d-none d-lg-block d-xl-none">
   <nav style="padding-bottom:0px; padding-bottom:0px; margin-top:0px; margin-bottom:0px; height:70px; "  class="navbar-width navbar-margin-mobile navbar navbar-expand-lg navbar-light bg-white">
-    <a class="alert-padding-top  brand-logo-large navbar-brand" href="#">
-      <a class="navbar-brand " href="home.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
+    <a class="alert-padding-top  brand-logo-large navbar-brand" href="home.html">
+      <a class="navbar-brand " href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo" alt=""></a>
     </a>
     <div class="container-2 collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#"></a>
@@ -82,50 +109,42 @@
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="vaccine.html">Vaccine</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link"  style="color:black;" href="fundraisers.html">Fundraisers</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" style="color:black;" href="intiatives.html">Initiatives</a>
           </li>
-          <li class="nav-item">
+          <!--  <li class="nav-item">
             <a class="nav-link" style="color:black;" href="about.html">About Us</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 </div>
-<!-- <div style=" margin-bottom:0; margin-top:-20px;  border:none; background-color:#fff9e7;" class="alert alert-warning" role="alert">
-  <div style=" " class="alert-margin p-text-alert ">
-    <i style="padding-right: 8px; color:#DB4437;" class="fas fa-exclamation"></i> Last Updated <b>3 Hours ago</b> - For more information visit canada.ca
-  </div>
-</div>
-<div style=" margin-bottom:0;  border:none; background-color:;" class="alert alert-primary" role="alert">
-  <div style="" class=" alert-margin p-text-alert">
-    <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
-  </div>
-</div> -->
 <div style="padding:7px; margin:0px; border-radius:0px; border:none;" class="margin-top-alert alert alert-danger alert-dismissible fade show alert-text " role="alert">
   <strong  style="padding-left:10%; ">
     <i style="padding-right: 8px; color:#DB4437;" class="fas fa-exclamation"></i>
-      <b id="timeMod"></b>
+      Last Updated :
+      <b><time class="timeago" datetime="2020-05-22T14:05"></time></b>
 
   </strong> - For more information visit canada.ca
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>  <i  style="padding-left:10%; ">
+</div>
+<!-- <div style="padding:7px; margin:0px; border-radius:0px;" class="alert alert-primary alert-dismissible fade show alert-text " role="alert">
+
+  <i  style="padding-left:10%; ">
     <i style="padding-right: 10px;" class="far fa-smile"></i> 100% of ad revenue will go towards local initiatives and maintaining the site
   </i>
   <button  style="font-size:20px; padding:2.5px; margin:0px;" type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div> -->
-
+<!-- <img src="assets/images/canada_wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image"> -->
 <img src="assets/images/blue-diamnond-wallpaper.jpg" class="img-fluid-wallpaper" alt="Responsive image">
-
-
 
 <body  class="bg-color">
   <div class="container-top container-v2">
@@ -135,157 +154,415 @@
         <div class="in-page-nav">
           <h1 style="margin-left:10px;"class="header-1-text">Most Viewed</h1>
           <ul>
-            <li class="in-page-nav-text"><a href="">Companies working on Vaccines</a></li>
-            <li class="in-page-nav-text"><a href="">Known Theraputics</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
-            <li class="in-page-nav-text"><a href="">Companies working on</a></li>
+            <li class="in-page-nav-text"><a href="#noncanadiancom2">Non-Canadian  working on Vaccines</a></li>
+            <li class="in-page-nav-text"><a href="#Theraputic">Known Theraputics</a></li>
+            <li class="in-page-nav-text"><a href="#clinicaltrials">Clinical Trials</a></li>
+            <li class="in-page-nav-text"><a href="#canadiancom">Canadian Companies</a></li>
+            <li class="in-page-nav-text"><a href="#vaccinetimeline">Vaccine Timeline</a></li>
           </ul>
 
         </div>
       </div>
       <!---------- Companies --------->
-      <div class=" text-center col-12 col-sm-6">
-        <h1 style="color: #435B77; font-weight:600; margin-bottom: 25px;" class="company-margin text-left header-1-text">Companies Working on a Vaccine</h1>
-        <div class="row">
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
+      <div class="top-margin-vaccine-news text-left col-12 col-sm-6">
+        <div class="">
+          <h1 class="header-1-text">News Feed</h1>
+          <hr class="underline-small">
+          <div class="row">
+            <div class="col news-box">
+                <img src="https://i.cbc.ca/1.5543698.1587736372!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_780/to-lockdown.jpg" alt="" class="news-img">
+                <div style="" class="top-left-cbc">CBC</div>
+                <p class="date-text"><b style="color:darkred;">Canada - </b> May 11, 2020 9:55 AM ET</p>
+                <a target="_blank"  href="https://www.cbc.ca/news/canada/toronto/covid-19-coronavirus-may-11-emergency-order-extended-1.5564237">
+                  <p style="margin-top: -15px; color:black;" class="header-2-text">State of emergency to be pushed to June 2</p>
+                </a>
+            </div>
+            <div class="col news-box">
+
+                <img src="https://www.macleans.ca/wp-content/uploads/2020/05/TRUDEAU_CORONAVIRUS_MAY_3-767x431.jpg" alt="" class="news-img">
+                <div style="" class="top-left-ctv">CTV</div>
+                <p class="date-text"><b style="color:darkblue;">Toronto - </b> May 11, 2020 1:41PM EDT </p>
+                <a target="_blank" href="https://www.ctvnews.ca/health/coronavirus/pm-trudeau-covid-19-efforts-could-go-up-in-smoke-if-one-jurisdiction-makes-wrong-decisions-1.4934219">
+                  <p style="margin-top: -15px; color:black;" class="header-2-text">PM Trudeau: COVID-19 efforts could 'go up in smoke'</p>
+                </a>
             </div>
           </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
-            </div>
-          </div>
-          <div class="col company-margin-group">
-            <img class="vaccine-img"src="assets/images/charlie-avatar.jpg" alt="">
-            <div class="company-info-margin">
-              <p class="p-text ">Company name (CAD)</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
-    <!---------- Caption 1 --------->
-    <div class="body-margin">
-      <h1 class="header-1-text">Theraputics</h1>
+    <!---------- Non Canadian Comapnies --------->
+    <div  id="noncanadiancom2" class="body-margin ">
+      <h1 class="header-1-text">Non-Canadian Companies Working on Vaccine</h1>
       <hr class="underline-small">
-      <h1 class="header-2-text">Theraputics</h1>
-      <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-vaccine-text"><b>Amgen and Adaptive Biotechnologies</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-4 col-sm-2 vaccine-img-small"src="assets/images/logo_adaptive.jpg" alt="">
+          <div class="col-8 col-sm-10">
+            <p class=" p-text">
+              <b>Type:</b> Antibody treatment
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Preclinical
+            </p>
+            <p class="p-text">
+              <b>More Info: </b> <a href="https://www.amgen.com/media/news-releases/2020/04/amgen-and-adaptive-biotechnologies-announce-strategic-partnership-to-develop-a-therapeutic-to-prevent-or-treat-covid-19/">Amgen and Adaptive Biotechnologies</a>
+            </p>
+          </div>
+
+        </div>
+        <p class=" p-text">
+          <b>Background: </b> The very early-stage collaboration between Amgen Inc. US:AMGN and Adaptive Biotechnologies Corp. US:ADPT seeks to discover antibodies that can be used to prevent or treat COVID-19. Financial terms of the exclusive collaboration will be completed “in the coming weeks,” the companies said April 2. “There may well be more than one generation of antibody therapeutics entering the clinic,” Amgen R&D EVP David Reese told investors on an earnings call.
+        </p>
+        <p class=" p-text">
+          <b>Also in the works:</b> Amgen will test Otezla as a COVID-19 therapy treating respiratory distress in late-stage patients, with the company saying April 30 that it plans to put the oral psoriasis drug into trials “in the coming weeks.”
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-vaccine-text"><b>Altimmune</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-4 col-sm-2  vaccine-img-small"src="assets/images/logo-altimmune.png" alt="">
+          <div class="col-8 col-sm-10">
+            <p class=" p-text">
+              <b>Type:</b> Vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Preclinical
+            </p>
+            <p class="p-text">
+              <b>More Info: </b> <a href="https://altimmune.com/">Altimmune COVID-19</a>
+            </p>
+          </div>
+
+        </div>
+        <p class="p-text">
+          <b>Background: </b> Altimmune Inc. US:ALT said March 30 it is partnering with University of Alabama at Birmingham to develop a single-dose, intranasal COVID-19 vaccine. They said they plan to put the vaccine candidate into Phase 1 trials in the third quarter. The preclinical company is also developing vaccines for anthrax and the flu.
+
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-vaccine-text"><b>BioNTech and Pfizer</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-4 col-sm-2  vaccine-img-small"src="assets/images/logo-pfizer.png" alt="">
+          <div class="col-8 col-sm-10">
+            <p class=" p-text">
+              <b>Type:</b> mRNA vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 1/2
+            </p>
+            <p class="p-text">
+              <b>More Info: </b> <a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer_and_biontech_dose_first_participants_in_the_u_s_as_part_of_global_covid_19_mrna_vaccine_development_program">BioNTech and Pfizer COVID-19</a>
+            </p>
+          </div>
+
+        </div>
+        <p class=" p-text">
+          <b>Background: </b> Pfizer Inc. US:PFE announced March 17 it would help develop and distribute BioNTech SE’s US:BNTX COVID-19 vaccine candidate, though the deal excludes China. The 360 patients in the U.S. trial had started to receive the first doses of the four vaccine candidates included in the study as of May 5. Dosing in 200 participants in the German trial began April 23. As part of the deal, Pfizer will pay $185 million upfront, with additional possible future milestone payments of up to $563 million. Mikael Dolsten, Pfizer’s chief scientific officer, said during an April 28 earnings call that the companies expect the first round of trial data in May or June, with the vaccine candidate moving into “expanded trials that could allow emergency use or accelerated approval coming in the fall, possibly October.”
+          BioNTech is also testing the vaccine in collaboration with Shanghai Fosun Pharmaceutical Group Co. Ltd. in China.
+          Pfizer and BioNTech for several years have said they are working on mRNA-based influenza vaccines.
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-vaccine-text"><b>CytoDyn (leronlimab)</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-4 col-sm-2 vaccine-img-small"src="assets/images/logo-crypto.png" alt="">
+          <div class="col-8 col-sm-10">
+            <p class=" p-text">
+              <b>Type:</b> Treatment
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 2 and Phase 2b/3 clinical trials
+            </p>
+            <p class="p-text">
+              <b>More Info: </b> <a href="https://altimmune.com/">CytoDyn COVID-19</a>
+            </p>
+          </div>
+
+        </div>
+        <p class=" p-text">
+          <b>Background: </b>CytoDyn Inc. US:CYDY, a preclinical biotechnology company based in Vancouver, is testing its experimental drug leronlimab in two types of COVID-19 patients. The investigational therapy hasn’t been approved for any indications; for COVID-19, it is being proposed as a treatment for mild-to-moderate respiratory complications that occur in patients with the disease as well as severely and critically ill patients.
+          The randomized, double-blind, placebo-controlled study will test the efficacy and safety of leronlimab in 75 patients. CytoDyn had been studying the experimental therapy as a treatment for people with HIV and a form of metastatic breast cancer.
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-vaccine-text"><b>Gilead Sciences</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-4 col-sm-2 vaccine-img-small"src="assets/images/logo-gilead.png" alt="">
+          <div class="col-8 col-sm-10">
+            <p class=" p-text">
+              <b>Type:</b> Treatment
+            </p>
+            <p class="p-text">
+              <b>Stage:</b>  Emergency use authorization
+            </p>
+            <p class="p-text">
+              <b>Name:</b>  remdesivir
+            </p>
+            <p class="p-text">
+              <b>More Info: </b> <a href="https://altimmune.com/">Gilead COVID-19</a>
+            </p>
+          </div>
+
+        </div>
+        <p class="  p-text">
+          <b>Background: </b>Gilead Sciences Inc. US:GILD is a longtime drugmaker best known for developing the first major cure for hepatitis-C in Sovaldi, a therapy that changed the standard of care for that disease but also kicked off the national debate about drug pricing. The company has experience developing and marketing HIV drugs, including Truvada for pre-exposure prophylaxis (PrEP), its preventive HIV medicine.
+          <br><br>
+            It received an emergency-use authorization from the Food and Drug Administration in the U.S. on May 1 based on preliminary results from two clinical trials: one conducted by the NIAID, and one by Gilead. In the NIAID trial, COVID-19 patients taking the drug had a median recovery time of 11 days, compared with 15 days for those patients taking placebo. NIAID director Dr. Anthony Fauci has said the drug is now considered the standard of care; however, other experts have had mixed responses to the data. Dr. Eric Topol, director of the Scripps Research Translational Institute, said he thinks the drug is effective based on the preliminary data that has been made public. “It’s just not that potent,” he said via email.
+            <br><br>
+            The drug was also used in two randomized, controlled clinical trials in China. Results from one trial, which was stopped early, found the drug didn’t produce “statistically significant clinical benefits,” according to findings published in The Lancet.
+            <br><br>
+            Gilead in late March had to halt individual compassionate use requests for remdesivir as outbreaks worsened in the U.S., having provided the investigational therapy to 1,000 patients. “The system cannot support and process the overwhelming number of applications we have seen with COVID-19,” Gilead CEO Daniel O’Day said March 28.
+            <br><br>
+            The company told investors on May 1 it may spend up to $1 billion this year to develop and manufacture remdesivir, and it aims to have 500,000 treatment courses by October and 1 million by the end of 2020.
+        </p>
+        <hr>
+      </div>
+    <!--  <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-2-text"><b>BioNTech and Pfizer</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-2 vaccine-img-small"src="assets/images/charlie-avatar.jpg" alt="">
+          <div class="col-10">
+            <p class=" p-text">
+              <b>Type:</b> mRNA vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 1/2
+            </p>
+          </div>
+
+        </div>
+        <p class="col-12  p-text">
+          <b>Background:</b>
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-2-text"><b>BioNTech and Pfizer</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-2 vaccine-img-small"src="assets/images/charlie-avatar.jpg" alt="">
+          <div class="col-10">
+            <p class=" p-text">
+              <b>Type:</b> mRNA vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 1/2
+            </p>
+          </div>
+
+        </div>
+        <p class="col-12  p-text">
+          <b>Background:</b>
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-2-text"><b>BioNTech and Pfizer</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-2 vaccine-img-small"src="assets/images/charlie-avatar.jpg" alt="">
+          <div class="col-10">
+            <p class=" p-text">
+              <b>Type:</b> mRNA vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 1/2
+            </p>
+          </div>
+
+        </div>
+        <p class="col-12  p-text">
+          <b>Background:</b>
+        </p>
+        <hr>
+      </div>
+      <div class="container">
+        <h1 style="margin-bottom:25px;" class="header-2-text"><b>BioNTech and Pfizer</b></h1>
+        <div style="margin-bottom:25px;" class="row">
+          <img class="col-2 vaccine-img-small"src="assets/images/charlie-avatar.jpg" alt="">
+          <div class="col-10">
+            <p class=" p-text">
+              <b>Type:</b> mRNA vaccine
+            </p>
+            <p class="p-text">
+              <b>Stage:</b> Phase 1/2
+            </p>
+          </div>
+
+        </div>
+        <p class="col-12  p-text">
+          <b>Background:</b>
+        </p>
+        <hr>
+      </div> -->
     </div>
-    <!---------- Caption 2 --------->
-    <div class="body-margin">
-      <h1 class="header-1-text">Theraputics</h1>
+    <!---------- Canadian Comapnies --------->
+    <div style="margin-top:-30px;" id="canadiancom" class="body-margin">
+      <div style="margin-left:5px; " class="filterDiv  time-line  graph-margin">
+            <h1 class="header-1-text">Canadian Initiatives</h1>
+            <hr class="underline-small">
+            <p style="margin-bottom:40px;"CLASS="paragraph-text"></p>
+            <div  style="" class=" ">
+                <div id="dateformat_div-3"></div>
+              </div>
+        </div>
+    </div>
+    <!---------- Clinical trials  --------->
+    <div style="margin-top:-100px;" class="body-margin">
+      <h1 id="clinicaltrials" class="header-1-text">Clinical trials</h1>
       <hr class="underline-small">
-      <h1 class="header-2-text">Theraputics</h1>
-      <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <h1 class="header-2-text">Clinical trials for COVID-19 vaccines</h1>
+      <p class="p-text">At this time, there is no vaccine authorized to protect against COVID-19. Nevertheless, clinical trials for COVID-19 vaccines are ongoing around the world, and Health Canada is working with vaccine developers and manufacturers to help expedite the development and availability of vaccines to prevent COVID-19. Moreover, Health Canada is also collaborating with international regulators and organizations, including the International Coalition of Medicines Regulatory          Authorities, on issues related to the development of COVID-19 vaccines. Health Canada is working to fast-track clinical trial applications for COVID-19 vaccines. Companies and researchers with vaccines in development that may be effective in preventing COVID-19 are encouraged to contact Health Canada to facilitate the submission of clinical trial applications. While the Department is expediting discussions on clinical trials with companies who have products in development, it will only do so with those companies and researchers who have sufficient pre-clinical data to be planning clinical trials. For all enquiries related to clinical trials for COVID-19 vaccines contact, please contact hc.bgtd.ora.sc@canada.ca.
+      </p>
+      <h1 class="header-2-text">Clinical trials for COVID-19 treatments</h1>
+      <p class="p-text"> Health Canada is working to fast-track clinical trials for COVID-19 treatments. We have received a number of clinical trial applications in this regard, some of which have already been authorized. Companies and researchers with drugs that may be effective for the treatment of COVID-19 are encouraged to contact us to facilitate clinical trials.While Health Canada is expediting discussions on clinical trials with companies who have products in development, the Department will only do so with those companies and researchers who have sufficient pre-clinical data to be planning clinical trials.For enquiries related to clinical trials for pharmaceutical drugs to treat COVID-19, please contact OCT_BEC_Enquiries_Enquetes@hc-sc.gc.ca. For clinical trials related to biologic drug treatments for COVID-19, please contact hc.bgtd.ora.sc@canada.ca.
+      </p>
 
     </div>
+    <div class="body-margin">
+      <h1 id="Theraputic"class="header-1-text">Theraputic</h1>
+      <hr class="underline-small">
+      <h1 class="header-2-text">Theraputics</h1>
+      <p class="p-text">
+        Currently there are no therapies available for either the prevention or treatment of COVID-19. While certain products may alleviate COVID-19 symptoms, such as fever and cough, there are no proven treatments to prevent or cure the disease.
+        Health Canada is closely tracking all potential therapeutic treatments and vaccines in development in Canada and abroad, including products that are being used off-label. The Department is working with vaccine developers, researchers, and manufacturers to help expedite the development and availability of medical products such as vaccines, antibodies, and drugs to prevent and treat COVID-19.
+      </p>
+    </div>
+
+    <!-- Chart --------------------------------------------------------------------->
+    <style media="screen">
+
+        tbody>tr>:nth-child(1){
+          color:black;
+          font-weight: 500;
+          font-family: 'Roboto', sans-serif;
+        }
+        tbody>tr>:nth-child(4){
+           font-weight: 400;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .headerRow{
+          background-color: #dcdcdc;
+          text-align: left;
+        }
+
+        .tablecell{
+          text-align: left;
+          background-color: #ececec;
+              border: solid red;
+
+            }
+
+            .google-visualization-table-table td {
+                  border: solid #ececec;
+                  border-width: 0 1px 1px 0;
+                  padding: 2px .35em;}
+
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="vaccinetimeline" style="margin-left:5px; " class="filterDiv  time-line  graph-margin">
+          <h1 class="header-1-text">Full Vaccine Timeline</h1>
+          <hr class="underline-small">
+          <p style="margin-bottom:40px;"CLASS="paragraph-text">The following is a time line of the events taken place related to a possible COVID19 vaccine since the first infection, more data will be added shortly</p>
+          <div  style="" class=" conatiner-chart">
+              <div id="dateformat_div-2"></div>
+            </div>
+      </div>
+
+
+
+
 </div>
 </body>
 
 
-
-  <!-- Footer -->
+<!-- Footer -->
 <footer style="margin-top:50px;" class="page-footer font-small stylish-color-dark pt-4">
 
   <!-- Footer Links -->
   <div style="padding-top: 20px; padding-bottom: 30px; background-color:#dedede;" class="">
     <div  class="container text-center text-md-left">
       <div class="row">
-        <div class="col-md-4 mx-auto">
-          <h5 class="footer-title-text mt-3 mb-4">About</h5>
-          <p class="footer-content-text">I created this website to provide some relief to those hard working Canadians in need. Share your story, find relief programs and stop the spread of misinformation. If you have and tips or feedback send me an email.</p>
-        </div>
-        <hr class="clearfix w-100 d-md-none">
+
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Stats</h5>
           <ul class="list-unstyled footer-content-text">
             <li >
-              <a style="color: black;" href="#!">Link 1</a>
+              <a class="footer-nav-link"  href="stats.html#timeline">Timeline</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 2</a>
+              <a class="footer-nav-link" href="stats.html#mortality">Mortality Rate</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 3</a>
+              <a class="footer-nav-link"  href="stats.html#recovered">Recoverd</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 4</a>
+              <a class="footer-nav-link"  href="stats.html#summary">Summary</a>
             </li>
           </ul>
 
         </div><hr class="clearfix w-100 d-md-none">
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Vaccine</h5>
           <ul class="list-unstyled footer-content-text">
             <li>
-              <a style="color: black;" href="#!">Link 1</a>
+              <a class="footer-nav-link" href="#">Companies</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 2</a>
+              <a class="footer-nav-link" href="#">Therapeutic</a>
             </li>
             <li>
-              <a  style="color: black;" href="#!">Link 3</a>
+              <a  class="footer-nav-link" href="#">How To Get</a>
             </li>
             <li>
-              <a  style="color: black;" href="#!">Link 4</a>
+              <a  class="footer-nav-link" href="#">More</a>
             </li>
           </ul>
 
         </div>
         <hr class="clearfix w-100 d-md-none">
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
+
         <div class="col-md-2 mx-auto">
           <h5 class="footer-title-text mt-3 mb-4">Initiatives</h5>
           <ul class="list-unstyled footer-content-text">
             <li>
-              <a style="color: black;" href="#!">Link 1</a>
+              <a class="footer-nav-link"  href="intiatives.html">For Artists</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 2</a>
+              <a class="footer-nav-link" href="intiatives.html">Paying Back CERB</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 3</a>
+              <a class="footer-nav-link" href="intiatives.html">For Drivers</a>
             </li>
             <li>
-              <a style="color: black;" href="#!">Link 4</a>
+              <a class="footer-nav-link" href="intiatives.html">Front Line Workers</a>
             </li>
           </ul>
 
+        </div>
+        <hr class="d-none d-sm-none d-md-block" style="border-left: 1px solid darkgrey; height: 120px; wid">
+
+        <div class="col-md-4 mx-auto ">
+          <hr class="clearfix w-100 d-md-none">
+          <a href="index.html"><img src="assets/images/Covid19-canada-logo.png" class="brand-logo-footer" alt=""></a>
         </div>
       </div>
     </div>
   </div>
 
-  <ul style="margin-top: 15px;" class="list-unstyled list-inline text-center py-2">
+  <!-- <ul style="margin-top: 15px;" class="list-unstyled list-inline text-center py-2">
 
     <li class="list-inline-item">
       <img src="assets/images/buy-me-coffee-icon.png" class="coffee-img"alt="">
     </li>
-  </ul>
-  <hr>
+  </ul> -->
+  <!-- <hr> -->
 
   <!-- Social buttons
   <ul class="list-unstyled list-inline text-center">
@@ -316,12 +593,71 @@
     </li>
   </ul>  -->
   <!-- Social buttons -->
-  <div style="margin-bottom:0; padding-top:0; padding-bottom:0;"class="footer-copyright paragraph-text text-center py-3">Created by <b>Harman Brar </b>  +
-    <a style="color: black;" target="_blank" href="http://www.TheSoFoundcompany.com/"> <b>www.TheSoFoundcompany.com</b></a>
-  </div>
+  <!-- <div style="margin-bottom:0; padding-top:0; padding-bottom:0;"class="footer-copyright paragraph-text text-center py-3"> Created by <b>Harman Brar </b>  +
+    <a style="color: black;" target="_blank" href="http://www.thesofoundcompany.com/"> <b>www.thesofoundcompany.com</b></a>
+  </div> -->
 
 
 </footer>
 <!-- Footer -->
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+  //Intializing variables
+  var x, i;
+  //searches the page for the divs with the filterDiv class
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("containerv2");
+  var btns = btnContainer.getElementsByClassName("tablinks");
+  for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", " ");
+    this.className += " active";
+  });
+  }
+
+</script>
+<script src="assets/js/alldata.js"></script>
+<script src="assets/js/pie-bar-chart.js"></script>
+<script src="assets/js/world.js"></script>
+<script src="assets/js/daily-charts.js"></script>
+<script src="assets/js/daily-charts.js"></script>
+<script src="assets/js/provinces-table.js"></script>
 
 </html>

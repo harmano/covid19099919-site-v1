@@ -1,21 +1,21 @@
 // Gathering data
 
 
-// date is 2020-05-19T14:05
-var timeMod = '2020-05-19T14:05'
-var deaths = 5950;
-var deathsToday = 1;
-var confirmed = 78836;
-var confirmedToday = 152;
+// date is 2020-05-22T14:05
+var timeMod = '2020-05-22T14:05'
+var deaths = 6249;
+var deathsToday = 3;
+var confirmed = 81767;
+var confirmedToday = 387;
 
-var recovered = 39488;
+var recovered = 41975;
 var recoveredToday = 260;
 
-var active = 33398;
+var active = 33543;
 var activeToday =  active - 32673;
 
-var test = 1331173;
-var testToday = 11186;
+var test = 1379731;
+var testToday = 2585;
 
 var m = (deaths / confirmed) * 100;
 var mortality = m.toFixed(3);
@@ -28,7 +28,7 @@ var critical = 502;
 
 document.getElementById("confirmed").innerHTML = numberWithCommas(confirmed);
 document.getElementById("confirmedAlt").innerHTML = numberWithCommas(confirmed);
-document.getElementById("confirmedToday").innerHTML = '+' + numberWithCommas(confirmedToday);
+document.getElementById("confirmedToday").innerHTML = '+' + countItUpConfirmedToday(confirmedToday);
 document.getElementById("confirmedTodayAlt").innerHTML = '+' + countItUp5(confirmedToday);
 
 document.getElementById("deaths").innerHTML = numberWithCommas(deaths);
@@ -38,7 +38,7 @@ document.getElementById("deathsTodayAlt").innerHTML = '+' + countItUp6(deathsTod
 
 document.getElementById("recovered").innerHTML = numberWithCommas(recovered);
 document.getElementById("recoveredAlt").innerHTML = numberWithCommas(recovered);
-document.getElementById("recoveredToday").innerHTML = '+' + numberWithCommas(recoveredToday);
+document.getElementById("recoveredToday").innerHTML = '+' + countItUpRecoveredToday(recoveredToday);
 document.getElementById("recoveredTodayAlt").innerHTML = '+' + countItUp7(recoveredToday);
 
 document.getElementById("active").innerHTML = numberWithCommas(active);
@@ -56,8 +56,35 @@ document.getElementById("totatTestsToday").innerHTML = countItUp2(testToday);
 document.getElementById("timeMod").innerHTML = timeMod;
 document.getElementById("timeModAlt").innerHTML = timeMod;
 document.getElementById("timeModalt2").innerHTML = timeMod;
+document.getElementById("timeModalt3").innerHTML = timeMod;
 
 
+function countItUpRecoveredToday(numb) {
+  var secondsLabel = document.getElementById("recoveredToday");
+  var totalSeconds = numb - 30;
+
+  var countdown = setInterval(function(){
+    totalSeconds++;
+    secondsLabel.innerHTML = totalSeconds;
+
+    if (totalSeconds >= numb) {
+      clearInterval(countdown);
+    }
+  }, 1);
+}
+function countItUpConfirmedToday(numb) {
+  var secondsLabel = document.getElementById("confirmedToday");
+  var totalSeconds = numb - 30;
+
+  var countdown = setInterval(function(){
+    totalSeconds++;
+    secondsLabel.innerHTML = totalSeconds;
+
+    if (totalSeconds >= numb) {
+      clearInterval(countdown);
+    }
+  }, 1);
+}
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
