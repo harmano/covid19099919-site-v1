@@ -1334,12 +1334,14 @@ a .header-2-text:hover{
     margin-top: 10px;
   }
   .in-page-nav{
-    background-color: #f3f3f3;
+    background-color: white;
     padding: 15px;
     border-radius: 5px;
     max-width: 300px;
     margin: 0;
     width: auto;
+    border: solid 1px lightgrey;
+
 
   }
 

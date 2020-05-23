@@ -226,7 +226,8 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
-     [new Date(2020, 4, 22), '  ', ''],
+      [new Date(2020, 4, 23), '  ', ''],
+      [new Date(2020, 4, 22), '  ', ''],
       [new Date(2020, 4, 21), 'SUPPORT ', 'Ottawa announces another $75M in pandemic funding for Indigenous people living off-reserve.'],
       [new Date(2020, 4, 20), 'ECONOMY ', 'Inflation rate turned negative in April for first time since 2009'],
       [new Date(2020, 4, 20), 'SOCIAL ', 'Manitoba to allow gatherings of up to 50 people outdoors, 25 indoors'],
@@ -397,6 +398,7 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 4, 23), '  '],
       [new Date(2020, 4, 22), '  '],
       [new Date(2020, 4, 21), '  '],
       [new Date(2020, 4, 20), '  '],
@@ -421,7 +423,6 @@ google.charts.load('current', {'packages':['table']});
       [new Date(2020, 4, 3), '  '],
       [new Date(2020, 4, 2), '  '],
       [new Date(2020, 4, 1), '  '],
-
       [new Date(2020, 3, 30), '  '],
       [new Date(2020, 3, 29), '  '],
       [new Date(2020, 3, 28), '  '],
@@ -600,7 +601,8 @@ google.charts.load('current', {'packages':['table']});
         headerRow: 'headerRow',
         tableRow: 'tableRow',
         headerCell: 'headerCell',
-        rowNumberCell: 'rowNumberCell'
+        rowNumberCell: 'rowNumberCell',
+        highlightClass: 'hoverTableRow'
 
       },
     };

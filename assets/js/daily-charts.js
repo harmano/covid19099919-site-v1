@@ -123,6 +123,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 19), 79766],
       [new Date (2020, 4, 20), 80801],
       [new Date (2020, 4, 21), 81380],
+      [new Date (2020, 4, 22), 82586],
     ]);
 
     var tickMarks = [];
@@ -277,6 +278,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 19), 40050],
       [new Date (2020, 4, 20), 40750],
       [new Date (2020, 4, 21), 41715],
+      [new Date (2020, 4, 22), 42594],
     ]);
 
     var tickMarks = [];
@@ -430,6 +432,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 19), 6017],
       [new Date (2020, 4, 20), 6136],
       [new Date (2020, 4, 21), 6246],
+      [new Date (2020, 4, 22), 6341],
     ]);
 
     var tickMarks = [];
@@ -587,6 +590,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 19), 1082],
       [new Date (2020, 4, 20), 1035],
       [new Date (2020, 4, 21), 579],
+      [new Date (2020, 4, 22), 1206],
     ]);
 
     var tickMarks = [];
@@ -748,6 +752,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 19), 33699],
       [new Date (2020, 4, 20), 33915],
       [new Date (2020, 4, 21), 33419],
+      [new Date (2020, 4, 22), 33651],
     ]);
 
     var tickMarks = [];
@@ -759,7 +764,7 @@ google.charts.load('current', {
       chart: {
         title: 'Active Cases',
       },
-      legend: { position:'none' },
+      legend: {position: 'none'},
       width: '100%',
       pointSize: 10,
       explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
