@@ -1,20 +1,20 @@
 // Gathering data
 
 
-// date is 2020-05-23T10:25
-var timeMod = '2020-05-23T10:25'
-var deaths = 6284;
-var deathsToday = 0;
-var confirmed = 82480;
+// date is 2020-05-24T14:25
+var timeMod = '2020-05-24T14:25'
+var deaths = 6390;
+var deathsToday = 35;
+var confirmed = 84082;
 var confirmedToday = 0;
 
-var recovered = 42594;
-var recoveredToday = 260;
+var recovered = 43640;
+var recoveredToday = 335;
 
-var active = 33602;
-var activeToday =  active - 33543;
+var active = 34052;
+var activeToday =  active - 33602;
 
-var test = 1405208;
+var test = 1431911;
 var testToday = 0;
 
 var m = (deaths / confirmed) * 100;
@@ -33,7 +33,7 @@ document.getElementById("confirmedTodayAlt").innerHTML = '+' + countItUp5(confir
 
 document.getElementById("deaths").innerHTML = numberWithCommas(deaths);
 document.getElementById("deathsAlt").innerHTML = numberWithCommas(deaths);
-document.getElementById("deathsToday").innerHTML = '+' + numberWithCommas(deathsToday);
+document.getElementById("deathsToday").innerHTML = '+' + countItUp10(deathsToday);
 document.getElementById("deathsTodayAlt").innerHTML = '+' + countItUp6(deathsToday);
 
 document.getElementById("recovered").innerHTML = numberWithCommas(recovered);
@@ -131,6 +131,20 @@ function countItUp3(numb) {
 
 function countItUp6(numb) {
   var secondsLabel = document.getElementById("deathsTodayAlt");
+  var totalSeconds = numb - 20;
+
+  var countdown = setInterval(function(){
+    totalSeconds++;
+    secondsLabel.innerHTML = totalSeconds;
+
+    if (totalSeconds >= numb) {
+      clearInterval(countdown);
+    }
+  }, 1);
+}
+
+function countItUp10(numb) {
+  var secondsLabel = document.getElementById("deathsToday");
   var totalSeconds = numb - 20;
 
   var countdown = setInterval(function(){

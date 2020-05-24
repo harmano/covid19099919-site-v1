@@ -1,4 +1,4 @@
-// Timeline - Provinces Charts
+//  Vaccine Timeline - Timeline - Provinces Charts
 
 // ontario
 var ontarioInfected = 24628;
@@ -13,39 +13,39 @@ var ontariocritical = 153;
 var ontariotest = 0;
 
 // Alberta
-var albertaInfected = 6444;
-var albertaInfectedToday = 0;
-var albertadeaths = 127;
+var albertaInfected = 6818;
+var albertaInfectedToday = 18;
+var albertadeaths = 135;
 var albertadeathstoday = 0;
 var albertarecovered = 5453;
 var albertarecoveredToday = 0;
-var albertaactive = 1064;
+var albertaactive = 814;
 var albertachange = albertaInfected - 6444;
-var albertacritical = 0;
-var albertatest = 0;
+var albertacritical = 48;
+var albertatest = 232774;
 
 // BritishColumbia
-var britishColumbiaInfected = 2428;
+var britishColumbiaInfected = 2517;
 var britishColumbiaInfectedToday = 0;
-var britishColumbiadeaths = 141;
+var britishColumbiadeaths = 155;
 var britishColumbiadeathstoday = 0;
-var britishColumbiarecovered = 1932;
+var britishColumbiarecovered = 2057;
 var britishColumbiarecoveredToday = 0;
 var britishColumbiaactive = 355;
 var britishColumbiachange = britishColumbiaInfected - 2428;
-var britishColumbiacritical = 0;
-var britishColumbiatest = 0;
+var britishColumbiacritical = 41;
+var britishColumbiatest = 129942;
 
 // saskatchewan
-var saskatchewanInfected = 592;
+var saskatchewanInfected = 630;
 var saskatchewanInfectedToday = 0;
 var saskatchewandeaths = 7;
 var saskatchewandeathstoday = 0;
-var saskatchewanrecovered = 444;
+var saskatchewanrecovered = 535;
 var saskatchewanrecoveredToday = 0;
 var saskatchewanactive = 141;
 var saskatchewanchange = saskatchewanInfected - 592;
-var saskatchewancritical = 0;
+var saskatchewancritical = 6;
 var saskatchewantest = 0;
 
 // manitoba
@@ -53,46 +53,46 @@ var manitobaInfected = 290;
 var manitobaInfectedToday = 1;
 var manitobadeaths = 7;
 var manitobadeathstoday = 0;
-var manitobarecovered = 257;
+var manitobarecovered = 268;
 var manitobarecoveredToday = 0;
-var manitobaactive = 0;
+var manitobaactive = 17;
 var manitobachange = manitobaInfected - 290;
 var manitobacritical = 0;
-var manitobatest = 0;
+var manitobatest = 37870;
 
 // quebec
-var quebecInfected = 43627;
-var quebecInfectedToday = 707;
-var quebeceaths = 3596;
+var quebecInfected = 46838;
+var quebecInfectedToday = 697;
+var quebeceaths = 3940;
 var quebecdeathstoday = 0;
-var quebecrecovered = 12045;
+var quebecrecovered = 14044;
 var quebecrecoveredToday = 0;
-var quebecactive = 0;
+var quebecactive = quebecInfected - quebeceaths - quebecrecovered;
 var quebecchange = quebecInfected - 43627;
-var quebeccritical = 0;
+var quebeccritical = 1452;
 var quebectest = 0;
 
 
 // newBrunswick
-var newBrunswickInfected = 120;
+var newBrunswickInfected = 121;
 var newBrunswickInfectedToday = 0;
 var newBrunswickdeaths = 0;
 var newBrunswickdeathstoday = 0;
 var newBrunswickrecovered = 120;
 var newBrunswickrecoveredToday = 0;
-var newBrunswickactive = 0;
+var newBrunswickactive = newBrunswickInfected - newBrunswickdeaths - newBrunswickrecovered;
 var newBrunswickchange = newBrunswickInfected - 120;
 var newBrunswickcritical = 0;
-var newBrunswicktest = 0;
+var newBrunswicktest = 22301;
 
 // novaScotia
-var novaScotiaInfected = 1044;
-var novaScotiaInfectedToday = 3;
-var novaScotiadeaths = 56;
+var novaScotiaInfected = 1050;
+var novaScotiaInfectedToday = 1;
+var novaScotiadeaths = 58;
 var novaScotiadeathstoday = 0;
-var novaScotiarecovered = 956;
+var novaScotiarecovered = 973;
 var novaScotiarecoveredToday = 0;
-var novaScotiaactive = 0;
+var novaScotiaactive = novaScotiaInfected - novaScotiadeaths - novaScotiarecovered;
 var novaScotiachange = novaScotiaInfected - 1044;
 var novaScotiacritical = 0;
 var novaScotiatest = 0;
@@ -115,11 +115,11 @@ var newfoundlandInfected = 260;
 var newfoundlandInfectedToday = 0;
 var newfoundlanddeaths = 3;
 var newfoundlanddeathstoday = 0;
-var newfoundlandrecovered = 249;
+var newfoundlandrecovered = 254;
 var newfoundlandrecoveredToday = 0;
-var newfoundlandactive = 0;
+var newfoundlandactive = newfoundlandInfected - newfoundlanddeaths - newfoundlandrecovered;
 var newfoundlandchange = newfoundlandInfected - 260;
-var newfoundlandcritical = 0;
+var newfoundlandcritical = 3;
 var newfoundlandtest = 0;
 
 // yukon
@@ -132,7 +132,7 @@ var yukonrecoveredToday = 0;
 var yukonactive = 0;
 var yukonchange = yukonInfected - 11;
 var yukoncritical = 0;
-var yukontest = 0;
+var yukontest = 1145;
 
 
 // northwest Territories
@@ -145,7 +145,7 @@ var northwestTerritoriesrecoveredToday = 0;
 var northwestTerritoriesactive = 0;
 var northwestTerritorieschange = northwestTerritoriesInfected -  5;
 var northwestTerritoriescritical = 0;
-var northwestTerritoriestest = 2034;
+var northwestTerritoriestest = 2056;
 
 // nunavut
 var nunavutInfected = 0;
@@ -157,7 +157,7 @@ var nunavutRecoveredToday = 0;
 var nunavutActive = 0;
 var nunavutChange = nunavutInfected - 0;
 var nunavutCritical = 0;
-var nunavutTest = 948;
+var nunavutTest = 972;
 
 
 google.charts.load('current', {'packages':['table']});
