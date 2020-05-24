@@ -602,7 +602,7 @@ google.charts.load('current', {'packages':['table']});
         tableRow: 'tableRow',
         headerCell: 'headerCell',
         rowNumberCell: 'rowNumberCell',
-        highlightClass: 'hoverTableRow'
+        hoverTableRow: 'hoverTableRow'
 
       },
     };
