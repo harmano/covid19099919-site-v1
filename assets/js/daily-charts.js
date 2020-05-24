@@ -136,6 +136,7 @@ google.charts.load('current', {
       chart: {
         title: 'Infection History',
       },
+      crosshair: {orientation: 'vertical', trigger: 'focus'},
       legend: { position:'none' },
       width: '100%',
       pointSize: 10,
@@ -294,6 +295,7 @@ google.charts.load('current', {
       legend: { position:'none' },
       width: '100%',
       pointSize: 10,
+      crosshair: {orientation: 'vertical', trigger: 'focus'},
       explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
       hAxis: {
         format: 'MM/dd/yyyy',
@@ -451,6 +453,7 @@ google.charts.load('current', {
       legend: { position:'none' },
       width: '100%',
       pointSize: 10,
+      crosshair: {orientation: 'vertical', trigger: 'focus'},
       explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
       hAxis: {
         format: 'MM/dd/yyyy',
@@ -614,6 +617,7 @@ google.charts.load('current', {
       legend: { position:'none' },
       width: '100%',
       pointSize: 10,
+      crosshair: {orientation: 'vertical', trigger: 'focus'},
       explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
       hAxis: {
         format: 'MM/dd/yyyy',
@@ -777,6 +781,7 @@ google.charts.load('current', {
       legend: {position: 'none'},
       width: '100%',
       pointSize: 10,
+      crosshair: {orientation: 'vertical', trigger: 'focus'},
       explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
       hAxis: {
         format: 'MM/dd/yyyy',

@@ -1,113 +1,190 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <div id="chart_div"></div>
-  </body>
-  <script>
-  google.charts.load('current', {
-callback: drawChart,
-packages: ['corechart']
-});
+<html>
+   <head>
+      <title>Google Charts Tutorial</title>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart','line']});
+      </script>
+   </head>
 
-function drawChart() {
-var dataTable = new google.visualization.DataTable({
-  cols: [
-    {id: 'x', label: 'Date', type: 'date'},
-    {id: 'y', label: 'Fn', type: 'number'}
-  ]
-});
+   <body>
+      <div id = "container" style = "width: 100%; height: 100%; margin: 0 auto">
+      </div>
+      <script language = "JavaScript">
+         function drawChart() {
+            // Define the chart to be drawn.
+            var data = new google.visualization.DataTable();
+            data.addColumn('date', '');
+            data.addColumn('number', 'Daily Infection');
+            data.addRows([
+              [new Date (2020, 0, 26), 1],
+              [new Date (2020, 0, 27), 1],
+              [new Date (2020, 0, 28), 2],
+              [new Date (2020, 0, 29), 2],
+              [new Date (2020, 0, 30), 2],
+              [new Date (2020, 0, 31), 4],
+              [new Date (2020, 1, 1), 4],
+              [new Date (2020, 1, 2), 4],
+              [new Date (2020, 1, 3), 4],
+              [new Date (2020, 1, 4), 4],
+              [new Date (2020, 1, 5), 5],
+              [new Date (2020, 1, 6), 5],
+              [new Date (2020, 1, 7), 7],
+              [new Date (2020, 1, 8), 7],
+              [new Date (2020, 1, 9), 7],
+              [new Date (2020, 1, 10), 7],
+              [new Date (2020, 1, 11), 7],
+              [new Date (2020, 1, 12), 6],
+              [new Date (2020, 1, 13), 6],
+              [new Date (2020, 1, 14), 6],
+              [new Date (2020, 1, 15), 6],
+              [new Date (2020, 1, 16), 6],
+              [new Date (2020, 1, 17), 7],
+              [new Date (2020, 1, 18), 7],
+              [new Date (2020, 1, 19), 7],
+              [new Date (2020, 1, 20), 7],
+              [new Date (2020, 1, 21), 6],
+              [new Date (2020, 1, 22), 6],
+              [new Date (2020, 1, 23), 6],
+              [new Date (2020, 1, 24), 7],
+              [new Date (2020, 1, 25), 8],
+              [new Date (2020, 1, 26), 8],
+              [new Date (2020, 1, 27), 7],
+              [new Date (2020, 1, 28), 7],
+              [new Date (2020, 1, 29), 14],
+              [new Date (2020, 2, 1), 18],
+              [new Date (2020, 2, 2), 21],
+              [new Date (2020, 2, 3), 23],
+              [new Date (2020, 2, 4), 27],
+              [new Date (2020, 2, 5), 31],
+              [new Date (2020, 2, 6), 43],
+              [new Date (2020, 2, 7), 46],
+              [new Date (2020, 2, 8), 56],
+              [new Date (2020, 2, 9), 96],
+              [new Date (2020, 2, 10), 64],
+              [new Date (2020, 2, 11), 99],
+              [new Date (2020, 2, 12), 108],
+              [new Date (2020, 2, 13), 97],
+              [new Date (2020, 2, 14), 234],
+              [new Date (2020, 2, 15), 292],
+              [new Date (2020, 2, 16), 409],
+              [new Date (2020, 2, 17), 578],
+              [new Date (2020, 2, 18), 706],
+              [new Date (2020, 2, 19), 850],
+              [new Date (2020, 2, 20), 1051],
+              [new Date (2020, 2, 21), 1295],
+              [new Date (2020, 2, 22), 1435],
+              [new Date (2020, 2, 23), 1747],
+              [new Date (2020, 2, 24), 2654],
+              [new Date (2020, 2, 25), 3188],
+              [new Date (2020, 2, 26), 3776],
+              [new Date (2020, 2, 27), 4348],
+              [new Date (2020, 2, 28), 5199],
+              [new Date (2020, 2, 29), 5642],
+              [new Date (2020, 2, 30), 6266],
+              [new Date (2020, 2, 31), 7268],
+              [new Date (2020, 3, 1), 7881],
+              [new Date (2020, 3, 2), 9131],
+              [new Date (2020, 3, 3), 10022],
+              [new Date (2020, 3, 4), 11086],
+              [new Date (2020, 3, 5), 12511],
+              [new Date (2020, 3, 6), 12713],
+              [new Date (2020, 3, 7), 13488],
+              [new Date (2020, 3, 8), 14463],
+              [new Date (2020, 3, 9), 14945],
+              [new Date (2020, 3, 10), 15566],
+              [new Date (2020, 3, 11), 16237],
+              [new Date (2020, 3, 12), 16494],
+              [new Date (2020, 3, 13), 17144],
+              [new Date (2020, 3, 14), 17827],
+              [new Date (2020, 3, 15), 18432],
+              [new Date (2020, 3, 16), 19825],
+              [new Date (2020, 3, 17), 21079],
+              [new Date (2020, 3, 18), 21626],
+              [new Date (2020, 3, 19), 21626],
+              [new Date (2020, 3, 20), 23291],
+              [new Date (2020, 3, 21), 24250],
+              [new Date (2020, 3, 22), 25545],
+              [new Date (2020, 3, 23), 26213],
+              [new Date (2020, 3, 24), 26630],
+              [new Date (2020, 3, 25), 27311],
+              [new Date (2020, 3, 26), 27118],
+              [new Date (2020, 3, 27), 28451],
+              [new Date (2020, 3, 28), 28920],
+              [new Date (2020, 3, 29), 29297],
+              [new Date (2020, 3, 30), 29648],
+              [new Date (2020, 4, 1), 29995],
+              [new Date (2020, 4, 2), 30385],
+              [new Date (2020, 4, 3), 31744],
+              [new Date (2020, 4, 4), 32473],
+              [new Date (2020, 4, 5), 32027],
+              [new Date (2020, 4, 6), 32455],
+              [new Date (2020, 4, 7), 32601],
+              [new Date (2020, 4, 8), 32470],
+              [new Date (2020, 4, 9), 32790],
+              [new Date (2020, 4, 10), 32948],
+              [new Date (2020, 4, 11), 33099],
+              [new Date (2020, 4, 12), 33022],
+              [new Date (2020, 4, 13), 32918],
+              [new Date (2020, 4, 14), 32382],
+              [new Date (2020, 4, 15), 32493],
+              [new Date (2020, 4, 16), 32868],
+              [new Date (2020, 4, 17), 33161],
+              [new Date (2020, 4, 18), 33507],
+              [new Date (2020, 4, 19), 33699],
+              [new Date (2020, 4, 20), 33915],
+              [new Date (2020, 4, 21), 33419],
+              [new Date (2020, 4, 22), 33651],
+              [new Date (2020, 4, 22), 33961],
+            ]);
 
-var formatDate = new google.visualization.DateFormat({
-  pattern: 'MMM d, yyyy'
-});
+            var tickMarks = [];
+            for (var i = 0; i < data.getNumberOfRows(); i++) {
+              tickMarks.push(data.getValue(i, 0));
+            }
 
-var oneDay = (1000 * 60 * 60 * 24);
-var startDate = new Date(2016, 1, 21);
-var endDate = new Date();
-var ticksAxisH = [];
-for (var i = startDate.getTime(); i < endDate.getTime(); i = i + oneDay) {
-  // x = date
-  var rowDate = new Date(i);
-  var xValue = {
-    v: rowDate,
-    f: formatDate.formatValue(rowDate)
-  };
+            // Set chart options
+            var options = {
+                'title' : 'Active Cases',
+                width: '100%',
+                pointSize: 1,
+               hAxis: {
+                  title: '',
+                  format: 'MM/dd/yyyy',
+                  ticks: 'tickMarks',
+                  maxSpacing: 300,
+                  gridlines: {
+                    color: 'lightgrey', maxSpacing: 100,
 
-  // y = 2x + 8
-  var yValue = (2 * ((i - startDate.getTime()) / oneDay) + 8);
+                  },
 
-  // add data row
-  dataTable.addRow([
-    xValue,
-    yValue
-  ]);
 
-  // add tick every 90 days
-  if ((((i - startDate.getTime()) / oneDay) % 90) === 0) {
-    ticksAxisH.push(xValue);
-  }
-}
+               },
+               vAxis: {
+                  title: 'Infections',
+                  format: 'short',
+                  gridlines: {
+                    color: 'lightgrey', minSpacing: 50,
+                  }
+               },
 
-var container = document.getElementById('chart_div');
-var chart = new google.visualization.ChartWrapper({
-  chartType: 'LineChart',
-  dataTable: dataTable,
-  options: {
-    hAxis: {
-      gridlines: {
-        color: 'transparent'
-      },
-      ticks: ticksAxisH,
-      title: 'title hAxis'
-    },
-    tooltip: {
-      isHtml: true
-    },
-    vAxis: {
-      gridlines: {
-        count: 10
-      },
-      title: 'My title'
-    }
-  }
-});
+               crosshair: {
+                  color: 'black',
+                  trigger: 'both'
+               },
+               legend: {position: 'bottom', textStyle: {color: 'grey', fontSize: 16}},
 
-// add hover line
-google.visualization.events.addOneTimeListener(chart, 'ready', function () {
-  var svgParent = container.getElementsByTagName('svg')[0];
-  var layout = chart.getChart().getChartLayoutInterface();
-  var lineHeight = layout.getBoundingBox('chartarea').height - 18;
-  var lineTop = layout.getBoundingBox('chartarea').top;
+               curveType: 'function',
+               colors:['#F4B400'],
+               explorer: { actions: ['dragToZoom', 'rightClickToReset'],  axis: 'horizontal', keepInBounds: true },
 
-  var hoverLine = container.getElementsByTagName('rect')[0].cloneNode(true);
-  hoverLine.setAttribute('y', lineTop);
-  hoverLine.setAttribute('height', lineHeight);
-  hoverLine.setAttribute('width', '1');
-  hoverLine.setAttribute('stroke', 'none');
-  hoverLine.setAttribute('stroke-width', '0');
-  hoverLine.setAttribute('fill', '#cccccc');
+            };
 
-  google.visualization.events.addListener(chart.getChart(), 'onmouseover', function (p) {
-    if (p.row !== null) {
-      var xPos = layout.getXLocation(dataTable.getValue(p.row, 0));
-      svgParent.appendChild(hoverLine);
-      hoverLine.setAttribute('x', xPos);
-    }
-  });
-
-  google.visualization.events.addListener(chart.getChart(), 'onmouseout', function (p) {
-    if (p.row !== null) {
-      svgParent.removeChild(hoverLine);
-    }
-  });
-});
-
-chart.draw(container);
-}
-  </script>
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.LineChart(document.getElementById('container'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
 </html>
