@@ -1,71 +1,71 @@
 //  Vaccine Timeline - Timeline - Provinces Charts
 
 // ontario
-var ontarioInfected = 24628;
-var ontarioInfectedToday = 206;
-var ontariodeaths = 2021;
+var ontarioInfected = 25904;
+var ontarioInfectedToday = 460;
+var ontariodeaths = 2102;
 var ontariodeathstoday = 0;
-var ontariorecovered = 18767;
+var ontariorecovered = 19698;
 var ontariorecoveredToday = 278;
-var ontarioactive = 27994;
+var ontarioactive = ontarioInfected - ontariorecovered - ontariodeaths;
 var ontariochange = ontarioInfected - 24177;
-var ontariocritical = 153;
+var ontariocritical = 859;
 var ontariotest = 0;
 
 // Alberta
-var albertaInfected = 6818;
-var albertaInfectedToday = 18;
+var albertaInfected = 6860;
+var albertaInfectedToday = 42;
 var albertadeaths = 135;
 var albertadeathstoday = 0;
 var albertarecovered = 5453;
 var albertarecoveredToday = 0;
-var albertaactive = 814;
-var albertachange = albertaInfected - 6444;
-var albertacritical = 48;
-var albertatest = 232774;
+var albertaactive = albertaInfected - albertadeaths - albertarecovered;
+var albertachange = albertaInfected - 6818;
+var albertacritical = 46;
+var albertatest = 236789;
 
 // BritishColumbia
-var britishColumbiaInfected = 2517;
-var britishColumbiaInfectedToday = 0;
+var britishColumbiaInfected = 2507;
+var britishColumbiaInfectedToday = 18;
 var britishColumbiadeaths = 155;
 var britishColumbiadeathstoday = 0;
-var britishColumbiarecovered = 2057;
+var britishColumbiarecovered = 2042;
 var britishColumbiarecoveredToday = 0;
-var britishColumbiaactive = 355;
+var britishColumbiaactive = britishColumbiaInfected - britishColumbiadeaths - britishColumbiarecovered;
 var britishColumbiachange = britishColumbiaInfected - 2428;
 var britishColumbiacritical = 41;
 var britishColumbiatest = 129942;
 
 // saskatchewan
-var saskatchewanInfected = 630;
-var saskatchewanInfectedToday = 0;
+var saskatchewanInfected = 632;
+var saskatchewanInfectedToday = 2;
 var saskatchewandeaths = 7;
 var saskatchewandeathstoday = 0;
-var saskatchewanrecovered = 535;
+var saskatchewanrecovered = 538;
 var saskatchewanrecoveredToday = 0;
-var saskatchewanactive = 141;
-var saskatchewanchange = saskatchewanInfected - 592;
-var saskatchewancritical = 6;
+var saskatchewanactive = saskatchewanInfected - saskatchewandeaths - saskatchewanrecovered;
+var saskatchewanchange = saskatchewanInfected - 630;
+var saskatchewancritical = 5;
 var saskatchewantest = 0;
 
 // manitoba
-var manitobaInfected = 290;
-var manitobaInfectedToday = 1;
+var manitobaInfected = 292;
+var manitobaInfectedToday = 0;
 var manitobadeaths = 7;
 var manitobadeathstoday = 0;
 var manitobarecovered = 268;
 var manitobarecoveredToday = 0;
-var manitobaactive = 17;
+var manitobaactive = manitobaInfected - manitobadeaths - manitobarecovered;
 var manitobachange = manitobaInfected - 290;
 var manitobacritical = 0;
 var manitobatest = 37870;
 
 // quebec
-var quebecInfected = 46838;
-var quebecInfectedToday = 697;
-var quebeceaths = 3940;
+var quebecInfected = 47984;
+var quebecInfectedToday = 573;
+var quebeceaths = 4069;
 var quebecdeathstoday = 0;
-var quebecrecovered = 14044;
+var quebecrecovered = 14654;
 var quebecrecoveredToday = 0;
 var quebecactive = quebecInfected - quebeceaths - quebecrecovered;
 var quebecchange = quebecInfected - 43627;
@@ -83,7 +83,7 @@ var newBrunswickrecoveredToday = 0;
 var newBrunswickactive = newBrunswickInfected - newBrunswickdeaths - newBrunswickrecovered;
 var newBrunswickchange = newBrunswickInfected - 120;
 var newBrunswickcritical = 0;
-var newBrunswicktest = 22301;
+var newBrunswicktest = 22572;
 
 // novaScotia
 var novaScotiaInfected = 1050;
@@ -106,7 +106,7 @@ var pierecovered = 27;
 var pierecoveredToday = 0;
 var pieactive = 0;
 var piechange = pieInfected - 27;
-var piecritical = 0;
+var piecritical = 5329	;
 var pietest = 0;
 
 
@@ -226,6 +226,8 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
+     [new Date(2020, 4, 25), '  ', ''],
+     [new Date(2020, 4, 24), '  ', ''],
       [new Date(2020, 4, 23), '  ', ''],
       [new Date(2020, 4, 22), '  ', ''],
       [new Date(2020, 4, 21), 'SUPPORT ', 'Ottawa announces another $75M in pandemic funding for Indigenous people living off-reserve.'],
@@ -398,6 +400,8 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 4, 25), '  '],
+      [new Date(2020, 4, 24), '  '],
       [new Date(2020, 4, 23), '  '],
       [new Date(2020, 4, 22), '  '],
       [new Date(2020, 4, 21), '  '],

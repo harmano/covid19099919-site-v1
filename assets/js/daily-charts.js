@@ -125,6 +125,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 21), 81380],
       [new Date (2020, 4, 22), 82586],
       [new Date (2020, 4, 23), 83261],
+      [new Date (2020, 4, 24), 84699],
     ]);
 
     var tickMarks = [];
@@ -479,6 +480,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 21), 6246, 41715],
       [new Date (2020, 4, 22), 6341, 42594],
       [new Date (2020, 4, 23), 6390, 43305],
+      [new Date (2020, 4, 23), 6457, 43985],
 
     ]);
 
@@ -498,6 +500,7 @@ google.charts.load('current', {
        pointSize: 10,
        dataOpacity: 0,
        color:'white',
+       animation: {"startup": true},=
        hAxis: {
 
 
@@ -510,7 +513,7 @@ google.charts.load('current', {
            ticks: 'tickMarks',
            maxSpacing: 300,
            gridlines: {
-             color: 'lightgrey', maxSpacing: 100,
+             color: '#F0F0F0	', maxSpacing: 100,
             },
             baselineColor: 'grey',
             textStyle: {
@@ -534,7 +537,7 @@ google.charts.load('current', {
               },
             },
         crosshair: {
-           color: 'black',
+           color: 'grey',
            trigger: 'both',
            orientation: 'vertical'
             },
@@ -681,6 +684,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 21), 579],
       [new Date (2020, 4, 22), 1206],
       [new Date (2020, 4, 23), 1035],
+      [new Date (2020, 4, 24), 1078],
     ]);
 
     var tickMarks = [];
@@ -883,7 +887,8 @@ function drawChart2() {
      [new Date (2020, 4, 20), 33915],
      [new Date (2020, 4, 21), 33419],
      [new Date (2020, 4, 22), 33651],
-     [new Date (2020, 4, 22), 33961],
+     [new Date (2020, 4, 23), 33961],
+     [new Date (2020, 4, 24), 34247],
    ]);
 
    var tickMarks = [];
