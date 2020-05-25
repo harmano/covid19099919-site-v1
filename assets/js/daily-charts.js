@@ -143,6 +143,7 @@ google.charts.load('current', {
          },
         pointSize: 10,
         dataOpacity: 0,
+        selection: 'none',
         color:'#59748E',
         hAxis: {
             title: 'Drag to Zoom In, Right click to reset',
@@ -164,6 +165,7 @@ google.charts.load('current', {
                },
            },
          tooltip:{textStyle: {color: 'black'} },
+        aggregationTarget: 'series',
          vAxis: {
             title: '',
             format: 'short',
@@ -480,8 +482,7 @@ google.charts.load('current', {
       [new Date (2020, 4, 21), 6246, 41715],
       [new Date (2020, 4, 22), 6341, 42594],
       [new Date (2020, 4, 23), 6390, 43305],
-      [new Date (2020, 4, 23), 6457, 43985],
-
+      [new Date (2020, 4, 24), 6457, 43985],
     ]);
 
     var tickMarks = [];
@@ -500,10 +501,8 @@ google.charts.load('current', {
        pointSize: 10,
        dataOpacity: 0,
        color:'white',
-       animation: {"startup": true},=
+       animation: {"startup": true},
        hAxis: {
-
-
            title: 'Drag to Zoom In, Right click to reset',
            titleTextStyle: {
              color: 'grey',
