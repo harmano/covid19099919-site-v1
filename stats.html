@@ -404,25 +404,30 @@
 
   </div>
   <hr class="filterDiv none stats-line">
+
   <!--  daily  --------------------------------------------------------------------->
   <div class="filterDiv  Daily row">
-    <div id="daily_line_chart" class="box-graphs chart-margin-line line-chart-infection"></div>
+    <div id="daily_line_chart" class="box-graphs  line-chart-infection"></div>
     <p style="margin-top:5px;" class="filterDiv  Daily  p-3-text">Updated <i><time class="timeago" datetime="2020-05-24T14:25"></time></i> | Sources: <a href="#sources">Click Here</a></p>
 
   </div>
   <hr class="filterDiv none stats-line">
   <!--  Active  --------------------------------------------------------------------->
   <div class="filterDiv  Active row">
-    <div id="active_line_chart" class="box-graphs chart-margin-line line-chart-infection"></div>
+    <div class="box-graphs chart-margin-line line-chart-infection">
+      <div style="height: 100%; width:100%; " id="container" ></div>
 
+    </div>
     <p style="margin-top:5px;" class="filterDiv  Active p-3-text">Updated <i><time class="timeago" datetime="2020-05-24T14:25"></time></i> | Sources: <a href="#sources">Click Here</a></p>
+
+
 
   </div>
   <hr class="filterDiv none stats-line">
   <!--  Charts  --------------------------------------------------------------------->
 
   <div class="filterDiv  Recovery Deaths row">
-    <div id="deaths_line_chart" class="box-graphs chart-margin-line line-chart-infection"></div>
+    <div id="deaths_line_chart" style="" class="box-graphs chart-margin-line line-chart-infection"></div>
     <p style="margin-top:5px;" class="filterDiv  Active p-3-text">Updated <i><time class="timeago" datetime="2020-05-24T14:25"></time></i> | Sources: <a href="#sources">Click Here</a></p>
 
   </div>

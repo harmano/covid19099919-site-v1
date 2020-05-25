@@ -133,25 +133,61 @@ google.charts.load('current', {
     }
 
     var options = {
-      chart: {
-        title: 'Infection History',
-      },
-      crosshair: {orientation: 'vertical', trigger: 'focus'},
-      legend: { position:'none' },
-      width: '100%',
-      pointSize: 10,
-      explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
-      hAxis: {
-        format: 'MM/dd/yyyy',
-        ticks: tickMarks
-      },
-      curveType: 'function',
+       title: 'Active Cases',
+       titleTextStyle: {
+         color: 'grey',
+         bold: false,
+         fontSize: 14,
+         },
+        pointSize: 20,
+        dataOpacity: 0,
+        color:'white',
+        hAxis: {
+            title: '',
+            format: 'MMM d',
+            ticks: 'tickMarks',
+            maxSpacing: 300,
+            gridlines: {
+              color: 'lightgrey', maxSpacing: 100,
+             },
+             baselineColor: 'grey',
+             textStyle: {
+               color: 'grey',
+               bold: false,
+               fontSize: 15,
+               },
+           },
+         tooltip:{textStyle: {color: 'black'} },
+         vAxis: {
+            title: '',
+            format: 'short',
+            gridlines: {
+              color: 'lightgrey', minSpacing: 50,
+               },
+             viewWindow:{ min: 0 },
+             textStyle: {
+               color: 'grey',
+               bold: false,
+               fontSize: 12,
+               },
+             },
+
+       crosshair: {
+          color: 'black',
+          trigger: 'both',
+          orientation: 'vertical'
+       },
+       legend: {position: 'none'},
+
+       curveType: 'function',
+       explorer: { actions: ['dragToZoom', 'rightClickToReset'],  axis: 'horizontal', keepInBounds: true },
+
       colors:['#59748E'],
 
     };
 
-        var chart = new google.charts.Line(document.getElementById('linechart_material'));
-        chart.draw(data, google.charts.Line.convertOptions(options));
+        var chart = new google.visualization.LineChart(document.getElementById('linechart_material'));
+        chart.draw(data, options);
 
   },
   packages: ['corechart', 'line']
@@ -447,30 +483,61 @@ google.charts.load('current', {
     }
 
     var options = {
-      chart: {
-        title: 'Deaths & Recovery History',
-      },
-      legend: { position:'none' },
-      width: '100%',
-      pointSize: 10,
-      crosshair: {orientation: 'vertical', trigger: 'focus'},
-      explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
-      hAxis: {
-        format: 'MM/dd/yyyy',
-        ticks: tickMarks
-      },
-      vAxis: {
-
-          legend: {position: 'bottom'},
+      title: 'Deaths and Recovery',
+      titleTextStyle: {
+        color: 'grey',
+        bold: false,
+        fontSize: 14,
         },
-      curveType: 'function',
-      colors:['#FF4C4C', '#759785']
+       width: '100%',
+       pointSize: 20,
+       dataOpacity: 0,
+       color:'white',
+       hAxis: {
+           title: '',
+           format: 'MMM d',
+           ticks: 'tickMarks',
+           maxSpacing: 300,
+           gridlines: {
+             color: 'lightgrey', maxSpacing: 100,
+            },
+            baselineColor: 'grey',
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 15,
+              },
+          },
+        tooltip:{textStyle: {color: 'black'} },
+        vAxis: {
+           title: '',
+           format: 'short',
+           gridlines: {
+             color: 'lightgrey', minSpacing: 50,
+              },
+            viewWindow:{ min: 0 },
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 12,
+              },
+            },
+        crosshair: {
+           color: 'black',
+           trigger: 'both',
+           orientation: 'vertical'
+            },
+        legend: {position: 'bottom', textStyle: {color: 'grey', fontSize: 16}},
+        curveType: 'function',
+        explorer: { actions: ['dragToZoom', 'rightClickToReset'],  axis: 'horizontal', keepInBounds: true },
+
+        colors:['#FF4C4C', '#759785']
     };
 
 
 
-        var chart = new google.charts.Line(document.getElementById('deaths_line_chart'));
-        chart.draw(data, google.charts.Line.convertOptions(options));
+        var chart = new google.visualization.LineChart(document.getElementById('deaths_line_chart'));
+        chart.draw(data, options);
 
 
   },
@@ -611,28 +678,63 @@ google.charts.load('current', {
     }
 
     var options = {
-      chart: {
-        title: 'Daily Change',
-      },
-      legend: { position:'none' },
-      width: '100%',
-      pointSize: 10,
-      crosshair: {orientation: 'vertical', trigger: 'focus'},
-      explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
-      hAxis: {
-        format: 'MM/dd/yyyy',
-        ticks: tickMarks
-      },
-      curveType: 'function',
-      colors:['grey']
+      title: 'Daily Change',
+      titleTextStyle: {
+        color: 'grey',
+        bold: false,
+        fontSize: 14,
+        },
+       width: '100%',
+       pointSize: 20,
+       dataOpacity: 0,
+       color:'white',
+       hAxis: {
+           title: '',
+           format: 'MMM d',
+           ticks: 'tickMarks',
+           maxSpacing: 300,
+           gridlines: {
+             color: 'lightgrey', maxSpacing: 100,
+            },
+            baselineColor: 'grey',
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 15,
+              },
+          },
+        tooltip:{textStyle: {color: 'black'} },
+        vAxis: {
+           title: '',
+           format: 'short',
+           gridlines: {
+             color: 'lightgrey', minSpacing: 50,
+              },
+            viewWindow:{ min: 0 },
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 12,
+              },
+            },
+        crosshair: {
+           color: 'black',
+           trigger: 'both',
+           orientation: 'vertical'
+            },
+        legend: {position: 'none', textStyle: {color: 'grey', fontSize: 16}},
+        curveType: 'function',
+        colors:['grey'],
+        explorer: { actions: ['dragToZoom', 'rightClickToReset'],  axis: 'horizontal', keepInBounds: true },
+
     };
 
 
 
 
       function resize() {
-        var chart = new google.charts.Line(document.getElementById('daily_line_chart'));
-        chart.draw(data, google.charts.Line.convertOptions(options));
+        var chart = new google.visualization.LineChart(document.getElementById('daily_line_chart'));
+        chart.draw(data, options);
        }
        window.onload = resize();
        window.onresize = resize;
@@ -642,159 +744,196 @@ google.charts.load('current', {
 
 
 // .................................................. Active ................................ //
-google.charts.load('current', {
-  callback: function () {
-    var data = new google.visualization.DataTable();
-    data.addColumn('date', '');
-    data.addColumn('number', 'Daily Infection');
-    data.addRows([
-      [new Date (2020, 0, 26), 1],
-      [new Date (2020, 0, 27), 1],
-      [new Date (2020, 0, 28), 2],
-      [new Date (2020, 0, 29), 2],
-      [new Date (2020, 0, 30), 2],
-      [new Date (2020, 0, 31), 4],
-      [new Date (2020, 1, 1), 4],
-      [new Date (2020, 1, 2), 4],
-      [new Date (2020, 1, 3), 4],
-      [new Date (2020, 1, 4), 4],
-      [new Date (2020, 1, 5), 5],
-      [new Date (2020, 1, 6), 5],
-      [new Date (2020, 1, 7), 7],
-      [new Date (2020, 1, 8), 7],
-      [new Date (2020, 1, 9), 7],
-      [new Date (2020, 1, 10), 7],
-      [new Date (2020, 1, 11), 7],
-      [new Date (2020, 1, 12), 6],
-      [new Date (2020, 1, 13), 6],
-      [new Date (2020, 1, 14), 6],
-      [new Date (2020, 1, 15), 6],
-      [new Date (2020, 1, 16), 6],
-      [new Date (2020, 1, 17), 7],
-      [new Date (2020, 1, 18), 7],
-      [new Date (2020, 1, 19), 7],
-      [new Date (2020, 1, 20), 7],
-      [new Date (2020, 1, 21), 6],
-      [new Date (2020, 1, 22), 6],
-      [new Date (2020, 1, 23), 6],
-      [new Date (2020, 1, 24), 7],
-      [new Date (2020, 1, 25), 8],
-      [new Date (2020, 1, 26), 8],
-      [new Date (2020, 1, 27), 7],
-      [new Date (2020, 1, 28), 7],
-      [new Date (2020, 1, 29), 14],
-      [new Date (2020, 2, 1), 18],
-      [new Date (2020, 2, 2), 21],
-      [new Date (2020, 2, 3), 23],
-      [new Date (2020, 2, 4), 27],
-      [new Date (2020, 2, 5), 31],
-      [new Date (2020, 2, 6), 43],
-      [new Date (2020, 2, 7), 46],
-      [new Date (2020, 2, 8), 56],
-      [new Date (2020, 2, 9), 96],
-      [new Date (2020, 2, 10), 64],
-      [new Date (2020, 2, 11), 99],
-      [new Date (2020, 2, 12), 108],
-      [new Date (2020, 2, 13), 97],
-      [new Date (2020, 2, 14), 234],
-      [new Date (2020, 2, 15), 292],
-      [new Date (2020, 2, 16), 409],
-      [new Date (2020, 2, 17), 578],
-      [new Date (2020, 2, 18), 706],
-      [new Date (2020, 2, 19), 850],
-      [new Date (2020, 2, 20), 1051],
-      [new Date (2020, 2, 21), 1295],
-      [new Date (2020, 2, 22), 1435],
-      [new Date (2020, 2, 23), 1747],
-      [new Date (2020, 2, 24), 2654],
-      [new Date (2020, 2, 25), 3188],
-      [new Date (2020, 2, 26), 3776],
-      [new Date (2020, 2, 27), 4348],
-      [new Date (2020, 2, 28), 5199],
-      [new Date (2020, 2, 29), 5642],
-      [new Date (2020, 2, 30), 6266],
-      [new Date (2020, 2, 31), 7268],
-      [new Date (2020, 3, 1), 7881],
-      [new Date (2020, 3, 2), 9131],
-      [new Date (2020, 3, 3), 10022],
-      [new Date (2020, 3, 4), 11086],
-      [new Date (2020, 3, 5), 12511],
-      [new Date (2020, 3, 6), 12713],
-      [new Date (2020, 3, 7), 13488],
-      [new Date (2020, 3, 8), 14463],
-      [new Date (2020, 3, 9), 14945],
-      [new Date (2020, 3, 10), 15566],
-      [new Date (2020, 3, 11), 16237],
-      [new Date (2020, 3, 12), 16494],
-      [new Date (2020, 3, 13), 17144],
-      [new Date (2020, 3, 14), 17827],
-      [new Date (2020, 3, 15), 18432],
-      [new Date (2020, 3, 16), 19825],
-      [new Date (2020, 3, 17), 21079],
-      [new Date (2020, 3, 18), 21626],
-      [new Date (2020, 3, 19), 21626],
-      [new Date (2020, 3, 20), 23291],
-      [new Date (2020, 3, 21), 24250],
-      [new Date (2020, 3, 22), 25545],
-      [new Date (2020, 3, 23), 26213],
-      [new Date (2020, 3, 24), 26630],
-      [new Date (2020, 3, 25), 27311],
-      [new Date (2020, 3, 26), 27118],
-      [new Date (2020, 3, 27), 28451],
-      [new Date (2020, 3, 28), 28920],
-      [new Date (2020, 3, 29), 29297],
-      [new Date (2020, 3, 30), 29648],
-      [new Date (2020, 4, 1), 29995],
-      [new Date (2020, 4, 2), 30385],
-      [new Date (2020, 4, 3), 31744],
-      [new Date (2020, 4, 4), 32473],
-      [new Date (2020, 4, 5), 32027],
-      [new Date (2020, 4, 6), 32455],
-      [new Date (2020, 4, 7), 32601],
-      [new Date (2020, 4, 8), 32470],
-      [new Date (2020, 4, 9), 32790],
-      [new Date (2020, 4, 10), 32948],
-      [new Date (2020, 4, 11), 33099],
-      [new Date (2020, 4, 12), 33022],
-      [new Date (2020, 4, 13), 32918],
-      [new Date (2020, 4, 14), 32382],
-      [new Date (2020, 4, 15), 32493],
-      [new Date (2020, 4, 16), 32868],
-      [new Date (2020, 4, 17), 33161],
-      [new Date (2020, 4, 18), 33507],
-      [new Date (2020, 4, 19), 33699],
-      [new Date (2020, 4, 20), 33915],
-      [new Date (2020, 4, 21), 33419],
-      [new Date (2020, 4, 22), 33651],
-      [new Date (2020, 4, 22), 33961],
-    ]);
+function drawChart2() {
+   // Define the chart to be drawn.
+   var data = new google.visualization.DataTable();
+   data.addColumn('date', '');
+   data.addColumn('number', 'Daily Infection');
+   data.addRows([
+     [new Date (2020, 0, 26), 1],
+     [new Date (2020, 0, 27), 1],
+     [new Date (2020, 0, 28), 2],
+     [new Date (2020, 0, 29), 2],
+     [new Date (2020, 0, 30), 2],
+     [new Date (2020, 0, 31), 4],
+     [new Date (2020, 1, 1), 4],
+     [new Date (2020, 1, 2), 4],
+     [new Date (2020, 1, 3), 4],
+     [new Date (2020, 1, 4), 4],
+     [new Date (2020, 1, 5), 5],
+     [new Date (2020, 1, 6), 5],
+     [new Date (2020, 1, 7), 7],
+     [new Date (2020, 1, 8), 7],
+     [new Date (2020, 1, 9), 7],
+     [new Date (2020, 1, 10), 7],
+     [new Date (2020, 1, 11), 7],
+     [new Date (2020, 1, 12), 6],
+     [new Date (2020, 1, 13), 6],
+     [new Date (2020, 1, 14), 6],
+     [new Date (2020, 1, 15), 6],
+     [new Date (2020, 1, 16), 6],
+     [new Date (2020, 1, 17), 7],
+     [new Date (2020, 1, 18), 7],
+     [new Date (2020, 1, 19), 7],
+     [new Date (2020, 1, 20), 7],
+     [new Date (2020, 1, 21), 6],
+     [new Date (2020, 1, 22), 6],
+     [new Date (2020, 1, 23), 6],
+     [new Date (2020, 1, 24), 7],
+     [new Date (2020, 1, 25), 8],
+     [new Date (2020, 1, 26), 8],
+     [new Date (2020, 1, 27), 7],
+     [new Date (2020, 1, 28), 7],
+     [new Date (2020, 1, 29), 14],
+     [new Date (2020, 2, 1), 18],
+     [new Date (2020, 2, 2), 21],
+     [new Date (2020, 2, 3), 23],
+     [new Date (2020, 2, 4), 27],
+     [new Date (2020, 2, 5), 31],
+     [new Date (2020, 2, 6), 43],
+     [new Date (2020, 2, 7), 46],
+     [new Date (2020, 2, 8), 56],
+     [new Date (2020, 2, 9), 96],
+     [new Date (2020, 2, 10), 64],
+     [new Date (2020, 2, 11), 99],
+     [new Date (2020, 2, 12), 108],
+     [new Date (2020, 2, 13), 97],
+     [new Date (2020, 2, 14), 234],
+     [new Date (2020, 2, 15), 292],
+     [new Date (2020, 2, 16), 409],
+     [new Date (2020, 2, 17), 578],
+     [new Date (2020, 2, 18), 706],
+     [new Date (2020, 2, 19), 850],
+     [new Date (2020, 2, 20), 1051],
+     [new Date (2020, 2, 21), 1295],
+     [new Date (2020, 2, 22), 1435],
+     [new Date (2020, 2, 23), 1747],
+     [new Date (2020, 2, 24), 2654],
+     [new Date (2020, 2, 25), 3188],
+     [new Date (2020, 2, 26), 3776],
+     [new Date (2020, 2, 27), 4348],
+     [new Date (2020, 2, 28), 5199],
+     [new Date (2020, 2, 29), 5642],
+     [new Date (2020, 2, 30), 6266],
+     [new Date (2020, 2, 31), 7268],
+     [new Date (2020, 3, 1), 7881],
+     [new Date (2020, 3, 2), 9131],
+     [new Date (2020, 3, 3), 10022],
+     [new Date (2020, 3, 4), 11086],
+     [new Date (2020, 3, 5), 12511],
+     [new Date (2020, 3, 6), 12713],
+     [new Date (2020, 3, 7), 13488],
+     [new Date (2020, 3, 8), 14463],
+     [new Date (2020, 3, 9), 14945],
+     [new Date (2020, 3, 10), 15566],
+     [new Date (2020, 3, 11), 16237],
+     [new Date (2020, 3, 12), 16494],
+     [new Date (2020, 3, 13), 17144],
+     [new Date (2020, 3, 14), 17827],
+     [new Date (2020, 3, 15), 18432],
+     [new Date (2020, 3, 16), 19825],
+     [new Date (2020, 3, 17), 21079],
+     [new Date (2020, 3, 18), 21626],
+     [new Date (2020, 3, 19), 21626],
+     [new Date (2020, 3, 20), 23291],
+     [new Date (2020, 3, 21), 24250],
+     [new Date (2020, 3, 22), 25545],
+     [new Date (2020, 3, 23), 26213],
+     [new Date (2020, 3, 24), 26630],
+     [new Date (2020, 3, 25), 27311],
+     [new Date (2020, 3, 26), 27118],
+     [new Date (2020, 3, 27), 28451],
+     [new Date (2020, 3, 28), 28920],
+     [new Date (2020, 3, 29), 29297],
+     [new Date (2020, 3, 30), 29648],
+     [new Date (2020, 4, 1), 29995],
+     [new Date (2020, 4, 2), 30385],
+     [new Date (2020, 4, 3), 31744],
+     [new Date (2020, 4, 4), 32473],
+     [new Date (2020, 4, 5), 32027],
+     [new Date (2020, 4, 6), 32455],
+     [new Date (2020, 4, 7), 32601],
+     [new Date (2020, 4, 8), 32470],
+     [new Date (2020, 4, 9), 32790],
+     [new Date (2020, 4, 10), 32948],
+     [new Date (2020, 4, 11), 33099],
+     [new Date (2020, 4, 12), 33022],
+     [new Date (2020, 4, 13), 32918],
+     [new Date (2020, 4, 14), 32382],
+     [new Date (2020, 4, 15), 32493],
+     [new Date (2020, 4, 16), 32868],
+     [new Date (2020, 4, 17), 33161],
+     [new Date (2020, 4, 18), 33507],
+     [new Date (2020, 4, 19), 33699],
+     [new Date (2020, 4, 20), 33915],
+     [new Date (2020, 4, 21), 33419],
+     [new Date (2020, 4, 22), 33651],
+     [new Date (2020, 4, 22), 33961],
+   ]);
 
-    var tickMarks = [];
-    for (var i = 0; i < data.getNumberOfRows(); i++) {
-      tickMarks.push(data.getValue(i, 0));
-    }
+   var tickMarks = [];
+   for (var i = 0; i < data.getNumberOfRows(); i++) {
+     tickMarks.push(data.getValue(i, 0));
+   }
 
-    var options = {
-      chart: {
-        title: 'Active Cases',
+   // Set chart options
+   var options = {
+      title: 'Active Cases',
+      titleTextStyle: {
+        color: 'grey',
+        bold: false,
+        fontSize: 14,
+        },
+        width:'100%',
+       pointSize: 20,
+       dataOpacity: 0,
+       color:'white',
+       hAxis: {
+           title: '',
+           format: 'MMM d',
+           ticks: 'tickMarks',
+           maxSpacing: 300,
+           gridlines: {
+             color: 'lightgrey', maxSpacing: 100,
+            },
+            baselineColor: 'grey',
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 15,
+              },
+          },
+        tooltip:{textStyle: {color: 'black'} },
+        vAxis: {
+           title: '',
+           format: 'short',
+           gridlines: {
+             color: 'lightgrey', minSpacing: 50,
+              },
+            viewWindow:{ min: 0 },
+            textStyle: {
+              color: 'grey',
+              bold: false,
+              fontSize: 12,
+              },
+            },
+
+      crosshair: {
+         color: 'black',
+         trigger: 'both',
+         orientation: 'vertical'
       },
       legend: {position: 'none'},
-      width: '100%',
-      pointSize: 10,
-      crosshair: {orientation: 'vertical', trigger: 'focus'},
-      explorer: { actions: ['dragToZoom', 'rightClickToReset'] },
-      hAxis: {
-        format: 'MM/dd/yyyy',
-        ticks: tickMarks
-      },
 
       curveType: 'function',
-      colors:['#F4B400']
-    };
+      explorer: { actions: ['dragToZoom', 'rightClickToReset'],  axis: 'horizontal', keepInBounds: true },
 
-      var chart = new google.charts.Line(document.getElementById('active_line_chart'));
-      chart.draw(data, google.charts.Line.convertOptions(options));
+      colors:['#F4B400'],
 
-    },
-  packages: ['corechart', 'line']
-});
+   };
+
+   // Instantiate and draw the chart.
+   var chart = new google.visualization.LineChart(document.getElementById('container'));
+   chart.draw(data, options);
+}
+google.charts.setOnLoadCallback(drawChart2);
