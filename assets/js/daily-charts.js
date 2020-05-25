@@ -133,17 +133,22 @@ google.charts.load('current', {
     }
 
     var options = {
-       title: 'Active Cases',
+       title: 'Infected',
+       subtitle: 'Active Cadses',
        titleTextStyle: {
          color: 'grey',
          bold: false,
          fontSize: 14,
          },
-        pointSize: 20,
+        pointSize: 10,
         dataOpacity: 0,
-        color:'white',
+        color:'#59748E',
         hAxis: {
-            title: '',
+            title: 'Drag to Zoom In, Right click to reset',
+            titleTextStyle: {
+              color: 'grey',
+              fontSize: 9,
+            },
             format: 'MMM d',
             ticks: 'tickMarks',
             maxSpacing: 300,
@@ -490,11 +495,17 @@ google.charts.load('current', {
         fontSize: 14,
         },
        width: '100%',
-       pointSize: 20,
+       pointSize: 10,
        dataOpacity: 0,
        color:'white',
        hAxis: {
-           title: '',
+
+
+           title: 'Drag to Zoom In, Right click to reset',
+           titleTextStyle: {
+             color: 'grey',
+             fontSize: 9,
+           },
            format: 'MMM d',
            ticks: 'tickMarks',
            maxSpacing: 300,
@@ -685,11 +696,15 @@ google.charts.load('current', {
         fontSize: 14,
         },
        width: '100%',
-       pointSize: 20,
+       pointSize: 10,
        dataOpacity: 0,
        color:'white',
        hAxis: {
-           title: '',
+         title: 'Drag to Zoom In, Right click to reset',
+         titleTextStyle: {
+           color: 'grey',
+           fontSize: 9,
+         },
            format: 'MMM d',
            ticks: 'tickMarks',
            maxSpacing: 300,
@@ -885,11 +900,15 @@ function drawChart2() {
         fontSize: 14,
         },
         width:'100%',
-       pointSize: 20,
+       pointSize: 10,
        dataOpacity: 0,
        color:'white',
        hAxis: {
-           title: '',
+         title: 'Drag to Zoom In, Right click to reset',
+         titleTextStyle: {
+           color: 'grey',
+           fontSize: 9,
+         },
            format: 'MMM d',
            ticks: 'tickMarks',
            maxSpacing: 300,
@@ -921,7 +940,8 @@ function drawChart2() {
       crosshair: {
          color: 'black',
          trigger: 'both',
-         orientation: 'vertical'
+         orientation: 'vertical',
+         selected: { color: 'darkgrey', opacity: 0.8 },
       },
       legend: {position: 'none'},
 
