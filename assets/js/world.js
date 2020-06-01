@@ -79,7 +79,8 @@ google.charts.load('current', {
                ['Feb',  20,      0,      0],
                ['Mar',  8592,      101,      1242],
                ['Apr',  45782,       3202,      20181],
-               ['May',  (confirmed - 54394),      (deaths - 3303),      (recovered - 21423)]
+               ['May',  38085,       4071,      27834],
+               ['Jun',  (confirmed - 92479),      (deaths - 7374),      (recovered - 49257)]
              ]);
 
              var options = {
