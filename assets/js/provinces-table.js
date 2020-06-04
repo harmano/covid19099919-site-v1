@@ -226,6 +226,11 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
+     [new Date(2020, 4, 3), '  ', ''],
+     [new Date(2020, 4, 2), '  ', ''],
+     [new Date(2020, 5, 1), '  ', ''],
+      [new Date(2020, 4, 31), '  ', ''],
+     [new Date(2020, 4, 30), '  ', ''],
      [new Date(2020, 4, 29), '  ', ''],
      [new Date(2020, 4, 28), '  ', ''],
      [new Date(2020, 4, 27), '  ', ''],
@@ -404,6 +409,12 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 4, 3), '  '],
+      [new Date(2020, 4, 2), '  '],
+      [new Date(2020, 5, 1), '  '],
+      [new Date(2020, 4, 31), '  '],
+      [new Date(2020, 4, 30), '  '],
+      [new Date(2020, 4, 29), '  '],
       [new Date(2020, 4, 29), '  '],
       [new Date(2020, 4, 28), '  '],
       [new Date(2020, 4, 27), '  '],
