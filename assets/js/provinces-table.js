@@ -227,9 +227,9 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
-     [new Date(2020, 4, 2), 'ECONOMY', 'Ontario considering Stage 2 of reopening despite steady stream of new COVID-19 cases'],
-     [new Date(2020, 4, 3), 'SUPPORT ', "Feds to announce date for seniors benefit top-up"],
-     [new Date(2020, 4, 2), '  ', ''],
+     [new Date(2020, 5, 2), 'ECONOMY', 'Ontario considering Stage 2 of reopening despite steady stream of new COVID-19 cases'],
+     [new Date(2020, 5, 3), 'SUPPORT ', "Feds to announce date for seniors benefit top-up"],
+     [new Date(2020, 5, 2), '  ', ''],
      [new Date(2020, 5, 1), '  ', ''],
       [new Date(2020, 4, 31), '  ', ''],
      [new Date(2020, 4, 30), '  ', ''],
@@ -411,8 +411,8 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
-      [new Date(2020, 4, 3), "Anticipating 'mass vaccinations', Canada ordering millions of syringes  "],
-      [new Date(2020, 4, 2), '  '],
+      [new Date(2020, 5, 3), "Anticipating 'mass vaccinations', Canada ordering millions of syringes  "],
+      [new Date(2020, 5, 2), '  '],
       [new Date(2020, 5, 1), '  '],
       [new Date(2020, 4, 31), '  '],
       [new Date(2020, 4, 30), '  '],
