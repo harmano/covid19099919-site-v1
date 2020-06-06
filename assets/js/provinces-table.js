@@ -227,7 +227,8 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
-     [new Date(2020, 5, 2), 'ECONOMY', 'Ontario considering Stage 2 of reopening despite steady stream of new COVID-19 cases'],
+    [new Date(2020, 5, 5), 'NEWS', 'Ontario extends emergency orders to June 19, as province reports 455 new cases'],
+     [new Date(2020, 5, 4), 'ECONOMY', 'Ontario considering Stage 2 of reopening despite steady stream of new COVID-19 cases'],
      [new Date(2020, 5, 3), 'SUPPORT ', "Feds to announce date for seniors benefit top-up"],
      [new Date(2020, 5, 2), '  ', ''],
      [new Date(2020, 5, 1), '  ', ''],
@@ -411,6 +412,8 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 5, 5), 'Chief Public Health Officer Dr. Theresa Tam has issued a clear warning that Canada could see “explosive growth” in new cases if reopening is not done with caution  '],
+      [new Date(2020, 5, 4), '  '],
       [new Date(2020, 5, 3), "Anticipating 'mass vaccinations', Canada ordering millions of syringes  "],
       [new Date(2020, 5, 2), '  '],
       [new Date(2020, 5, 1), '  '],

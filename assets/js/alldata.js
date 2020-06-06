@@ -1,26 +1,26 @@
 // Gathering data
 
 
-// date is 2020-06-05T16:30
-var timeMod = '2020-06-05T16:30'
-var deaths = 7578;
-var deathsToday = 0;
+// date is 2020-06-06T14:30
+var timeMod = '2020-06-06T14:30'
+var deaths = 7812;
+var deathsToday = 36;
 
-var confirmed = 95681;
-var confirmedToday = 437;
+var confirmed = 96189;
+var confirmedToday = 239;
 
-var recovered = 52803;
-var recoveredToday = 671;
+var recovered = 53724;
+var recoveredToday = 836;
 
-var active = 35111;
-var activeToday =  active - 35560;
+var active = 34650;
+var activeToday =  active - 35111;
 
-var test = 1824857;
-var testToday = 37411;
+var test = 1830298;
+var testToday = 76;
 
 var m = (deaths / confirmed) * 100;
 var mortality = m.toFixed(3);
-var critical = 1727;
+var critical = 1738;
 
 
 
