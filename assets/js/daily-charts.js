@@ -138,6 +138,10 @@ google.charts.load('current', {
       [new Date (2020, 5, 3), 94620],
       [new Date (2020, 5, 4), 95244],
       [new Date (2020, 5, 5), 95947],
+
+      [new Date (2020, 5, 6), 96475],
+      [new Date (2020, 5, 7), 97176],
+      [new Date (2020, 5, 8), 97498],
     ]);
 
     var tickMarks = [];
@@ -507,6 +511,10 @@ google.charts.load('current', {
       [new Date (2020, 5, 3), 7578, 51496],
       [new Date (2020, 5, 4), 7715, 52132],
       [new Date (2020, 5, 5), 7776, 52888],
+
+      [new Date (2020, 5, 6), 7849, 54087],
+      [new Date (2020, 5, 7), 7876, 54672],
+      [new Date (2020, 5, 8), 7888, 55121],
     ]);
 
     var tickMarks = [];
@@ -721,6 +729,10 @@ google.charts.load('current', {
       [new Date (2020, 5, 3), 662],
       [new Date (2020, 5, 4), 624],
       [new Date (2020, 5, 5), 703],
+
+      [new Date (2020, 5, 6), 528],
+      [new Date (2020, 5, 7), 701],
+      [new Date (2020, 5, 8), 322],
     ]);
 
     var tickMarks = [];
@@ -938,6 +950,12 @@ function drawChart2() {
      [new Date (2020, 5, 3), 35551],
      [new Date (2020, 5, 4), 35267],
      [new Date (2020, 5, 5), 35283],
+
+     [new Date (2020, 5, 6), 34539],
+     [new Date (2020, 5, 7), 34628],
+     [new Date (2020, 5, 8), 34489],
+
+
    ]);
 
    var tickMarks = [];
