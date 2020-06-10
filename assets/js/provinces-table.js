@@ -227,6 +227,7 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
+     [new Date(2020, 5, 10), '  ', '  '],
      [new Date(2020, 5, 9), '  ', '  '],
      [new Date(2020, 5, 8), '  ', '  ' ],
      [new Date(2020, 5, 7), '  ', '  ' ],
@@ -416,6 +417,7 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 5, 10), '  '],
       [new Date(2020, 5, 9), '  '],
       [new Date(2020, 5, 8), '  '],
       [new Date(2020, 5, 7), '  '],

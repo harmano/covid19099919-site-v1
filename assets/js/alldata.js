@@ -1,8 +1,8 @@
 // Gathering data
 
 
-// date is 2020-06-09T13:00
-var timeMod = '2020-06-09T13:00'
+// date is 2020-06-10T17:00
+var timeMod = '2020-06-10T17:00'
 var deaths = 8025;
 var deathsToday = 69;
 
