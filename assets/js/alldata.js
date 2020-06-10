@@ -3,24 +3,24 @@
 
 // date is 2020-06-09T13:00
 var timeMod = '2020-06-09T13:00'
-var deaths = 7909;
-var deathsToday = 21;
+var deaths = 8025;
+var deathsToday = 69;
 
-var confirmed = 87822;
-var confirmedToday = 324;
+var confirmed = 98514;
+var confirmedToday = 488;
 
-var recovered = 55349;
-var recoveredToday = 228;
+var recovered = 56711;
+var recoveredToday = 836;
 
-var active = 55349;
-var activeToday =  active - 55349 - 224;
+var active = 33778;
+var activeToday =  active - 33778;
 
-var test = 1930141;
-var testToday = 76;
+var test = 1955719;
+var testToday = 25578;
 
 var m = (deaths / confirmed) * 100;
 var mortality = m.toFixed(3);
-var critical = 1828;
+var critical = 1864;
 
 
 
