@@ -3,7 +3,7 @@
 
 // date is 2020-06-12T16:00
 var timeMod = '2020-06-12T16:00'
-var deaths = 8114,
+var deaths = 8114;
 var deathsToday = 53;
 
 var confirmed = 99420;
