@@ -1,52 +1,52 @@
 //  Vaccine Timeline - Timeline - Provinces Charts
 
 // ontario
-var ontarioInfected = 29747;
-var ontarioInfectedToday = 344;
-var ontariodeaths = 2372	;
-var ontariodeathstoday = 0;
-var ontariorecovered = 23583;
+var ontarioInfected = 31992;
+var ontarioInfectedToday = 266;
+var ontariodeaths = 2507	;
+var ontariodeathstoday = 351;
+var ontariorecovered = 26538;
 var ontariorecoveredToday = 375;
 var ontarioactive = ontarioInfected - ontariorecovered - ontariodeaths;
 var ontariochange = ontarioInfected - 24177;
-var ontariocritical = 749;
-var ontariotest = 809053	;
+var ontariocritical = 489;
+var ontariotest = 980471	;
 
 // Alberta
-var albertaInfected = 	7091;
+var albertaInfected = 7346;
 var albertaInfectedToday = 15;
-var albertadeaths = 146;
+var albertadeaths = 149;
 var albertadeathstoday = 0;
-var albertarecovered = 6611;
+var albertarecovered = 6811;
 var albertarecoveredToday = 0;
 var albertaactive = albertaInfected - albertadeaths - albertarecovered;
 var albertachange = albertaInfected - 6818;
-var albertacritical = 54;
-var albertatest = 275524;
+var albertacritical = 53;
+var albertatest = 325148;
 
 // BritishColumbia
-var britishColumbiaInfected = 2632;
-var britishColumbiaInfectedToday = 5;
-var britishColumbiadeaths = 166;
+var britishColumbiaInfected = 2709;
+var britishColumbiaInfectedToday = 16;
+var britishColumbiadeaths = 168;
 var britishColumbiadeathstoday = 0;
-var britishColumbiarecovered = 2265;
+var britishColumbiarecovered = 2354;
 var britishColumbiarecoveredToday = 0;
 var britishColumbiaactive = britishColumbiaInfected - britishColumbiadeaths - britishColumbiarecovered;
 var britishColumbiachange = britishColumbiaInfected - 2428;
-var britishColumbiacritical = 26;
-var britishColumbiatest = 151458;
+var britishColumbiacritical = 12;
+var britishColumbiatest = 165256;
 
 // saskatchewan
-var saskatchewanInfected = 649;
+var saskatchewanInfected = 663;
 var saskatchewanInfectedToday = 0;
-var saskatchewandeaths = 11;
+var saskatchewandeaths = 13;
 var saskatchewandeathstoday = 0;
-var saskatchewanrecovered = 611;
+var saskatchewanrecovered = 627;
 var saskatchewanrecoveredToday = 0;
 var saskatchewanactive = saskatchewanInfected - saskatchewandeaths - saskatchewanrecovered;
 var saskatchewanchange = saskatchewanInfected - 630;
 var saskatchewancritical = 1;
-var saskatchewantest = 0;
+var saskatchewantest = 54508;
 
 // manitoba
 var manitobaInfected = 300;
@@ -227,6 +227,8 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
+     [new Date(2020, 5, 12), 'NEWS', "TREND LINE: Canada was warned about an 'explosive' second wave of COVID-19  "],
+     [new Date(2020, 5, 11), '  ', '  '],
      [new Date(2020, 5, 11), '  ', '  '],
      [new Date(2020, 5, 10), '  ', '  '],
      [new Date(2020, 5, 9), '  ', '  '],
@@ -418,6 +420,7 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 5, 12), 'Canadian expert says he is confident COVID-19 vaccine is months, not years away (CP24)'],
       [new Date(2020, 5, 11), '  '],
       [new Date(2020, 5, 10), '  '],
       [new Date(2020, 5, 9), '  '],
