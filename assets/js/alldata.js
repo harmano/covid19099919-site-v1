@@ -6,7 +6,7 @@ var timeMod = '2020-06-13T16:00'
 var deaths = 8173;
 var deathsToday = 50;
 
-var confirmed = 59523;
+var confirmed = 99523;
 var confirmedToday = 499;
 
 var recovered = 59785;
