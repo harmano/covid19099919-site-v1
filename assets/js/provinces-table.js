@@ -227,6 +227,9 @@ google.charts.load('current', {'packages':['table']});
     data.addColumn('string', 'TYPE');
     data.addColumn('string', '');
    data.addRows([
+     [new Date(2020, 5, 15), '  ', '  '],
+     [new Date(2020, 5, 14), '  ', '  '],
+     [new Date(2020, 5, 13), '  ', '  '],
      [new Date(2020, 5, 12), 'NEWS', "TREND LINE: Canada was warned about an 'explosive' second wave of COVID-19  "],
      [new Date(2020, 5, 11), '  ', '  '],
      [new Date(2020, 5, 11), '  ', '  '],
@@ -420,6 +423,9 @@ google.charts.load('current', {'packages':['table']});
      data.addColumn('date', 'DATE');
      data.addColumn('string', '');
     data.addRows([
+      [new Date(2020, 5, 15), '  ', '  '],
+      [new Date(2020, 5, 14), '  ', '  '],
+      [new Date(2020, 5, 13), '  ', '  '],
       [new Date(2020, 5, 12), 'Canadian expert says he is confident COVID-19 vaccine is months, not years away (CP24)'],
       [new Date(2020, 5, 11), '  '],
       [new Date(2020, 5, 10), '  '],
